@@ -44,8 +44,11 @@ body {
 /* Title Bar */
 #courseTitle {
 	background: #326BA9;
-/*	width: 100%;
-*/	padding: 25px;
+/*	width: 100%; */
+	padding: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 33px;
 
 }
 
@@ -63,6 +66,11 @@ body {
 	vertical-align: middle;
 	padding: 0 20px 0 20px;
 	border-right: 1px solid #FFFFFF;
+}
+
+.headerIframe {
+	height: 83px; 
+	width: 100%;
 }
 
 /* Code Highlighting */
@@ -417,4 +425,9 @@ span.subtitle {
 
 li heading {
 	font-weight: bold;
+}
+
+/* styles for 341 from birch */
+.evenlySpaced td {
+	width:50%;
 }
