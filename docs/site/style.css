@@ -411,6 +411,9 @@ heading.subtitle {
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom:20px;
+	border:1px solid black;
+	max-width:100%;
 }
 
 span.subtitle {

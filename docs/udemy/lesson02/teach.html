@@ -7,11 +7,8 @@
    <link rel="stylesheet" type="text/css" href="../../site/style.css" />
    <script type="text/javascript" src="../../site/global.js"></script> 
    <script>window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n01 + " " + g.teach;
-               document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
+               document.getElementById('g_teach').innerHTML      = g.n01 + " " + g.teach;
+               document.getElementById('g_teachTime').innerHTML  = g.teachTime;}
    </script> 
 </head>
 <body>
@@ -23,14 +20,9 @@
         <p>For your team activity this week you will complete the following exercise from the online course:</p>
         <ol>
            <li><p>Section 3, #39: Assignment 1: Time to Practice - The Basics</p></li>
-           <img class="img-tutorial" src="images/teach.png" alt="Assignment">
+           <li><img src="images/teach.png" alt="Assignment"></li>
            <li><p id="g_teachTime"></p></li>
          </ol>
-         <h2 id="g_teachInstructor"></h2>
-         <p id="g_teachSolution"></p>
-         <!-- <p>TODO solution link</p> -->
-         <h2>Submission</h2>
-         <p id="g_teachSubmit"></p>
     </article>
 </body>
 </html>

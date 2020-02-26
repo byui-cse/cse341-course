@@ -8,10 +8,18 @@ g.courseCodeName  = g.courseCode + " | " + g.courseName;
 g.courseMaterials = g.courseCode + " - Course Materials";
 
 // frequently used phrases
-g.prepare   = "Prepare: Reading Material";
-g.teach     = "Teach: Team Activity";
-g.ponder    = "Prove: Assignment";
-g.teachTime = "Please spend at least 1 hour on this assignment before reviewing the solution.";
+g.prepare         = "Prepare: Reading Material";
+g.teach           = "Teach: Team Activity";
+g.ponder          = "Prove: Assignment";
+g.teachTime       = "Please spend at least 1 hour on this assignment before reviewing the solution.";
+g.teachInstructor = "Instructor's Solution";
+g.teachSolution   = "As a part of this team activity, you are expected to look over a solution from the instructor, to compare your approach to that one. One of the questions on the I-Learn submission will ask you to provide insights from this comparison. <br><br> Please DO NOT open the solution until you have worked through this activity as a team for the one hour period. At the end of the hour, if you are still struggling with some of the core requirements, you are welcome to view the instructor's solution and use it to help you complete your own code. Even if you use the instructor's code to help you, you are welcome to report that you finished the core requirements, if you code them up yourself.";
+g.teachSubmit     = "When you have finished this activity, please fill out the assessment in I-Learn. You are welcome to complete any additional parts of this activity by yourself or with others after your meeting before submitting the assessment.";
+g.ponderSubmit    = "<h2>Submission</h2>" + 
+                     "<ol>" + 
+                        "<li><p>Ensure that your latest code is pushed to GitHub and Heroku.</p></li>" + 
+                        "<li><p>Download this assignment's <a href=\"prove.txt\" target=\"_blank\">submission form</a>, fill it out, and submit it to I-Learn.</p></li>" + 
+                     "</ol>";
 
 // module numbers
 g.n01 = "01";
