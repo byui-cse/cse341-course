@@ -8,7 +8,10 @@
    <script type="text/javascript" src="../../site/global.js"></script> 
    <script>window.onload = function(){ // load global variables
                document.getElementById('g_teach').innerHTML      = g.n01 + " " + g.teach;
-               document.getElementById('g_teachTime').innerHTML  = g.teachTime;}
+               document.getElementById('g_teachTime').innerHTML  = g.teachTime;
+               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
+               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
    </script> 
 </head>
 <body>
@@ -19,10 +22,15 @@
         <h2>Overview</h2>
         <p>For your team activity this week you will complete the following exercise from the online course:</p>
         <ol>
-           <li><p>Section 3, #39: Assignment 1: Time to Practice - The Basics</p></li>
-           <li><img src="images/teach.png" alt="Assignment"></li>
+           <li><p>Section 6, #92.5: Assignment: Time to Practice - Templating Engines</p></li>
+           <li><img class="img-tutorial" src="images/teach.jpg" alt="Assignment"></li>
            <li><p id="g_teachTime"></p></li>
-         </ol>
+        </ol>
+        <h2 id="g_teachInstructor"></h2>
+        <p id="g_teachSolution"></p>
+        <!-- <p>TODO solution link</p> -->
+        <h2>Submission</h2>
+        <p id="g_teachSubmit"></p>
     </article>
 </body>
 </html>
