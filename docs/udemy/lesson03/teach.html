@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="../../site/style.css" />
+   <script type="text/javascript" src="../../site/global.js"></script> 
+   <script>window.onload = function(){ // load global variables
+               document.getElementById('g_teach').innerHTML      = g.n01 + " " + g.teach;
+               document.getElementById('g_teachTime').innerHTML  = g.teachTime;
+               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
+               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
+   </script> 
+</head>
+<body>
+    <iframe src = "../../site/header.html" class="headerIframe"></iframe>
+    <article>
+        <h1><span id="g_teach"></span></h1>
+
+        <h2>Overview</h2>
+        <p>For your team activity this week you will complete the following:</p>
+        <ol>
+           <li><p>Create a Node webpage that will read data from the following json: <a href="http://birchphp.herokuapp.com/files/bbguide.json" target="_blank">'http://birchphp.herokuapp.com/files/bbguide.json'</a>.</p></li>
+           <li><p>Display data in a professional manner.</p></li>
+           <li><p>Incorporate a way to search through the data and only display associated search results.</p></li>
+           <li><p id="g_teachTime"></p></li>
+        </ol>
+        <h2 id="g_teachInstructor"></h2>
+        <p id="g_teachSolution"></p>
+        <!-- <p>TODO solution link</p> -->
+        <h2>Submission</h2>
+        <p id="g_teachSubmit"></p>
+    </article>
+</body>
+</html>

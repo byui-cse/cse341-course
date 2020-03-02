@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../site/style.css" />
     <script type="text/javascript" src="../../site/global.js"></script> 
     <script>window.onload = function(){ // load global variables
-        document.getElementById('g_prepare').innerHTML  = g.n01 + " " + g.prepare;}
+        document.getElementById('g_prepare').innerHTML  = g.n01 + " " + g.prepare;
+        document.getElementById('g_reading').innerHTML  = g.reading;}
     </script> 
 </head>
 <body>
@@ -32,7 +33,7 @@
         <ul>
             <li><p><heading><a href="https://www.udemy.com/course/nodejs-the-complete-guide/" target="_blank">NodeJS - The Complete Guide</a></heading> - Click here to purchase and begin the course.</p></li>
         </ul>
-        <p>For your technical reading this week, you will completed the following sections of the course: </p>
+        <p id="g_reading"></p>
         <ul>   
             <li><p>Section 1: Introduction                                -- 37min    </p></li>
             <li><p>Section 2: Optional: JavaScript - A Quick Refresher    -- 50min    </p></li>

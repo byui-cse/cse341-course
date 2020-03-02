@@ -11,6 +11,7 @@ g.courseMaterials = g.courseCode + " - Course Materials";
 g.prepare         = "Prepare: Reading Material";
 g.teach           = "Teach: Team Activity";
 g.ponder          = "Prove: Assignment";
+g.reading         = "For your technical reading this week, you will complete the following sections of the course: ";
 g.teachTime       = "Please spend at least 1 hour on this assignment before reviewing the solution.";
 g.teachInstructor = "Instructor's Solution";
 g.teachSolution   = "As a part of this team activity, you are expected to look over a solution from the instructor, to compare your approach to that one. One of the questions on the I-Learn submission will ask you to provide insights from this comparison. <br><br> Please DO NOT open the solution until you have worked through this activity as a team for the one hour period. At the end of the hour, if you are still struggling with some of the core requirements, you are welcome to view the instructor's solution and use it to help you complete your own code. Even if you use the instructor's code to help you, you are welcome to report that you finished the core requirements, if you code them up yourself.";
@@ -54,6 +55,7 @@ g.w13 = "Lesson " + g.n13 + " - Review and Final";
 // udemy module names
 g.u01 = "Lesson " + g.n01 + " - Introduction";
 g.u02 = "Lesson " + g.n02 + " - Client Pages in Node";
+g.u03 = "Lesson " + g.n03 + " - MVC and CRUD";
 
 // other repeated statements
 g.otherUnofficial = "This is an unofficial listing of the course content. Please consult I-Learn for the official list of materials, including quizzes and due-dates.";
