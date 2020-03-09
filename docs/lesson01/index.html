@@ -6,17 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script type="text/javascript" src="../site/global.js"></script> 
-    <script type="text/javascript" src="index.js"></script> 
+    <script> window.onload = function(){ // load global variables
+            document.title                                         = g.courseMaterials;
+            document.getElementById('g_otherUnofficial').innerHTML = g.otherUnofficial;
+            document.getElementById('g_w01').innerHTML             = g.w01;
+            document.getElementById('g_prepare').innerHTML         = g.prepare;
+            document.getElementById('g_teach').innerHTML           = g.teach;
+            document.getElementById('g_ponder').innerHTML          = g.ponder;
+        };
+    </script> 
 </head>
 <body>
     <iframe src = "../site/header.html" class="headerIframe"></iframe>
     <article>
-        <h1 id="g_w01"></h1>
-        <h2>Summary</h2>
-        <p>Welcome to Week One of CSE 341!</p>
-        <p>This week is an exciting introduction to the course. We will be learning about the course, getting to know each other, creating cloud platform accounts, setting up our development environments, and following the time honored "Hello World!" tradition by creating an HTML file and deploying it to an application in the cloud.</p>
-        <p>Remember to take the time to visit the "Weekly Developer Forum" discussion topic often to both ask and answer questions. We can all learn from each other. We have students from a number of different majors. You will quickly find that you already have experience and knowledge that could be of great benefit to your fellow classmates.</p>
-        <p>Let's get started...</p>
+        <h1 id="g_w01">                                        </h1>
+        <h2>Summary                                            </h2>
+        <p>Welcome to Week One of CSE 341!                     </p>
+        <p>This week is an exciting introduction to the course.</p>
+        <p>Our goals for this week are as follows:             </p>
+        <ul>
+            <li><p>Set up development environment and all accounts needed for this semester</p></li>
+            <li><p>Understand NodeJS                                                       </p></li>
+            <li><p>Setup a Node server                                                     </p></li>
+            <li><p>JavaScript Refresher (Optional)                                         </p></li>
+            <li><p>Intro to Parsing requests                                               </p></li>
+            <li><p>Modular programming                                                     </p></li>
+            <li><p>NPM packages and scripts                                                </p></li>
+            <li><p>Finding Errors (logical, syntax)                                        </p></li>
+            <li><p>Using the debugger                                                      </p></li>
+        </ul>
         <h2>Assignments</h2>
         <ul>
             <li><p><a href="prepare.html" id="g_prepare"></a></p></li>

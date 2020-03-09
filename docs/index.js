@@ -6,7 +6,7 @@ window.onload = function(){
    document.getElementById('g_otherUnofficial').innerHTML  = g.otherUnofficial;
 
    // traditional globals
-   document.getElementById('g_w01').innerHTML = g.w01;
+   // document.getElementById('g_w01').innerHTML = g.w01;
    // document.getElementById('g_w02').innerHTML = g.w02;
    // document.getElementById('g_w03').innerHTML = g.w03;
    // document.getElementById('g_w04').innerHTML = g.w04;
