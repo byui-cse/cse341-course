@@ -434,3 +434,13 @@ li heading {
 .evenlySpaced td {
 	width:50%;
 }
+.time {
+	float:right; 
+	padding-right:50px;
+}
+.time:after {
+	content: ")"
+ }
+ .time:before {
+	content: "("
+ }

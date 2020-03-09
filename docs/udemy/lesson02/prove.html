@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../site/style.css" />
     <script type="text/javascript" src="../../site/global.js"></script> 
     <script>window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML      = g.n02 + " " + g.ponder;
+                document.getElementById('g_ponder').innerHTML       = g.n02 + " " + g.ponder;
+                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
             }
     </script> 
  </head>
@@ -15,6 +16,7 @@
     <iframe src = "../../site/header.html" class="headerIframe"></iframe>
     <article>
         <h1><span id="g_ponder"></span></h1>
+        <h2>Assignment</h2>
         <p>Your assignment for this week will be to build an express app that handles two routes.</p>
         <ol>
             <li><p>Allow user to input the title of a book and a summary of the book in a text area. Use POST.</p></li>

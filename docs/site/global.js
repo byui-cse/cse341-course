@@ -21,6 +21,7 @@ g.ponderSubmit    = "<h2>Submission</h2>" +
                         "<li><p>Ensure that your latest code is pushed to GitHub and Heroku.</p></li>" + 
                         "<li><p>Download this assignment's <a href=\"prove.txt\" target=\"_blank\">submission form</a>, fill it out, and submit it to I-Learn.</p></li>" + 
                      "</ol>";
+g.project1req     = "Your assignment for this week will 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>."                     
 
 // module numbers
 g.n01 = "01";

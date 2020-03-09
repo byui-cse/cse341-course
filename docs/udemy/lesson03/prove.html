@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../site/style.css" />
     <script type="text/javascript" src="../../site/global.js"></script> 
     <script>window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML      = g.n03 + " " + g.ponder;
+                document.getElementById('g_ponder').innerHTML       = g.n03 + " " + g.ponder;
+                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
             }
     </script> 
  </head>
@@ -15,7 +16,8 @@
     <iframe src = "../../site/header.html" class="headerIframe"></iframe>
     <article>
         <h1><span id="g_ponder"></span></h1>
-        <p>Your assignment for this week will 100% dedicated to your personal project for this portion of the semester. To review project requirements please <a href="../projectStuff/prj1-requirements.html">read here</a>.</p>
+        <p id="g_project1req"></p>
+        <h2>Assignment</h2>
         <ol>
             <li><p>Organize your personal project in such a way that it follows the MVC pattern.</p></li>
             <li><p>Create JSON file that has the data you need for your app (for example, all of the products you are going to be selling).</p></li>
