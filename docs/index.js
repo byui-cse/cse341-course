@@ -7,18 +7,18 @@ window.onload = function(){
 
    // traditional globals
    document.getElementById('g_w01').innerHTML = g.w01;
-   document.getElementById('g_w02').innerHTML = g.w02;
-   document.getElementById('g_w03').innerHTML = g.w03;
-   document.getElementById('g_w04').innerHTML = g.w04;
-   document.getElementById('g_w05').innerHTML = g.w05;
-   document.getElementById('g_w06').innerHTML = g.w06;
-   document.getElementById('g_w07').innerHTML = g.w07;
-   document.getElementById('g_w08').innerHTML = g.w08;
-   document.getElementById('g_w09').innerHTML = g.w09;
-   document.getElementById('g_w10').innerHTML = g.w10;
-   document.getElementById('g_w11').innerHTML = g.w11;
-   document.getElementById('g_w12').innerHTML = g.w12;
-   document.getElementById('g_w13').innerHTML = g.w13;
+   // document.getElementById('g_w02').innerHTML = g.w02;
+   // document.getElementById('g_w03').innerHTML = g.w03;
+   // document.getElementById('g_w04').innerHTML = g.w04;
+   // document.getElementById('g_w05').innerHTML = g.w05;
+   // document.getElementById('g_w06').innerHTML = g.w06;
+   // document.getElementById('g_w07').innerHTML = g.w07;
+   // document.getElementById('g_w08').innerHTML = g.w08;
+   // document.getElementById('g_w09').innerHTML = g.w09;
+   // document.getElementById('g_w10').innerHTML = g.w10;
+   // document.getElementById('g_w11').innerHTML = g.w11;
+   // document.getElementById('g_w12').innerHTML = g.w12;
+   // document.getElementById('g_w13').innerHTML = g.w13;
 
    // udemy globals
    document.getElementById('g_u01').innerHTML = g.u01;
