@@ -58,6 +58,8 @@ g.u01 = "Lesson " + g.n01 + " - Introduction";
 g.u02 = "Lesson " + g.n02 + " - Client Pages in Node";
 g.u03 = "Lesson " + g.n03 + " - MVC and CRUD";
 g.u04 = "Lesson " + g.n04 + " - Databases and NoSQL";
+g.u05 = "Lesson " + g.n05 + " - Sessions and Authentication";
+g.u06 = "Lesson " + g.n06 + " - Sessions and Authentication";
 
 // other repeated statements
 g.otherUnofficial = "This is an unofficial listing of the course content. Please consult I-Learn for the official list of materials, including quizzes and due-dates.";
