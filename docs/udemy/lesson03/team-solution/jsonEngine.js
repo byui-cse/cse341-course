@@ -3,7 +3,7 @@ const http = require("http");
 function processJson(req, res) {
       
    // read json
-   var url = 'http://birchphp.herokuapp.com/files/items.json';
+   var url = 'http://birchnode.herokuapp.com/class-assignments-public/w03/items.json';
 
    http.get(url, function(response){
       var body = '';
@@ -14,7 +14,7 @@ function processJson(req, res) {
 
       response.on('end', function(){
          var jsonResponse = JSON.parse(body);
-         console.log("Got a response: ", jsonResponse);
+         // console.log("Got a response: ", jsonResponse);
          var stuff = {data:jsonResponse}
 
          res.render('results', stuff);

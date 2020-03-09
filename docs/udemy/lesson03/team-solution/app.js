@@ -1,3 +1,10 @@
+/* To run this file after downloading, run the following commands:
+    npm install fs
+    npm install ejs
+    npm install express
+    node app.js"
+*/
+
 const fs = require("fs");
 const ejs = require("ejs");
 

@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Paper Rock Scissors Results</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+   <title>JSON Results</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="/css/results.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<h1>Results</h1>
-   <table>
+   <div class="container">
+      <h1>JSON Results</h1>
       <% for(var i=0; i<data.length; i++) {%>
-         <tr>
-            <% if (data[i].imageUrl) { %><td><img src="<%= data[i].imageUrl %>" alt=""></td><% } %>
-            <td><%= data[i].name %></td>
-            <td><%= data[i].price %></td>
-            <td><%= data[i].description %></td>
-         </tr>
+         <% if(i % 3 == 0) { %> 
+            <div class="card-deck">
+         <% } %>
+               <div class="card cCard">
+                  <img src="<%= data[i].imageUrl %>" class="card-img-top cImage">
+                  <div class="card-body">
+                     <h5 class="card-title"><%= data[i].name %></h5>
+                     <h6><%= data[i].price %></h6>
+                     <p class="card-text cText"><%= data[i].description %></p>
+                  </div>
+               </div>
+         <% if(i % 3 == 2) { %> 
+            </div>
+            <br>
+         <% } %>   
       <% } %>
-   </table>
-
+   </div>
 </body>
 </html>
