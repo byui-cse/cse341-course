@@ -1,0 +1,12 @@
+After completing the assignment, be sure to push to Github and Heroku.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application (e.g., Heroku):
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+
+3. What aspect of your project did you work on this week?
+
+4. Are you on track with your project development plan?
+
+5. What concerns do you have about your project?

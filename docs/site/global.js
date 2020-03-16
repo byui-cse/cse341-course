@@ -22,6 +22,7 @@ g.ponderSubmit    = "<h2>Submission</h2>" +
                         "<li><p>Download this assignment's <a href=\"prove.txt\" target=\"_blank\">submission form</a>, fill it out, and submit it to I-Learn.</p></li>" + 
                      "</ol>";
 g.project1req     = "Your assignment for this week will 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>."                     
+g.project2req     = "Your assignment for this week will 100% dedicated to your personal project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2-requirements.html'>read here</a>."                     
 
 // module numbers
 g.n01 = "01";
@@ -60,6 +61,13 @@ g.u03 = "Lesson " + g.n03 + " - MVC and CRUD";
 g.u04 = "Lesson " + g.n04 + " - Databases and NoSQL";
 g.u05 = "Lesson " + g.n05 + " - Sessions and Authentication";
 g.u06 = "Lesson " + g.n06 + " - Advanced Authentication";
+g.u07 = "Lesson " + g.n07 + " - In-depth Architecture";
+g.u08 = "Lesson " + g.n08 + " - Advanced Topics";
+g.u09 = "Lesson " + g.n09 + " - Async Requests, REST APIs";
+g.u10 = "Lesson " + g.n10 + " - Working with REST";
+g.u11 = "Lesson " + g.n11 + " - Async Await, Websockets, GraphQL";
+g.u12 = "Lesson " + g.n12 + " - Deployment and Testing";
+g.u13 = "Lesson " + g.n13 + " - Review and Final";
 
 // other repeated statements
 g.otherUnofficial = "This is an unofficial listing of the course content. Please consult I-Learn for the official list of materials, including quizzes and due-dates.";
