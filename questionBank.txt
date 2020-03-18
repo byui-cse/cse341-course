@@ -1,0 +1,141 @@
+Question# 1:
+   Node.js runs on __________
+   Client
+   Server
+   Both, server and client
+   None of the above
+   Correct Answer: Server
+Question# 2:
+   Node.js is ________ by default.
+   Synchronous
+   Multi-threaded
+   Asynchronous
+   None of the above
+   Correct Answer: Asynchronous
+Question# 3:
+   Node.js supports which of the following platform?
+   Windows
+   Macintosh
+   Unix/Linux
+   All of the above
+   Correct Answer: All of the above
+Question# 4:
+   Node.js terminal (REPL) is used for _________.
+   testing node.js/JavaScript expressions
+   executing browser’s JavaScript expressions.
+   the preview of node.js application.
+   None of the above
+   Correct Answer: testing node.js/JavaScript expressions
+Question# 5:
+   What is the default scope in Node.js application.
+   Global
+   Local
+   Global Function
+   Local to object
+   Correct Answer: Local
+Question# 6:
+   Node.js application runs on __________.
+   Multiple threads
+   Single thread
+   Multiple Processes
+   Single Process
+   Correct Answer: Single thread
+Question# 7:
+   Simple or complex functionality organized in a single or multiple JavaScript files which can be reused throughout your Node.js application is called ________.
+   Module
+   Library
+   Package
+   Function
+   Correct Answer: Module
+Question# 8:
+   The Node.js modules can be exposed using _________.
+   module.expose
+   module
+   module.exports
+   all of the above
+   Correct Answer: module.exports
+Question# 9:
+   Third-party packages can be install/update/delete using ________.
+   Node Package Manager
+   Node.exe
+   Module.exports
+   REPL
+   Correct Answer: Node Package Manager
+Question# 10:
+   Which of the following core module is used to create a web server in Node.js?
+   fs
+   url
+   connect
+   http
+   Correct Answer: http
+Question# 11:
+   How to import module in Node.js?
+   Using require() function.
+   Using module.import
+   Using include() function
+   Using app.use() function
+   Correct Answer: Using require() function.
+Question# 12:
+   Which of the following is a GUI-based debugging tool for Node.js?
+   Core node debugger
+   Console
+   REPL
+   Node Inspector
+   Correct Answer: Node Inspector
+Question# 13:
+   Which of the following class is used to create and consume custom events in Node.js?
+   EventEmitter
+   Events
+   NodeEvent
+   None of the above
+   Correct Answer: EventEmitter
+Question# 14:
+   Which of the followings are web application frameworks for Node.js?
+   Express.js
+   Geddy
+   Locomotive
+   All of the above.
+   Correct Answer: All of the above.
+Question# 15:
+   Which of the following types of application can be built using Node.js?
+   Web Application
+   Chat Application
+   RESTful Service
+   All of the above
+   Correct Answer: All of the above
+Question# 16:
+   Which module is used to serve static resources in Node.js?
+   node-static
+   http
+   node-resource
+   static
+   Correct Answer: node-static
+Question# 17:
+   Which of the following template engines can be used with Node.js?
+   Jade
+   Vash
+   Handlebars
+   All of the above
+   Correct Answer: All of the above
+Question# 18:
+   Which of the following tool automates various tasks of Node.js application?
+   Express.js
+   GruntJS
+   NPM
+   None of the above
+   Correct Answer: GruntJS
+Question# 19:
+   Which of the followings are valid languages for Node.js?
+   JavaScript
+   Java
+   C++
+   C#
+   Correct Answer: JavaScript
+Question# 20:
+   Node.js application can access which of the following databases?
+   NoSQL databases
+   Relational databases
+   All of the above
+   None of the above
+   Correct Answer: All of the above
+   
