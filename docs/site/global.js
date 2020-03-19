@@ -71,3 +71,20 @@ g.u13 = "Lesson " + g.n13 + " - Review and Final";
 
 // other repeated statements
 g.otherUnofficial = "This is an unofficial listing of the course content. Please consult I-Learn for the official list of materials, including quizzes and due-dates.";
+
+g.survey = {
+   01: "https://forms.gle/7eaMYrJMK9DtREM97",
+   02: "https://forms.gle/eg24xFSo4zsurhFh8",
+   03: "https://forms.gle/QTyJD3rQD6cHqDA88",
+   04: "https://forms.gle/t9y561r1BM6FwNC78",
+   05: "https://forms.gle/RHRcEofrr3hghSvH6",
+   06: "https://forms.gle/umVGKtycisikFkVh9",
+   07: "https://forms.gle/dEUTtgKsQfjjL2Qb8",
+   08: "https://forms.gle/YNv56pDfRjJyWEcF7",
+   09: "https://forms.gle/7eXTZDRG7zsMmBpB8",
+   10: "https://forms.gle/a6FDRAMVUX3vQYCV7",
+   11: "https://forms.gle/QkVwdu9iPXYRfsUR8",
+   12: "https://forms.gle/TDpsm35TdWQrpt2E7",
+   13: "https://forms.gle/xEC2uYqoSmmscP8w9"
+}
+g.surveyText = "<p>Once you have completed your work for the week, please fill out this survey:</p>";

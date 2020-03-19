@@ -3,7 +3,7 @@ const http = require("http");
 function processJson(req, res) {
       
    // read json
-   var url = 'http://birchnode.herokuapp.com/class-assignments-public/w03/items.json';
+   var url = 'https://byui-cse.github.io/cse341-course/lesson03/items.json';
 
    http.get(url, function(response){
       var body = '';
