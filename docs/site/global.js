@@ -73,18 +73,18 @@ g.u13 = "Lesson " + g.n13 + " - Review and Final";
 g.otherUnofficial = "This is an unofficial listing of the course content. Please consult I-Learn for the official list of materials, including quizzes and due-dates.";
 
 g.survey = {
-   01: "https://forms.gle/7eaMYrJMK9DtREM97",
-   02: "https://forms.gle/eg24xFSo4zsurhFh8",
-   03: "https://forms.gle/QTyJD3rQD6cHqDA88",
-   04: "https://forms.gle/t9y561r1BM6FwNC78",
-   05: "https://forms.gle/RHRcEofrr3hghSvH6",
-   06: "https://forms.gle/umVGKtycisikFkVh9",
-   07: "https://forms.gle/dEUTtgKsQfjjL2Qb8",
-   08: "https://forms.gle/YNv56pDfRjJyWEcF7",
-   09: "https://forms.gle/7eXTZDRG7zsMmBpB8",
-   10: "https://forms.gle/a6FDRAMVUX3vQYCV7",
-   11: "https://forms.gle/QkVwdu9iPXYRfsUR8",
-   12: "https://forms.gle/TDpsm35TdWQrpt2E7",
-   13: "https://forms.gle/xEC2uYqoSmmscP8w9"
+   01: "https://docs.google.com/forms/d/e/1FAIpQLSfJIMOdDVDDLQMk3VgG1GKRTwHtb1GRnGESw__bY1mW4T6u-w/viewform?usp=sf_link",
+   02: "https://docs.google.com/forms/d/e/1FAIpQLSdTSZVNu5lYKriCKUuYEN01hak2e6bBwLxqmuYrMcrDIatwBg/viewform?usp=sf_link",
+   03: "https://docs.google.com/forms/d/e/1FAIpQLSfjSKA1uuV_hZq90t_cXCOtpcqzqUXaQ8_ZO2CVfDLFY-xR9A/viewform?usp=sf_link",
+   04: "https://docs.google.com/forms/d/e/1FAIpQLSfFp9YsH9UQgjcTxGD3wwaIhLV-a_dMhppaCpA6ao1jxYIQig/viewform?usp=sf_link",
+   05: "https://docs.google.com/forms/d/e/1FAIpQLSeQat8yFfHoA7ReBshWe0pmL3NoxloUhhUCpv2f2dQJfE5gMw/viewform?usp=sf_link",
+   06: "https://docs.google.com/forms/d/e/1FAIpQLScgioCbd9xKL20o6X9WLLK-CM8LROTrv89UkYjQi0oO2ng8BA/viewform?usp=sf_link",
+   07: "https://docs.google.com/forms/d/e/1FAIpQLScJZfxySyppb38oPleHaA0HoY8ghnjrP810dBL4HfUTuZW2mw/viewform?usp=sf_link",
+   08: "https://docs.google.com/forms/d/e/1FAIpQLSfIe-syqkCkclAZTZNqK2vrRT0-leXMY_eQMkw4YfwdCJvKOg/viewform?usp=sf_link",
+   09: "https://docs.google.com/forms/d/e/1FAIpQLSdb_Wu8MxJ1JjCquE6BJeQyfy_iodD_-CYvRJWFM6Fzpbr7kw/viewform?usp=sf_link",
+   10: "https://docs.google.com/forms/d/e/1FAIpQLSeP3ozF--pF5JU_-_5TsLPHgTQvA1DluRCiR_vLLlMrK2Le8g/viewform?usp=sf_link",
+   11: "https://docs.google.com/forms/d/e/1FAIpQLScQuI2YH1gBF5UPYcMr7pFp6wkkcwn7EP3Iu9Uvgt9PE4BcDg/viewform?usp=sf_link",
+   12: "https://docs.google.com/forms/d/e/1FAIpQLSey0AOk9hdewD2v22oP45wORMTXv7irL41DOpzvSLhG6TyuXw/viewform?usp=sf_link",
+   13: "https://docs.google.com/forms/d/e/1FAIpQLSd_V_EFOgOos1H5q_WlPXwBPjK2mfuCzwEButs5fZ_mCC2Kzw/viewform?usp=sf_link"
 }
 g.surveyText = "<p>Once you have completed your work for the week, please fill out this survey:</p>";
