@@ -9,6 +9,8 @@
     <script>window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n03 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+                document.getElementById('survey').innerHTML         = g.survey[03];
+                document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script> 
  </head>
@@ -24,7 +26,10 @@
             <li><p>Create a webpage to get information from the json.</p></li>
             <li><p>Make sure your app has dynamic routes and paths that make sense for your app. One example is adding the specific ID of your product to your url path.</p></li>
         </ol>
+        <p id="surveyText"></p>
+        <h4 id="survey"></h4><br><br>
         <div id="g_ponderSubmit"></div>
+
     </article>
 </body>
 </html>

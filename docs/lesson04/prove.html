@@ -10,7 +10,8 @@
                 document.getElementById('g_ponder').innerHTML       = g.n04 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('g_project1req').innerHTML  = g.project1req;
-                g.project1req
+                document.getElementById('survey').innerHTML         = g.survey[04];
+                document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script> 
  </head>
@@ -26,7 +27,10 @@
             <li><p>Successfully perform CRUD operations.</p></li>
             <li><p>Your app should have products and the ability to add, delete and update products in the cart (Create, Read, Update, Delete).</p></li>
         </ol>
+        <p id="surveyText"></p>
+        <h4 id="survey"></h4><br><br>
         <div id="g_ponderSubmit"></div>
+
     </article>
 </body>
 </html>

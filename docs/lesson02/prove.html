@@ -9,6 +9,8 @@
     <script>window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n02 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+                document.getElementById('survey').innerHTML         = g.survey[02];
+                document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script> 
  </head>
@@ -22,7 +24,10 @@
             <li><p>Allow user to input the title of a book and a summary of the book in a text area. Use POST.</p></li>
             <li><p>Use GET to display a page that looks nice and shows the title and summary back to the user (use template engines for this (Use EJS, because this is what we are going to continue to use for the rest of the semester)                     </p></li>
         </ol>
+        <p id="surveyText"></p>
+        <h4 id="survey"></h4><br><br>
         <div id="g_ponderSubmit"></div>
+
     </article>
 </body>
 </html>

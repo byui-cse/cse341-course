@@ -9,6 +9,8 @@
     <script>window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n13 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+                document.getElementById('survey').innerHTML         = g.survey[13];
+                document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script> 
  </head>
@@ -20,7 +22,10 @@
         <p>Congrats on having finished up your project. In all forms of software development, it is extremely important to evaluate progress along the way, as well as look back and evaluate projects as wholes. Your assignment this week, is to ponder on your experience with your personal project. The goal in doing this is to help you learn, and be more prepared for your future endeavors.</p>
         <h2>Assignment</h2>
         <p>Please submit the quiz in I-learn.</p>
+        <p id="surveyText"></p>
+        <h4 id="survey"></h4><br><br>
         <div id="g_ponderSubmit"></div>
+
     </article>
 </body>
 </html>

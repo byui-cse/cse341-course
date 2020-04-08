@@ -10,7 +10,8 @@
                 document.getElementById('g_ponder').innerHTML       = g.n11 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('g_project2req').innerHTML  = g.project2req;
-                g.project1req
+                document.getElementById('survey').innerHTML         = g.survey[11];
+                document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script> 
  </head>
@@ -22,7 +23,10 @@
         <p id="g_project2req"></p>
         <h2>Assignment</h2>
         <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
+        <p id="surveyText"></p>
+        <h4 id="survey"></h4><br><br>
         <div id="g_ponderSubmit"></div>
+
     </article>
 </body>
 </html>
