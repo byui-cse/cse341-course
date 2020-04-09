@@ -1,9 +1,7 @@
-After completing the assignment, be sure to push to Github and Heroku.
+After completing the assignment, be sure to push to Github. You do not have to worry about pushing to Heroku this week.
 Please answer the questions in this text file and submit it to I-Learn.
 
-1. Copy and paste the URL for your web application (e.g., Heroku):
-
-2. Copy and paste the URL for your source code repository (e.g., GitHub):
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
 
 3. Briefly list and describe the elements of the application that are functioning. 
 
