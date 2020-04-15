@@ -5,14 +5,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-   <script type="text/javascript" src="../site/global.js"></script> 
+   <script type="text/javascript" src="../site/global.js"></script>
    <script>window.onload = function(){ // load global variables
                document.getElementById('g_teach').innerHTML      = g.n02 + " " + g.teach;
                document.getElementById('g_teachTime').innerHTML  = g.teachTime;
                document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
                document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
                document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
-   </script> 
+   </script>
 </head>
 <body>
     <iframe src = "../site/header.html" class="headerIframe"></iframe>
@@ -20,13 +20,64 @@
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>For your team activity this week you will complete the following exercise from the online course:</p>
+        <p>For this week’s team activity, we’ll focus on getting a web application
+          set up that you’ll be able to use for the rest of the semester. The
+          application will be capable of running on both your localhost and Heroku.<br>
+          You will use of the EJS templating engine, which both the Udemy course
+          and class will be using for the rest of the semester.
+          However, Pug and Handlebars are two valid alternatives that can be used
+          for templating.</p>
+        <h2>Instructions</h2>
+        <p>It’s advised to complete the reading from the Udemy course this week
+          before starting the assignment. It will contain a lot of information
+          and resources that are relevant to this team activity.</p>
+        <p>Once you are ready, complete the following core challenges with your team:</p>
         <ol>
-           <li><p>Section 6, #92.5: Assignment: Time to Practice - Templating Engines</p></li>
-           <li><img class="img-tutorial" src="images/teach.jpg" alt="Assignment"></li>
+           <li><p>Carefully follow
+             <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">this tutorial</a>
+             from Heroku to create a Node.JS application that runs on both Heroku and your localhost.</p>
+           </li>
+           <li><p>Using the “/” path, render index.js and send it the JavaScript Object:</p>
+             <p><code>{ title: “Welcome to my CSE341 repo” }</code><p>
+             <p>Modify the index.ejs to display the title variable in the header
+               using the EJS templating brackets.</p>
+             <img class="img-tutorial" src="images/indexJS_example.jpg">
+           </li>
+           <li><p>Create a routes folder that will contain routes to different
+             assignments and team activities. Create a path “/ta03”, whose routes
+             will be handled in a ta03.js in the routes folder. This will serve
+             as a placeholder for Team Activity 03.</p>
+           </li>
            <li><p id="g_teachTime"></p></li>
         </ol>
+        <h4>Stretch Challenges</h4>
+        <p>After your team has finished the core requirements above, you’re
+          advised to experiment with templating engines further and complete at
+          least one of the stretch challenges below to earn 100%.</p>
+        <ol>
+          <li>
+            <p>Create a 404.ejs page that displays whenever a nonexistent route
+              is encountered, and displays that route in the 404 description error
+              using the req.url variable.</p>
+            <img class="img-tutorial" src="images/404_example.jpg">
+          </li>
+          <li>
+            <p>Modify the navigation bar’s drop down list to display link, and create placeholders and the associated .js files for handling the routes for ta03 and ta04.</p>
+            <img class="img-tutorial" src="images/navdrop_example.jpg">
+          </li>
+        </ol>
+        <div class="tips">
+        <h4>Tips</h4>
+          <ul>
+            <li><p>In EJS, your templating brackets for displaying variables sent through the render method are &lt%= variableName %&gt. You can read more about EJS <a href="https://ejs.co/">here</a>.</p></li>
+            <li><p>Lesson 66: “Using Express Router” in the Udemy Course provides a good overview of how to create and use routes using ExpressJS.</p><li>
+            <li><p><a href="https://www.npmjs.com/package/nodemon">Nodemon</a> is a helpful tool that automatically restarts your local server whenever a change is saved. </p><li>
+          </ul>
+        </div>
         <h2 id="g_teachInstructor"></h2>
+        <div class="tips">
+          <p>Your implementation will probably not look the same as the instructors solution. However, if you’re comfortable with your implementation, keep it. If you are not, you are welcome to clone the instructors solution and use it in the future. Just make sure to remove the remote origin, and replace it with your own github repository.<p>
+        </div>
         <p id="g_teachSolution"></p>
         <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson02/team-solution" target="_blank">Teacher Solution</a>
         <h2>Submission</h2>
