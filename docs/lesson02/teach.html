@@ -20,64 +20,57 @@
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>For this week’s team activity, we’ll focus on getting a web application
-          set up that you’ll be able to use for the rest of the semester. The
-          application will be capable of running on both your localhost and Heroku.<br>
-          You will use of the EJS templating engine, which both the Udemy course
-          and class will be using for the rest of the semester.
-          However, Pug and Handlebars are two valid alternatives that can be used
-          for templating.</p>
+        <p>For this week’s team activity, we'll focus on templating in NodeJS<br>
+          Using the EJS templating engine is recommended, as both the class Team Activity solutions
+          and Udemy course will be using it often. However, Pug and Handlebars
+          are valid alternatives.</p>
         <h2>Instructions</h2>
         <p>It’s advised to complete the reading from the Udemy course this week
-          before starting the assignment. It will contain a lot of information
+          before starting the acitvity. It will contain a lot of information
           and resources that are relevant to this team activity.</p>
         <p>Once you are ready, complete the following core challenges with your team:</p>
         <ol>
-           <li><p>Carefully follow
-             <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">this tutorial</a>
-             from Heroku to create a Node.JS application that runs on both Heroku and your localhost.</p>
+           <li><p>Modify the <code>ta02.ejs</code> page to display a form with
+             method <code>POST</code> and action <code>"/ta02/addUser"</code>. Also
+             create a section of the ejs file that will loop through an array of at least 3
+             names sent over via the render method.</p>
            </li>
-           <li><p>Using the “/” path, render index.js and send it the JavaScript Object:</p>
-             <p><code>{ title: “Welcome to my CSE341 repo” }</code><p>
-             <p>Modify the index.ejs to display the title variable in the header
-               using the EJS templating brackets.</p>
-             <img class="img-tutorial" src="images/indexJS_example.jpg">
+           <li><p>Using the <code>“/addUser” POST</code> path, render push the new
+             username from the form submission into the existing user array, and
+             then redirect to "/ta02/" to display the modified array.</p>
            </li>
-           <li><p>Create a routes folder that will contain routes to different
-             assignments and team activities. Create a path “/ta03”, whose routes
-             will be handled in a ta03.js in the routes folder. This will serve
-             as a placeholder for Team Activity 03.</p>
+           <li><p>Create another form, but this time using a new <code>"/removeUser"</code>
+             endpoint that removes a specified name from the array.</p>
            </li>
            <li><p id="g_teachTime"></p></li>
         </ol>
         <h4>Stretch Challenges</h4>
         <p>After your team has finished the core requirements above, you’re
-          advised to experiment with templating engines further and complete at
-          least one of the stretch challenges below to earn 100%.</p>
+          encouraged to go above and beyond and experiment more with templating.
+          Here are some recommended tasks:</p>
         <ol>
           <li>
-            <p>Create a 404.ejs page that displays whenever a nonexistent route
-              is encountered, and displays that route in the 404 description error
-              using the req.url variable.</p>
-            <img class="img-tutorial" src="images/404_example.jpg">
+            <p>Display an error message if a username is not found for removal.</p>
           </li>
           <li>
-            <p>Modify the navigation bar’s drop down list to display link, and create placeholders and the associated .js files for handling the routes for ta03 and ta04.</p>
-            <img class="img-tutorial" src="images/navdrop_example.jpg">
+            <p>Prevent duplicate insertions and display an error message.</p>
           </li>
         </ol>
         <div class="tips">
         <h4>Tips</h4>
           <ul>
-            <li><p>In EJS, your templating brackets for displaying variables sent through the render method are &lt%= variableName %&gt. You can read more about EJS <a href="https://ejs.co/">here</a>.</p></li>
+            <li><p>A const array can be declared at the top of your ta02.js file
+              that is sent over via the render method for router.get('/').
+            </p></li>
+            <li><p>In EJS, your templating brackets for displaying variables
+              sent through the render method are &lt%= variableName %&gt,
+              while embedded javascript uses these brackets: &lt% %&gt You can
+              read more about EJS <a href="https://ejs.co/">here</a>.</p></li>
             <li><p>Lesson 66: “Using Express Router” in the Udemy Course provides a good overview of how to create and use routes using ExpressJS.</p><li>
             <li><p><a href="https://www.npmjs.com/package/nodemon">Nodemon</a> is a helpful tool that automatically restarts your local server whenever a change is saved. </p><li>
           </ul>
         </div>
         <h2 id="g_teachInstructor"></h2>
-        <div class="tips">
-          <p>Your implementation will probably not look the same as the instructors solution. However, if you’re comfortable with your implementation, keep it. If you are not, you are welcome to clone the instructors solution and use it in the future. Just make sure to remove the remote origin, and replace it with your own github repository.<p>
-        </div>
         <p id="g_teachSolution"></p>
         <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson02/team-solution" target="_blank">Teacher Solution</a>
         <h2>Submission</h2>
