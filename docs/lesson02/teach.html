@@ -5,14 +5,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-   <script type="text/javascript" src="../site/global.js"></script> 
+   <script type="text/javascript" src="../site/global.js"></script>
    <script>window.onload = function(){ // load global variables
                document.getElementById('g_teach').innerHTML      = g.n02 + " " + g.teach;
                document.getElementById('g_teachTime').innerHTML  = g.teachTime;
                document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
                document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
                document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
-   </script> 
+   </script>
 </head>
 <body>
     <iframe src = "../site/header.html" class="headerIframe"></iframe>
@@ -20,12 +20,56 @@
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>For your team activity this week you will complete the following exercise from the online course:</p>
+        <p>For this week’s team activity, we'll focus on templating in NodeJS<br>
+          Using the EJS templating engine is recommended, as both the class Team Activity solutions
+          and Udemy course will be using it often. However, Pug and Handlebars
+          are valid alternatives.</p>
+        <h2>Instructions</h2>
+        <p>It’s advised to complete the reading from the Udemy course this week
+          before starting the acitvity. It will contain a lot of information
+          and resources that are relevant to this team activity.</p>
+        <p>Once you are ready, complete the following core challenges with your team:</p>
         <ol>
-           <li><p>Section 6, #92.5: Assignment: Time to Practice - Templating Engines</p></li>
-           <li><img class="img-tutorial" src="images/teach.jpg" alt="Assignment"></li>
+           <li><p>Modify the <code>ta02.ejs</code> page to display a form with
+             method <code>POST</code> and action <code>"/ta02/addUser"</code>. Also
+             create a section of the ejs file that will loop through an array of at least 3
+             names sent over via the render method.</p>
+           </li>
+           <li><p>Using the <code>“/addUser” POST</code> path, render push the new
+             username from the form submission into the existing user array, and
+             then redirect to "/ta02/" to display the modified array.</p>
+           </li>
+           <li><p>Create another form, but this time using a new <code>"/removeUser"</code>
+             endpoint that removes a specified name from the array.</p>
+           </li>
            <li><p id="g_teachTime"></p></li>
         </ol>
+        <h4>Stretch Challenges</h4>
+        <p>After your team has finished the core requirements above, you’re
+          encouraged to go above and beyond and experiment more with templating.
+          Here are some recommended tasks:</p>
+        <ol>
+          <li>
+            <p>Display an error message if a username is not found for removal.</p>
+          </li>
+          <li>
+            <p>Prevent duplicate insertions and display an error message.</p>
+          </li>
+        </ol>
+        <div class="tips">
+        <h4>Tips</h4>
+          <ul>
+            <li><p>A const array can be declared at the top of your ta02.js file
+              that is sent over via the render method for router.get('/').
+            </p></li>
+            <li><p>In EJS, your templating brackets for displaying variables
+              sent through the render method are &lt%= variableName %&gt,
+              while embedded javascript uses these brackets: &lt% %&gt You can
+              read more about EJS <a href="https://ejs.co/">here</a>.</p></li>
+            <li><p>Lesson 66: “Using Express Router” in the Udemy Course provides a good overview of how to create and use routes using ExpressJS.</p><li>
+            <li><p><a href="https://www.npmjs.com/package/nodemon">Nodemon</a> is a helpful tool that automatically restarts your local server whenever a change is saved. </p><li>
+          </ul>
+        </div>
         <h2 id="g_teachInstructor"></h2>
         <p id="g_teachSolution"></p>
         <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson02/team-solution" target="_blank">Teacher Solution</a>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+<!-- This is the solution for the templating side of TA02-->
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+  </div>
+</div>
+<div class="container">
+    <div>
+        <!-- Form for requirement 01 -->
+        <form action="/ta02/addUser" method="POST">
+            <label for="newUser">New Username</label><br>
+            <input type="text" name="newUser">
+            <button type="submit">Add User</button>
+        </form>
+        <!-- Form for requirement 01 -->
+    </div>
+    <div>
+        <!-- Form for requirement 03 -->
+        <form action="/ta02/removeUser" method="POST">
+            <label for="remUser">Username to remove</label><br>
+            <input type="text" name="remUser">
+            <button type="submit">Remove User</button>
+        </form>
+        <!-- Form for requirement 03 -->
+    </div>
+    <div>
+        <!-- Looped List for requirement 01-->
+        <h2>Users:</h2>
+        <% for(user of users) { %>
+          <p><%= user %></p>
+        <% } %>
+        <!-- Looped List for requirement 01-->
+    </div>
+</div>
+</body>
+</html>
