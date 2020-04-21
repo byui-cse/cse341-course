@@ -8,7 +8,7 @@
  * in CSE341. This is the main file for execution
  ************************************************/
 
-// For this, we'll be slightly emulating the Udemy course and
+// For this, we'll be slightly emulating the Online Videos Course and
 // using an imported function from './routes.js'
 const http = require('http');
 

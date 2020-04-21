@@ -20,7 +20,7 @@ window.onload = function(){
    // document.getElementById('g_w12').innerHTML = g.w12;
    // document.getElementById('g_w13').innerHTML = g.w13;
 
-   // udemy globals
+   // Online Videos Course globals
    document.getElementById('g_u01').innerHTML = g.u01;
    document.getElementById('g_u02').innerHTML = g.u02;
    document.getElementById('g_u03').innerHTML = g.u03;

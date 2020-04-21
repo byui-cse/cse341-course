@@ -54,7 +54,7 @@ g.w11 = "Lesson " + g.n11 + " - Authentication Part 2";
 g.w12 = "Lesson " + g.n12 + " - Deployment";
 g.w13 = "Lesson " + g.n13 + " - Review and Final";
 
-// udemy module names
+// Online Videos Course module names
 g.u01 = "Lesson " + g.n01 + " - Introduction";
 g.u02 = "Lesson " + g.n02 + " - Client Pages in Node";
 g.u03 = "Lesson " + g.n03 + " - MVC and CRUD";
