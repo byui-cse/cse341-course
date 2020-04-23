@@ -8,7 +8,6 @@
     <script type="text/javascript" src="../site/global.js"></script> 
     <script>window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n01 + " " + g.ponder;
-                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('survey').innerHTML         = g.survey[01];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
@@ -30,7 +29,13 @@
         </ol>
         <p id="surveyText"></p>
         <h4 id="survey"></h4><br><br>
-        <div id="g_ponderSubmit"></div>
+        <div>
+            <h2>Submission</h2>
+            <ol>
+                <li><p>Ensure that your latest code is pushed to GitHub.</p></li>
+                <li><p>Download this assignment's <a href="prove.txt" target="_blank">submission form</a>, fill it out, and submit it to I-Learn.</p></li>
+            </ol>
+        </div>
 
     </article>
 </body>
