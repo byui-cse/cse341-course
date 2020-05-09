@@ -96,7 +96,7 @@ const MONGODB_URL = process.env.MONGODB_URL || <span class="hljs-string">"mongod
                     <code class="hljs">
 mongoose
   .connect(
-    MONGODB_URI, options
+    MONGODB_URL, options
   )
   .then(result => {
     ... <span class="hljs-comment">// This should be your user handling code implement following the course videos</span>
