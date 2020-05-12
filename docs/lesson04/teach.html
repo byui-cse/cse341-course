@@ -7,11 +7,7 @@
    <link rel="stylesheet" type="text/css" href="../site/style.css" />
    <script type="text/javascript" src="../site/global.js"></script> 
    <script>window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n04 + " " + g.teach;
-            //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-            //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-            //    document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
+               document.getElementById('g_teach').innerHTML           = g.n04 + " " + g.teach;}
    </script> 
 </head>
 <body>
@@ -35,6 +31,17 @@
           A similar process must be used for the MongoDB implementation you created using the online video course.
         </p>
         <h2>Preparation Material</h2>
+        <h3>Create MongoDB Account and Cluster</h3>
+        <ol>
+            <li><p>Navigate to the <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> Site</p></li>
+            <li><p>Click: Start Free</p></li>
+            <li><p>Fill out your email, name and password to create an account.</p></li>
+            <li><p>Choose the free option and click: Create a Cluster</p></li>
+            <li><p>Ensure that the configurations for the new cluster look similar to the following image and have the free options selected.</p></li>
+            <img src="./images/atlas_settings.jpg" class="img_tutorial" alt="" style="border: 1px solid black;">
+            <li><p>Your account is now ready to be configured with your project.</p></li>
+        </ol>
+        <h3>Connect to Application</h3>
         <ol>
             <li>
                 <p>First, you will need to install the <a href="https://www.npmjs.com/package/cors" target="_blank">cors node package</a> using npm in your terminal:</p>
@@ -47,7 +54,10 @@
                 <p>Click the "+ ADD IP ADDRESS" button, and add the following IP address to the whitelist:</p>
                 <img src="images/whitelist_form.png" class="img-tutorial">
                 <p>This will allow all those who access your Heroku site to use the database. It's not very secure right now, but that's ok.</p>
+                <p>You are welcome to select the "Add Current IP Address" option, or look up the IP of your computer and add that. If you see the following error (after running npm start), it is because of the IP address not matching the one in use. This will be fixed by using 0.0.0.0/0</p>
+                <img src="images/mongo_error.jpg" class="img-tutorial">
             </li>
+            <li><p>Click: Security > Database Access, and create a new user with read/write access in any database.</p></li>
             <li>
                 <p>Within your <a href="https://cloud.mongodb.com/" target="_blank">MongoDB Atlas dashboard</a>, click on the clusters tab below "Data Storage"</p>
                 <p>Click on "connect" within the cluster you created for your shop</p>
@@ -60,9 +70,7 @@
                 <p>Click the app that you've published your store app to, and click on "settings"</p>
                 <p>Beneath settings, find the "Config Vars" section and click "Reveal Config Vars"</p>
                 <img src="images/config_vars_1.png" class="img-tutorial">
-                <p>Now, using the connection string you copied from your MongoDB Atlas cluster, enter a keyname of <code>MONGODB_URL</code>
-                    and with the value as your connection string.
-                </p>
+                <p>Now, enter a keyname of <code>MONGODB_URL</code> and use the connection string you copied from your MongoDB Atlas cluster for the value. </p>
                 <p>Obviously, &ltusername&gt and &ltpassword&gt should contain your MongoDB username and password.</p>
                 <img src="images/new_config_var.png" class="img-tutorial">
                 <p>Click add when the correct values are placed.</p>
