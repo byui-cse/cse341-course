@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script> 
-    <script>window.onload = function(){ // load global variables
+    <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+        window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n07 + " " + g.ponder;
                 document.getElementById('g_project2req').innerHTML  = g.project2req;
                 document.getElementById('survey').innerHTML         = g.survey[07];
@@ -15,7 +20,7 @@
     </script> 
  </head>
  <body>
-    <iframe src = "../site/header.html" class="headerIframe"></iframe>
+    <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
         <h2>Overview</h2>

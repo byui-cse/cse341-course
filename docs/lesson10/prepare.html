@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script> 
-    <script>window.onload = function(){ // load global variables
+    <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+        window.onload = function(){ // load global variables
         document.getElementById('g_prepare').innerHTML  = g.n10 + " " + g.prepare;
         document.getElementById('g_reading').innerHTML  = g.reading;}
     </script> 
 </head>
 <body>
-    <iframe src = "../site/header.html" class="headerIframe"></iframe>
+    <div id="includedHeader"></div>
     <article>
         <h1><span id="g_prepare"></span></h1>
 
