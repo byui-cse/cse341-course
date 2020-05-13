@@ -12,7 +12,8 @@
             $("#includedHeader").load("../site/header.html"); 
         });
         window.onload = function(){ // load global variables
-        document.getElementById('g_prepare').innerHTML  = g.n07 + " " + g.prepare;}
+        document.getElementById('g_prepare').innerHTML  = g.n07 + " " + g.prepare;
+        document.getElementById('g_reading').innerHTML  = g.reading;}
     </script> 
 </head>
 <body>
@@ -21,7 +22,7 @@
         <h1><span id="g_prepare"></span></h1>
 
         <h2>Overview</h2>
-        <p>The reading this week is intended to help you as you plan your project that will continue to the end of the semester. If you find other helpful resources, please share them with your instructor or the class.</p>
+        <p id="g_reading"></p>
         <h2>Readings</h2>
         <ul>   
             <li><p><a href="https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf" target="_blank">Bulletproof node.js project architecture</a></p></li>

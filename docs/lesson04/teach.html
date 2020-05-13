@@ -45,8 +45,6 @@
             <li><p>Ensure that the configurations for the new cluster look similar to the following image and have the free options selected.</p></li>
             <img src="./images/atlas_settings.jpg" class="img_tutorial" alt="" style="border: 1px solid black;">
             <li><p>Your account is now ready to be configured with your project.</p></li>
-            <br>
-            <li><p>If at this point, you don't see a cluster, and you just see a green button to create an organization, go ahead and click that. You will need to create an organization, then project, then a cluster. If you already created a cluster, then you're good to go. </p></li>
         </ol>
         <h3>Connect to Application</h3>
         <ol>
@@ -106,7 +104,7 @@ const options = {
 const MONGODB_URL = process.env.MONGODB_URL || <span class="hljs-string">"mongodb+srv://&ltusername&gt:&ltusername&gt@cse341cluster-3dwlw.mongodb.net/test?retryWrites=true&w=majority"</span>;
                         </code>
                     </pre>
-                <p>Finally, modify your mongoose.connect() function to match this (this will be at the end of your index.js file where you have your app.listen(port)):</p>
+                <p>Finally, modify your mongoose.connect() function to match this:</p>
                 <pre>
                     <code class="hljs">
 mongoose
