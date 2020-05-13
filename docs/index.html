@@ -8,13 +8,14 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="site/global.js"></script> 
     <script type="text/javascript" src="./index.js"></script> 
-
+    <script>
+        $(function(){
+            $("#includedHeader").load("site/header.html"); 
+        });
+    </script>
 </head>
 <body>
-    <header id="courseTitle">
-        <span class="icon-byui-logo"></span>
-        <h1 id="g_courseCodeName"></h1>
-    </header>
+    <div id="includedHeader"></div>
     <article>
         <h1 id="g_courseMaterials"></h1>
         <p id="g_otherUnofficial"></p>
