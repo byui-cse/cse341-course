@@ -1,11 +1,88 @@
-<link rel="stylesheet" type="text/css" href="style.css" />
-<script type="text/javascript" src="global.js"></script> 
-<script>
-   window.onload = function(){
-      document.getElementById('g_courseCodeName').innerHTML  = g.courseCodeName;
-   };
-</script>
-<header id="courseTitle">
-   <span class="icon-byui-logo"></span>
-   <h1 id="g_courseCodeName"></h1>
-</header>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <style>
+         /* Title Bar */
+            #courseTitle {
+               background: #326BA9 !important;
+            }
+            #courseTitle h1 {
+               color: #FFFFFF;
+               font-size: 30px;
+               display: inline-block;
+               vertical-align: middle;
+               margin-left: 20px;
+            }
+            #courseTitle .logo {
+               position:fixed;
+            }
+            #courseTitle .courseName {
+               padding-left: 75px;
+               position:fixed;
+            }
+            @media (max-width: 555px) {
+               .noMobile {display: none !important;}
+            }
+            @media (max-width: 700px) {
+               .navbar-collapse.collapse {display: none !important;}
+               .navbar-collapse.collapse.in {display: block !important;}
+               .navbar-header .collapse, .navbar-toggle {display:block !important;}
+               .navbar-header {float:none;}
+               .navbar .navbar-brand {float:none;display: inline-block;}
+               .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+               .navbar .navbar-nav {float:none !important;}
+               .nav-item{width:100%;text-align:left;} 
+               .navbar-toggler {display: block !important;}
+               .navbar-toggleable-sm.collapse {display:none !important}
+               .navbar-toggleable-sm.collapse.in {display:block !important}
+            }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary flex-nowrap" style="background-color: #326BA9 !important">
+         <img src="logo.jpg" alt="" class="logo">
+         <span class="navbar-brand w-100" style="padding-left: 20px;">CSE 341 <span class="noMobile"> | Backend Development II</span></span>
+         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbar5">
+             <ul class="navbar-nav mx-auto">
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Lessons
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="#">Lesson 1</a>
+                     <a class="dropdown-item" href="#">Lesson 2</a>
+                     <a class="dropdown-item" href="#">Lesson 3</a>
+                     <a class="dropdown-item" href="#">Lesson 4</a>
+                     <a class="dropdown-item" href="#">Lesson 5</a>
+                     <a class="dropdown-item" href="#">Lesson 6</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Lesson 7</a>
+                     <a class="dropdown-item" href="#">Lesson 8</a>
+                     <a class="dropdown-item" href="#">Lesson 9</a>
+                     <a class="dropdown-item" href="#">Lesson 10</a>
+                     <a class="dropdown-item" href="#">Lesson 11</a>
+                     <a class="dropdown-item" href="#">Lesson 12</a>
+                     <a class="dropdown-item" href="#">Lesson 13</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="#">Project 1 Requirements</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Project 2 Breakdown</a>
+                     <a class="dropdown-item" href="#">Project 2 Requirements</a>
+                  </div>
+               </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1uHMje1Bf5ZEKHGCkuFc2fRLJ9JmdZRY_rnUqh3heFAw/edit?usp=sharing" target="_blank">Videos</a>
+                 </li>
+             </ul>
+         </div>
+         <div class="w-100"><!--spacer--></div>
+         <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar5">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+     </nav>

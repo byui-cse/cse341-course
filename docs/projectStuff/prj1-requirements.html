@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+    </script>
  </head>
  <body>
-    <iframe src = "../site/header.html" class="headerIframe"></iframe>
+    <!-- <iframe src = "../site/header.html" class="headerIframe"></iframe> -->
+    <div id="includedHeader"></div>
     <article>
         <h1>Project 1 Requirements</h1>
         <h3>Overview</h3>
-        <p>For the first half of the semester we will be building web applications using Node.js. </p>
+        <p>For the first half of the semester we will be building web applications using Node.js. You will notice that the amount of reading we have in the first part of the semester is extensive, but this will greatly fascilitate the development of this first project. Technically speaking, your e-commerce app code completely come from your work in the Online Videos Course as long as you make it your own, and integrate it with your other assignments in your node application. It is advised that you integrate your e-commerce app in the node app for this class starting in week 2 to avoid an extensive amount of work to be done in a short period of time later on. All other assignments and team activities should be in this same node app, with routes configured for optimal organization. For help getting these routes configured, please watch the week 2 walkthrough videos as well as the Scalable Routes Architecture video in the <a href="https://docs.google.com/spreadsheets/d/1uHMje1Bf5ZEKHGCkuFc2fRLJ9JmdZRY_rnUqh3heFAw/edit?usp=sharing">Videos Spreadsheet</a>.</p>
         <h3>Basic Guidelines</h3>
         <p>One of the strengths of Node.js is its ability to expose web services which can then be consumed by client-side AJAX. </p>
 
