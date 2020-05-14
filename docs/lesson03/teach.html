@@ -9,7 +9,7 @@
    <script type="text/javascript" src="../site/global.js"></script> 
    <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load(g.headerUrl); 
         });
         window.onload = function(){ // load global variables
             document.getElementById('g_teach').innerHTML      = g.n03 + " " + g.teach;

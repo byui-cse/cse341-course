@@ -6,6 +6,7 @@ g.courseCode      = "CSE 341";
 g.courseName      = "Backend Development II";
 g.courseCodeName  = g.courseCode + " | " + g.courseName;
 g.courseMaterials = g.courseCode + " - Course Materials";
+g.headerUrl       = "https://byui-cse.github.io/cse341-course/site/header.html";
 
 // frequently used phrases
 g.prepare         = "Prepare: Reading Material";

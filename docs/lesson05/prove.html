@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../site/global.js"></script> 
     <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load(g.headerUrl); 
         });
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n05 + " " + g.ponder;
