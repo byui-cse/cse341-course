@@ -1,0 +1,76 @@
+<% include ../../includes/header.ejs %> <!-- Your 'includes' folder route may be different-->
+<!-- This conditional can also be done in the header instead of ta05.ejs in order to 
+     make the "theme" universal to all pages.-->
+<% switch(style) {
+  case '1': %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme1.css" />
+  <% break;
+  case '2': %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme2.css" />
+  <% break;
+  case '3': %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/theme3.css" />
+  <% break;
+  default: %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+  <%
+} %>
+
+</head>
+
+<body>
+  <% include ../../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <!-- CHALLENGE 1 -->
+    <div>
+      <form action="/teamActivities/05/change-style" method="POST">
+        <!-- The idea is that each option points contains a value that selects a stylesheet to include in the header -->
+        <label for='css_style'>Choose your theme</label>
+        <select id="css_style" name="css_style">
+          <option value='0'>
+            Default (Blue)
+          </option>
+          <option value='1'>
+            Style 1 (Green)
+          </option>
+          <option value='2'>
+            Style 2 (Purple)
+          </option>
+          <option value='3'>
+            Style 3 (Orange)
+          </option>
+        </select>
+        <button type="submit">Change Style</button>
+      </form>
+    </div>
+    <!-- CHALLENGE 2 -->
+    <div>
+      <form action="/teamActivities/05/counter" method="POST">
+        <input type="hidden" name="constant" value="1">
+        <button class="btn btn-default" type="submit">+</button>
+      </form>
+      <%= counter %>
+      <form action="/teamActivities/05/counter" method="POST">
+        <input type="hidden" name="constant" value="-1">
+        <button class="btn btn-default" type="submit">-</button>
+      </form>
+    </div>
+    <!-- CHALLENGE 3 -->
+    <div>
+      <form action="/teamActivities/05/reset" method="POST">
+        <input type="hidden" name="reset" value="true">
+        <button class="btn btn-default" type="submit">Reset Session</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
