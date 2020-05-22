@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script> 
-    <script>window.onload = function(){ // load global variables
-        document.getElementById('g_prepare').innerHTML  = g.n04 + " " + g.prepare;
-        document.getElementById('g_reading').innerHTML  = g.reading;}
+    <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+        window.onload = function(){ // load global variables
+            document.getElementById('g_prepare').innerHTML  = g.n04 + " " + g.prepare;}
     </script> 
 </head>
 <body>
-    <iframe src = "../site/header.html" class="headerIframe"></iframe>
+    <div id="includedHeader"></div>
     <article>
         <h1><span id="g_prepare"></span></h1>
 
         <h2>Overview</h2>
-        <p id="g_reading"></p>
+        <p>You reading this week has the potential to be quite extensive. Sections 10 and 11 have great content in them, but where we are focusing on NoSQL this semester, you may skip them if you wish. Sections 10 covers SQL, which is Structured Query Language for working with relational databases. Section 11 covers Sequelize, which is an npm package (installed by running npm install...) which facilitates in the management of relational databases in Node.js. NoSQL, as you will learn this week in your reading, is extremely flexible in nature and will help prepare you for many future jobs, as well as enable you to create many web applications. The decision to focus on NoSQL in this course is because SQL is covered in other courses here at BYU-Idaho.</p>
+        <p>If you choose to skip sections 10 and 11, you will notice that in section 12 you will be a bit behind in the code of the tutorials. You are encouraged to download the resources zip folder at the end of section 12 and compare the code there with your own to ensure you are up to speed and ready to get started with NoSQL.</p>
         <ul>
-            <li><p>Section 10: Working with NoSQL & Using MongoDB <span class="time">53 min</span></p></li>
-            <li><p>Section 11: Working with NoSQL & Using MongoDB <span class="time">1hr 52 min</span></p></li>   
+            <h3>OPTIONAL:</h3>
+            <li><p>Section 10: SQL Introduction                   <span class="time">53 min</span></p></li>
+            <li><p>Section 11: Understanding Sequelize            <span class="time">1hr 52 min</span></p></li> 
+            <li>Roughly 2.75 hours</li><br>
+            <h3>REQUIRED:</h3>  
             <li><p>Section 12: Working with NoSQL & Using MongoDB <span class="time">2hr 19min</span></p></li>
             <li><p>Section 13: Working with Mongoose              <span class="time">1hr 17min</span></p></li>
+            <li>Roughly 3.6 hours</li>
             <br>
-            <li>Total: Roughly 6.3 hours</li>
-        </ul>
-        <p>After you have completed the online videos course, you'll need to make some modifications to the app
-            for MongoDB compatability with Heroku. Please read the instructions linked below:
-        </p>
-        <ul>
-            <li><p><a href="herokuMongoSetup.html">Setting up MongoDB for Heroku.</a><span class="time">10 min</span></p></li>
         </ul>
     </article>
 </body>

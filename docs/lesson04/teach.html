@@ -5,31 +5,127 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
    <script type="text/javascript" src="../site/global.js"></script> 
-   <script>window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n04 + " " + g.teach;
-            //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-            //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-            //    document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
+   <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+        window.onload = function(){ // load global variables
+               document.getElementById('g_teach').innerHTML           = g.n04 + " " + g.teach;}
    </script> 
 </head>
 <body>
-    <iframe src= "../site/header.html" class="headerIframe"></iframe>
+    <div id="includedHeader"></div>
     <article>
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>You will get to choose your team activity this week. Think of a small project/activity that you could do, then do it. Please be sure to report your chosen activity to your instructor. Also, send your finished code with comments.</p>
+        <p>Your team activity this week is extremely simple. <strong>Once you all have completed the reading</strong>, assist one another in making some modifications to your apps for MongoDB compatability with Heroku. Please read the instructions below:</p>
+         <h3>Using MongoDB on Heroku</h3>
+        <p>
+          In order to manage the use of external services and ports, Heroku's architecture requires the use of 
+          <a href="https://devcenter.heroku.com/articles/config-vars" target="_blank">config vars</a>.</br>
+          For example, for your app to run on both Heroku and localhost, Express calls .listen(PORT), which makes use of 
+          of the Heroku config var, .</br> 
+          PORT is initialized with:
+            <code class="bash hljs">const PORT = process.env.PORT || 5000</code> 
+          Using the ||, PORT's value is initialized to the first defined variable.</p> 
+          <p>So, when the application is run on Heroku, <code>process.env.PORT</code>
+          is defined and passed to .listen(). Running locally, the config var is undefined, so the localhost port 5000 is passed to .listen() instead.</br>
+          A similar process must be used for the MongoDB implementation you created using the online video course.
+        </p>
+        <h2>Preparation Material</h2>
+        <h3>Create MongoDB Account and Cluster</h3>
         <ol>
-           <!-- <li><p>Display data in a professional manner.</p></li> -->
-           <!-- <li><p id="g_teachTime"></p></li> -->
+            <li><p>Navigate to the <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> Site</p></li>
+            <li><p>Click: Start Free</p></li>
+            <li><p>Fill out your email, name and password to create an account.</p></li>
+            <li><p>Choose the free option and click: Create a Cluster</p></li>
+            <li><p>Ensure that the configurations for the new cluster look similar to the following image and have the free options selected.</p></li>
+            <img src="./images/atlas_settings.jpg" class="img_tutorial" alt="" style="border: 1px solid black;">
+            <li><p>Your account is now ready to be configured with your project.</p></li>
         </ol>
-        <!-- <h2 id="g_teachInstructor"></h2>
-        <p id="g_teachSolution"></p>
-        <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson03/team-solution" target="_blank">Teacher Solution</a> -->
-        <h2>Submission</h2>
-        <p id="g_teachSubmit"></p>
+        <h3>Connect to Application</h3>
+        <ol>
+            <li>
+                <p>First, you will need to install the <a href="https://www.npmjs.com/package/cors" target="_blank">cors node package</a> using npm in your terminal:</p>
+                <code class="bash hljs">npm install cors</code>
+                <p>We'll use this package later.</p>
+            </li>
+            <li>
+                <p>Next, open and login to <a href="https://cloud.mongodb.com/" target="_blank">MongoDB Atlas dashboard</a> on your browser, and click "Network Access"
+                    under the Security tab.</p>
+                <p>Click the "+ ADD IP ADDRESS" button, and add the following IP address to the whitelist:</p>
+                <img src="images/whitelist_form.png" class="img-tutorial">
+                <p>This will allow all those who access your Heroku site to use the database. It's not very secure right now, but that's ok.</p>
+                <p>You are welcome to select the "Add Current IP Address" option, or look up the IP of your computer and add that. If you see the following error (after running npm start), it is because of the IP address not matching the one in use. This will be fixed by using 0.0.0.0/0</p>
+                <img src="images/mongo_error.jpg" class="img-tutorial">
+            </li>
+            <li><p>Click: Security > Database Access, and create a new user with read/write access in any database.</p></li>
+            <li>
+                <p>Within your <a href="https://cloud.mongodb.com/" target="_blank">MongoDB Atlas dashboard</a>, click on the clusters tab below "Data Storage"</p>
+                <p>Click on "connect" within the cluster you created for your shop</p>
+                <p>In the popup, click on "Connect your application"</p>
+                <p>Click the "Copy" button the "Connection String Only" tab beneath step 2:</p>
+                <img src="images/atlas_connection.png" class="img-tutorial">
+            </li>
+            <li>
+                <p>Navigate to your app's settings in the <a href="https://dashboard.heroku.com/apps" target="_blank">Heroku dashboard</a></p>
+                <p>Click the app that you've published your store app to, and click on "settings"</p>
+                <p>Beneath settings, find the "Config Vars" section and click "Reveal Config Vars"</p>
+                <img src="images/config_vars_1.png" class="img-tutorial">
+                <p>Now, enter a keyname of <code>MONGODB_URL</code> and use the connection string you copied from your MongoDB Atlas cluster for the value. </p>
+                <p>Obviously, &ltusername&gt and &ltpassword&gt should contain your MongoDB username and password.</p>
+                <img src="images/new_config_var.png" class="img-tutorial">
+                <p>Click add when the correct values are placed.</p>
+            </li>
+            <li>
+                <p>Finally, within your app.js or index.js file (or wherever else you decided to place your Mongoose setup), add the 
+                    following lines of code:</p>
+                    <pre>
+                        <code class="hljs">
+const cors = <span class="hljs-function">require</span>(<span class="hljs-string">'cors'</span>) <span class="hljs-comment">// Place this with other requires (like 'path' and 'express')</span>
+...
+const corsOptions = {
+    origin: <span class="hljs-string">"https://&ltyour_app_name&gt.herokuapp.com/"</span>,
+    optionsSuccessStatus: <span class="hljs-number">200</span>
+};
+app.use(<span class="hljs-function">cors</span>(corsOptions));
+
+const options = {
+    useUnifiedTopology: <span class="hljs-value">true</span>,
+    useNewUrlParser: <span class="hljs-value">true</span>,
+    useCreateIndex: <span class="hljs-value">true</span>,
+    useFindAndModify: <span class="hljs-value">false</span>,
+    family: <span class="hljs-number">4</span>
+};
+
+const MONGODB_URL = process.env.MONGODB_URL || <span class="hljs-string">"mongodb+srv://&ltusername&gt:&ltusername&gt@cse341cluster-3dwlw.mongodb.net/test?retryWrites=true&w=majority"</span>;
+                        </code>
+                    </pre>
+                <p>Finally, modify your mongoose.connect() function to match this:</p>
+                <pre>
+                    <code class="hljs">
+mongoose
+  .connect(
+    MONGODB_URL, options
+  )
+  .then(result => {
+    ... <span class="hljs-comment">// This should be your user handling code implement following the course videos</span>
+    app.listen(PORT);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+
+                    </code>
+                </pre>
+            </li>
+            <li><p>Finally, push your application to Heroku master and check if your app works on Heroku.</p></li>
+        </ol>
+    <h2>Conclusion</h2>
+    <p>If you ever have any questions or issues, make sure to look at your Heroku logs with <code>Heroku logs --tail</code> and search online for solutions before seeking help in the class. If you find helpful resources or tutorials as you configure your project this week, please post them in the help channel to help your peers.</p>
     </article>
 </body>
 </html>

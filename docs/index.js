@@ -1,8 +1,11 @@
 // load global variables
-window.onload = function(){
+
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+        window.onload = function(){
    document.title = g.courseMaterials;
    document.getElementById('g_courseMaterials').innerHTML  = g.courseMaterials;
-   document.getElementById('g_courseCodeName').innerHTML   = g.courseCodeName;
    document.getElementById('g_otherUnofficial').innerHTML  = g.otherUnofficial;
 
    // traditional globals

@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script> 
-    <script>window.onload = function(){ // load global variables
+    <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+        window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n11 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('g_project2req').innerHTML  = g.project2req;
@@ -16,7 +21,7 @@
     </script> 
  </head>
  <body>
-    <iframe src = "../site/header.html" class="headerIframe"></iframe>
+    <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
         <h2>Overview</h2>
@@ -24,7 +29,7 @@
         <h2>Assignment</h2>
         <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
         <p id="surveyText"></p>
-        <h4 id="survey"></h4><br><br>
+        <p id="survey"></p><br><br>
         <div id="g_ponderSubmit"></div>
 
     </article>

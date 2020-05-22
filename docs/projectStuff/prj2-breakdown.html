@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
- </head>
- <body>
-    <iframe src = "../site/header.html" class="headerIframe"></iframe>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+        window.onload = function(){ // load global variables
+               document.getElementById('g_teach').innerHTML           = g.n04 + " " + g.teach;}
+   </script> 
+</head>
+<body>
+    <div id="includedHeader"></div>
     <article>
         <h1>Project 2 High-level Tasks</h1>
         <h3>Overview</h3>

@@ -19,7 +19,6 @@
   font-size:75px;
   color:#fff;
   float:left;
-  margin-top:-22px;
   padding-top:0px;
 
   font-family: 'icomoon';
@@ -48,7 +47,7 @@ body {
 	padding: 25px;
 	white-space: nowrap;
 	overflow: hidden;
-	height: 33px;
+	height: 60px;
 
 }
 
@@ -69,7 +68,7 @@ body {
 }
 
 .headerIframe {
-	height: 83px; 
+	/* height: 83px;  */
 	width: 100%;
 }
 
