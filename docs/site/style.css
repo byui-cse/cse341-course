@@ -116,6 +116,10 @@ p code, li code {
 	font-family: Menlo, Monaco, Consolas, monospace;
 	font-weight:bold;
 }
+.disclaimer {
+	margin:0 50px 0 50px; 
+	font-size:85%;
+}
 /*
 article ol li code {
 	margin-left: 0.5em;
