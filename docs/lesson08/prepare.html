@@ -13,7 +13,7 @@
         });
         window.onload = function(){ // load global variables
         document.getElementById('g_prepare').innerHTML  = g.n08 + " " + g.prepare;
-        document.getElementById('g_reading').innerHTML  = g.reading;}
+        document.getElementById('g_reading2').innerHTML  = g.reading2;}
     </script> 
 </head>
 <body>
@@ -22,12 +22,13 @@
         <h1><span id="g_prepare"></span></h1>
 
         <h2>Overview</h2>
-        <p id="g_reading"></p>
+        <p id="g_reading2"></p>
         <ul>   
             <li><p>Section 20: File Upload & Download      <span class="time"><i>1hr 11min</i></span></p></li>
             <li><p>Section 21: Adding Pagination           <span class="time"><i>26min    </i></span></p></li>
             <li><p>Section 22: Understanding Async Requests<span class="time"><i>23min    </i></span></p></li>
             <li><p>Section 23: Adding Payments             <span class="time"><i>29min    </i></span></p></li>
+            <p class="disclaimer">Disclaimer: To successfully configure payments with Stripe you need to use legitimate information (valid bank info, ssn, etc.). If your app does not need a payment system configured, you do not need to feel pressured to configure this.</p>
             <br>
             <li>Total: Roughly 2.5 hours</li>
         </ul>
