@@ -13,9 +13,9 @@
         });
         window.onload = function(){ // load global variables
                document.getElementById('g_teach').innerHTML           = g.n09 + " " + g.teach;
-            //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
+               document.getElementById('g_teachTime').innerHTML       = g.teachTime;
             //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-            //    document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
+               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
                document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
    </script> 
 </head>
@@ -25,14 +25,22 @@
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>You will get to choose your team activity this week. Think of a small project/activity that you could do, then do it. Please be sure to report your chosen activity to your instructor. Also, send your finished code with comments.</p>
+        <p>For this week’s team activity, you’ll work on pulling from a 3rd party API using async requests. The API you will be using is <a href="https://pokeapi.co/">pokeapi.co</a>, a popular RESTful API for Pokemon information. JavaScript’s “fetch” method will be used to make the async requests. For now, you’ll only be using GET for the request method.</p>
+        <p>Here are your main tasks:</p>
         <ol>
-           <!-- <li><p>Display data in a professional manner.</p></li> -->
-           <!-- <li><p id="g_teachTime"></p></li> -->
+           <li>
+               <p>Populate an unordered list of the first 10 Pokémon using the url <strong><a href="https://pokeapi.co/api/v2/pokemon?offset=0&limit=10">https://pokeapi.co/api/v2/pokemon?offset=0&limit=10</a></strong> for your fetch request.</p>
+               <div class="tips">
+                   NOTE: Clicking the above link will lead you to a JSON output of the API. 
+               </div>
+           </li>
+           <li><p>Create a button which clears the list and populates it with the next paginated result (this url is identified by the “next” key in the responding JSON object)</p></li>
+           <li><p>Create another button which clears the list and populates it with the previous paginated result. (like next, this url is the value of the “previous key in the responding JSON object)</p></li>
+           <li><p id="g_teachTime"></p></li>
         </ol>
-        <!-- <h2 id="g_teachInstructor"></h2>
+        <h2 id="g_teachInstructor"></h2>
         <p id="g_teachSolution"></p>
-        <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson03/team-solution" target="_blank">Teacher Solution</a> -->
+        <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson009/team-solution" target="_blank">Teacher Solution</a>
         <h2>Submission</h2>
         <p id="g_teachSubmit"></p>
     </article>
