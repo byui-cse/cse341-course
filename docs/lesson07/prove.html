@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n07 + " " + g.ponder;
@@ -17,7 +17,7 @@
                 document.getElementById('survey').innerHTML         = g.survey[07];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
-    </script> 
+    </script>
  </head>
  <body>
     <div id="includedHeader"></div>
@@ -47,9 +47,66 @@
             <li><p>How will you mitigate or overcome these risks?</p></li>
         </ol>
         <p>Use <a href="../projectStuff/CSE341Project2Proposal.docx">this template</a> for your proposal.</p>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Application info</td>
+                    <td>Project idea is clear and fulfills all the project requirements, with realistic ideas for stretch challenges</td>
+                    <td>Project idea is clear and fulfills all the project requirements</td>
+                    <td>Project idea is slightly unclear or may not fulfill a requirement</td>
+                    <td>Project idea is slightly unclear and is missing some requirements</td>
+                    <td>Project idea is unclear or doesn't fulfill project requirements</td>
+                    <td>No project idea</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Risk analysis</td>
+                    <td>Plans for overcoming risks are appropriately detailed and a variety of risks are accounted for</td>
+                    <td>Possible risks are identified and there are plans for mitigation</td>
+                    <td>Risks are identified, but some plans to overcome them are missing or lacking</td>
+                    <td>Some major risks are not planned for or don't have plans for mitigation</td>
+                    <td>Some risks are identified, but there are no plans to mitigate them</td>
+                    <td>No risk analysis was done</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Project schedule</td>
+                    <td>Each week has a relevant high-level task scheduled, with some tasks broken into subtasks</td>
+                    <td>Each week has a scheduled high-level task</td>
+                    <td>1-2 tasks are missing or unclear</td>
+                    <td>More than 2 tasks are missing</td>
+                    <td>Tasks are unclear, irrelevant, or missing, but there is a schedule</td>
+                    <td>No schedule</td>
+                    <td>20%</td>
+                </tr>
+            </tbody>
+        </table>
         <h2>Submission</h2>
         <p>Submit your document to I-Learn</p>
-        
+
         <p id="surveyText"></p>
         <p id="survey"></p><br><br>
     </article>

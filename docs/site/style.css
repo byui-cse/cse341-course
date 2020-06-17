@@ -37,7 +37,7 @@ body {
 	font-family: "Open Sans", helvetica, arial, sans-serif;
 	background: #FEFEFE;
 	color: #040404;
-	counter-reset: h3; 
+	counter-reset: h3;
 }
 
 /* Title Bar */
@@ -117,7 +117,7 @@ p code, li code {
 	font-weight:bold;
 }
 .disclaimer {
-	margin:0 50px 0 50px; 
+	margin:0 50px 0 50px;
 	font-size:85%;
 }
 /*
@@ -438,7 +438,7 @@ li heading {
 	width:50%;
 }
 .time {
-	float:right; 
+	float:right;
 	padding-right:50px;
 }
 .time:after {
@@ -446,4 +446,33 @@ li heading {
  }
  .time:before {
 	content: "("
+ }
+
+ /* styles for 341 prove rubrics */
+ table.rubric th,
+ table.rubric td {
+     border: 1px solid black;
+     padding: 5px;
+     vertical-align: middle;
+     text-align: center;
+     font-size: 90%;
+ }
+ table.rubric thead tr:first-child > * {
+     border-bottom: none;
+ }
+ table.rubric thead tr:last-child > * {
+     border-top: none;
+ }
+ table.rubric thead {
+     background-color: #326ba9;
+     color: white;
+ }
+ table.rubric thead > :nth-child(2) {
+     font-weight: bold;
+ }
+ table.rubric tbody td:first-child {
+     text-align: left;
+ }
+ table.rubric tbody tr:nth-child(even) {
+     background-color: #00000011
  }

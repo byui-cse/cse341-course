@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n05 + " " + g.ponder;
@@ -18,7 +18,7 @@
                 document.getElementById('survey').innerHTML         = g.survey[05];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
-    </script> 
+    </script>
  </head>
  <body>
     <div id="includedHeader"></div>
@@ -32,6 +32,63 @@
             <li><p>Store authentication token in such a way that views are dynamic based on logged in status.</p></li>
             <li><p>Include user information in the database to allow for future logins.</p></li>
         </ol>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Authentication system</td>
+                    <td>Authenticaion works well, error messages are displayed when a it fails</td>
+                    <td>Users can create accounts and log into the site</td>
+                    <td>Users can log in and create accounts, but there are some minor errors</td>
+                    <td>Users can log in, but not create accounts</td>
+                    <td>Logins not working</td>
+                    <td>No authentication system</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Dynamic views and route protection</td>
+                    <td>Dynamic views, route protection, and CSRF protection are implemented well</td>
+                    <td>Views are dynamic and routes are protected based on logged in status</td>
+                    <td>Views change with logins, but not all necessary routes are protected</td>
+                    <td>Views change with logins, but there is no route protection</td>
+                    <td>Part of a view changes when logged in, but some protected pages are still visible</td>
+                    <td>Nothing changes based on logged in status</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>Database</td>
+                    <td>Extra user information (name, etc.) is stored in the database</td>
+                    <td>User email and encrypted password are stored in the database</td>
+                    <td>User passwords are not encrypted</td>
+                    <td>User data is stored in the database but not used</td>
+                    <td>Some user info is stored, but not enough to handle logins</td>
+                    <td>No users stored in the database, or database isn't used</td>
+                    <td>30%</td>
+                </tr>
+            </tbody>
+        </table>
         <p id="surveyText"></p>
         <p id="survey"></p><br><br>
         <div id="g_ponderSubmit"></div>

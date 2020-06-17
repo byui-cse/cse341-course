@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n04 + " " + g.ponder;
@@ -18,7 +18,7 @@
                 document.getElementById('survey').innerHTML         = g.survey[04];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
-    </script> 
+    </script>
  </head>
  <body>
     <div id="includedHeader"></div>
@@ -32,6 +32,63 @@
             <li><p>Successfully perform CRUD operations.</p></li>
             <li><p>Your app should have products and the ability to add, delete and update products in the cart (Create, Read, Update, Delete).</p></li>
         </ol>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MongoDB connected</td>
+                    <td>Additional non-required collections created and used</td>
+                    <td>All needed collections instantiated and used correctly</td>
+                    <td>Some collections initialized and used</td>
+                    <td>Collections initialized but not used</td>
+                    <td>MongoDB created</td>
+                    <td>No attempt made</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>CRUD operations</td>
+                    <td>Operations user specific (can be to hard coded user)</td>
+                    <td>4/4 operations functional</td>
+                    <td>3/4 operations functional</td>
+                    <td>2/4 operations functional</td>
+                    <td>1/4 operations functional</td>
+                    <td>No CRUD operations</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Cart functionality</td>
+                    <td>Posting orders from cart functional</td>
+                    <td>Add, delete, and update cart</td>
+                    <td>Add and delete functional, update not functional</td>
+                    <td>Add to cart but no modification</td>
+                    <td>Cart page accessible, no functionality</td>
+                    <td>No cart</td>
+                    <td>20%</td>
+                </tr>
+            </tbody>
+        </table>
         <p id="surveyText"></p>
         <p id="survey"></p><br><br>
         <div id="g_ponderSubmit"></div>
