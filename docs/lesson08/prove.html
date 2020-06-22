@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n08 + " " + g.ponder;
@@ -18,7 +18,7 @@
                 document.getElementById('survey').innerHTML         = g.survey[08];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
-    </script> 
+    </script>
  </head>
  <body>
     <div id="includedHeader"></div>
@@ -28,6 +28,43 @@
         <p id="g_project2req"></p>
         <h2>Assignment</h2>
         <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weekly Plan</td>
+                    <td>Weekly goal achieved and some attempt was made in completing a stretch goal</td>
+                    <td>Weekly goal acheived with no errors</td>
+                    <td>Goal accomplished but has minor errors</td>
+                    <td>Goal close to completion with minor errors</td>
+                    <td>Weekly goal initiated but largely incomplete.</td>
+                    <td>No effort was made.</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
         <p id="surveyText"></p>
         <p id="survey"></p><br><br>
         <div id="g_ponderSubmit"></div>
