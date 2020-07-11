@@ -29,23 +29,24 @@
            from the Online Videos Course to create a Node.JS server that will expose
            several web endpoints in your local environment (i.e., accessed
            through localhost:3000 and not on the web). </p>
-        <p>Bellow are optional steps to file organization that will make your life a
+        <p>Below are steps to use a class template for file organization that will make your life a
            lot easier:</p>
         <ol>
-          <li><p>Create a new folder in your class GitHub repository named
-            “teamActivities” or another name of your choosing. This is a good
-            way to organize your work and have the code available to others on
-            your team and serve as a possible backup.</p></li>
-          <li><p>Within the “teamActivities” folder, create a new folder named
-            “ta01” or something similar.</p></li>
-          <li><p>Within the ta01 folder, create an app.js file. This is the file
-            you will run locally with the “node” or “nodemon” commands.</p></li>
+          <p>Clone the class template. The template can be found here: <a href="https://github.com/byui-cse/cse341-project">cse341-project</a></p>
+          <p>A few steps to complete the installation:</p>
+          <li><p>Assure that you are currently in the cse341-project folder when you type in the following commands</p></li>
+          <li><p>In the terminal type <code>npm install express --save</code>. This will install all the necessary files needed to use express.</p></li>
+          <li><p>In the terminal type <code>npm install nodemon --save</code>. While not necessary 'nodemon' allows for your localhost server run again every time your files are saved.</p></li>
+          <li><p>In order to start up a localhost session either type in <code>nodemon</code> if you installed nodemon or <code>npm start</code> if nodemon was not installed</p></li>
+          <li><p>Type <code>localhost:5000</code> in your browser url (This is a local workspace for you to test your code)</p></li>
+          <p>Using the EJS templating engine is recommended, as both the class Team Activity solutions
+            and Online Videos Course will be using it often. However, Pug and Handlebars
+            are valid alternatives.</p>
         </ol>
         <p>Once you are ready, complete the following core challenges:</p>
         <ol>
-           <li><p>Listen on port 3000 of your localhost</p></li>
-           <li><p>Create web endpoint "/", which writes to an html page with &lttitle&gt
-            and &ltbody&gt content of your choosing.</p></li>
+           <li><p>Create web endpoint "/", which writes to an ejs page with &lt;title&gt;
+            and &lt;body&gt; content of your choosing.</p></li>
            <li><p>Create web endpoint "/activities" which writes an html page which contains:
                 <ul>
                   <li><p>A list of 3+ activity names (“soccer”, “basketball”,
