@@ -13,9 +13,6 @@
     });
     window.onload = function(){ // load global variables
                document.getElementById('g_teach').innerHTML           = g.n01 + " " + g.teach;
-               document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
                document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
    </script>
 </head>
@@ -25,57 +22,28 @@
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>For the team activity this week, you will be using what you learned
-           from the Online Videos Course to create a Node.JS server that will expose
-           several web endpoints in your local environment (i.e., accessed
-           through localhost:3000 and not on the web). </p>
-        <p>Bellow are optional steps to file organization that will make your life a
+        <p>For the team activity this week, you will be cloning the class file organization
+          template. You will also learn how to start local development using your localhost 
+          (i.e localhost:5000). While the team activity for this week has already been completed
+          in the template, it is expected that you and your team thoughtfully look over and discuss the code.
+        </p>
+        <p>Below are steps to use a class template for file organization that will make your life a
            lot easier:</p>
         <ol>
-          <li><p>Create a new folder in your class GitHub repository named
-            “teamActivities” or another name of your choosing. This is a good
-            way to organize your work and have the code available to others on
-            your team and serve as a possible backup.</p></li>
-          <li><p>Within the “teamActivities” folder, create a new folder named
-            “ta01” or something similar.</p></li>
-          <li><p>Within the ta01 folder, create an app.js file. This is the file
-            you will run locally with the “node” or “nodemon” commands.</p></li>
+          <p>Clone the class template. The template can be found here: <a href="https://github.com/byui-cse/cse341-project">cse341-project</a></p>
+          <p>A few steps to complete the installation:</p>
+          <li><p>Assure that you are currently in the cse341-project folder when you type in the following commands</p></li>
+          <li><p>In the terminal type <code>npm install express --save</code>. This will install all the necessary files needed to use express.</p></li>
+          <li><p>In the terminal type <code>npm install nodemon --save</code>. While not necessary 'nodemon' allows for your localhost server run again every time your files are saved.</p></li>
+          <li><p>In order to start up a localhost session either type in <code>nodemon</code> if you installed nodemon or <code>npm start</code> if nodemon was not installed</p></li>
+          <li><p>Type <code>localhost:5000</code> in your browser url (This is a local workspace for you to test your code)</p></li>
         </ol>
-        <p>Once you are ready, complete the following core challenges:</p>
+        <p>Once you have dowloaded the template complete the following steps with your team:</p>
         <ol>
-           <li><p>Listen on port 3000 of your localhost</p></li>
-           <li><p>Create web endpoint "/", which writes to an html page with &lttitle&gt
-            and &ltbody&gt content of your choosing.</p></li>
-           <li><p>Create web endpoint "/activities" which writes an html page which contains:
-                <ul>
-                  <li><p>A list of 3+ activity names (“soccer”, “basketball”,
-                     etc) specified in hardcoded JavaScript array</p></li>
-                  <li><p>A &ltform&gt containing a single text &ltinput&gt and
-                    submit &ltbutton&gt which when clicked submits a post request
-                    to “/add-activity”</p></li>
-                </ul>
-               </p>
-           </li>
-           <li><p>Create a web endpoint "/add-activity" that handles the body of
-             the POST request and console.log() the text input from the form in
-             “/activities”, and redirect to “/activities”.</p>
-           </li>
+           <li><p>Navigate to the ta01.js file found in the routes folder</p></li>
+           <li><p>Together with your team thoughtfully examine the code</p></li>
+           <li><p>Assure that all members of the team understand what the code is doing</p></li>
          </ol>
-         <p>Once you have finished the core challenges above, you’ll be qualified
-           for a 93% grade on the team activity. It’s encouraged use any extra
-           time to experiment with your work and research/test features not
-           covered so far. To earn 100%, it’s encouraged to complete
-           at least one of these stretch challenges:</p>
-         <ol>
-           <li><p>Add some CSS for styling for a new or existing page.</p></li>
-           <li><p>Write your form’s text input to a file using the ‘fs’ package. </p></li>
-           <li><p>Read two number inputs from a form and outputs the sum to the console.</p></li>
-         </ol>
-         <p id="g_teachTime"></p>
-        <h2 id="g_teachInstructor"></h2>
-        <p id="g_teachSolution"></p>
-        <!--I'm -->
-        <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson01/team-solution" target="_blank">Teacher Solution</a>
         <h2>Submission</h2>
         <p id="g_teachSubmit"></p>
     </article>
