@@ -38,7 +38,54 @@
             <li><p>Parse the users input on the server and send the input to second view    </p></li>
             <li><p>Be sure to use nodemon                                               </p></li>
         </ol>
-        <p id="surveyText"></p>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Express</td>
+                    <td>Express and EJS are used, with routes in a separate file</td>
+                    <td>Express and EJS are used correctly</td>
+                    <td>Express and EJS were used, but there are some errors</td>
+                    <td>Express was used without EJS</td>
+                    <td>Some attempt was made to use Express</td>
+                    <td>Express and EJS not used</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>POST/GET Routes</td>
+                    <td>User can submit additional information (more than two)</td>
+                    <td>User can input twice via POST or GET</td>
+                    <td>Only one input is sent via POST or GET</td>
+                    <td>Attempt was made to send data through POST or GET</td>
+                    <td></td>
+                    <td>No POST or GET route or form</td>
+                    <td>50%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="surveyText" class="mt-5"></p>
         <p id="survey"></p><br><br>
         <div>
             <h2>Submission</h2>
