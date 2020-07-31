@@ -14,8 +14,8 @@
         window.onload = function(){ // load global variables
                document.getElementById('g_teach').innerHTML           = g.n12 + " " + g.teach;
             //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-            //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-            //    document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
+               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
                document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
    </script> 
 </head>
@@ -55,18 +55,27 @@
         <h2 id="option2">Option 2: Create a livechat room</h2>
         <h4>Overview</h4>
         <p>The primary task here is to combine some of your learning from the past semester and create a simple yet very useful web application. While the application does not have a backend, one could be easily implemented.</p>
-        <p>Start working with the files located <a href="">here</a>.</p> <!-- TODO: Add link after receiving response from Bro. Birch-->
+        <p>Start working with the files located within the zip folder <a href="">here</a>.</p>
         <h4>Core Requirements</h4>
-            <li><p></p></li>
-            <li><p></p></li>
-            <li><p></p></li>
-        <h4>Stretch Challenges</h4>
-            <li><p></p></li>
-            <li><p></p></li>
-            <li><p></p></li
+        <ol>
+            <li><p>When a user logs in using the ta12-login.ejs, their username is stored as a session variable. There <strong>cannot</strong> be duplicate usernames. If a user enters a duplicate username, they are notified.</p>
+                <img src="images/challenge1.gif"></li>
+            <li><p>When a user logs in, other users logged into the chat are notified via an "admin" user.</p>
+                <img src="images/challenge2.gif"></li>
+            <li><p>When a user sends a message, it is appended to their own chatbox and all other connected users. (basically, the page follows the basic operations of a messaging application) </p></li>
+        </ol>
+        <p>This application has a lot of potential for creativity. For example, you could:</p>
+        <ul>
+            <li><p>Include the time a message was sent in the message.</p></li>
+            <li><p>Make the messages persistent using MongoDB.</p></li>
+            <li><p>Notify users when a client disconnects.</p></li>
+            <li><p>Use socket.io rooms (instead of a global chat)</p></li>
+        </ul>
+        <h4 id="g_teachInstructor"></h4>
+        <p id="g_teachSolution"></p>
+        <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson08/team-solution" target="_blank">Teacher Solution</a>
         <h2>Submission</h2>
         <p id="g_teachSubmit"></p>
-
 
     </article>
 </body>
