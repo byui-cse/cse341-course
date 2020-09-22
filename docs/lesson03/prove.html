@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
                     document.getElementById('g_ponder').innerHTML       = g.n03 + " " + g.ponder;
@@ -17,7 +17,7 @@
                     document.getElementById('survey').innerHTML         = g.survey[03];
                     document.getElementById('surveyText').innerHTML     = g.surveyText;
         }
-    </script> 
+    </script>
  </head>
  <body>
     <div id="includedHeader"></div>
@@ -31,6 +31,73 @@
             <li><p>Create a webpage to get information from the json.</p></li>
             <li><p>Make sure your app has dynamic routes and paths that make sense for your app. One example is adding the specific ID of your product to your url path.</p></li>
         </ol>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MVC Pattern</td>
+                    <td>Project structure follows MVC and is easy to understand</td>
+                    <td>Project structure follows the MVC pattern</td>
+                    <td>Project structure follows some parts of the MVC pattern</td>
+                    <td>At least one part of the MVC pattern is used</td>
+                    <td>Project is organized, but does not follow the MVC pattern</td>
+                    <td>Project does not seem organized</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>JSON Data</td>
+                    <td>JSON data is detailed, or there are multiple JSON files for different models</td>
+                    <td>JSON data for the app is created</td>
+                    <td>JSON data exists but is very small</td>
+                    <td>Some JSON data exists but has errors or has parts missing</td>
+                    <td>Some JSON data was created</td>
+                    <td>No JSON data was created</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>Displayed Data</td>
+                    <td>Data from JSON file(s) is displayed and looks professional</td>
+                    <td>Data from JSON file(s) is displayed to the user</td>
+                    <td>Data is displayed as raw JSON</td>
+                    <td>Some data is displayed</td>
+                    <td>Data is retrieved from JSON file(s) but not displayed</td>
+                    <td>No data is retrieved or displayed</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>Routing</td>
+                    <td>Multiple dynamic routes are defined and all routes make sense in the project</td>
+                    <td>All necessary routes are defined, including at least one dynamic route</td>
+                    <td>Most necessary routes are defined, or there are no dynamic routes</td>
+                    <td>Some routes are defined, but some are missing and none are dynamic</td>
+                    <td>At least one route is defined</td>
+                    <td>No routes are defined</td>
+                    <td>25%</td>
+                </tr>
+            </tbody>
+        </table>
         <p id="surveyText"></p>
         <p id="survey"></p><br><br>
         <div id="g_ponderSubmit"></div>
