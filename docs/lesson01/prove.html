@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
             document.getElementById('g_ponder').innerHTML       = g.n01 + " " + g.ponder;
-            document.getElementById('survey').innerHTML         = g.survey[01];
+            document.getElementById('survey').href         = g.survey[01];
             document.getElementById('surveyText').innerHTML     = g.surveyText;
         }
-    </script> 
+    </script>
  </head>
  <body>
     <div id="includedHeader"></div>
@@ -85,8 +85,9 @@
                 </tr>
             </tbody>
         </table>
-        <p id="surveyText" class="mt-5"></p>
-        <p id="survey"></p><br><br>
+        <h2>Survey</h2>
+        <p id="surveyText"></p>
+        <p class="text-center"><a id="survey" target="_blank" href="">01 Prove Survey</a></p>
         <div>
             <h2>Submission</h2>
             <ol>

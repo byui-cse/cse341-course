@@ -15,7 +15,7 @@
                 document.getElementById('g_ponder').innerHTML       = g.n12 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('g_project2req').innerHTML  = g.project2req;
-                document.getElementById('survey').innerHTML         = g.survey[12];
+                document.getElementById('survey').href         = g.survey[12];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script>
@@ -67,8 +67,9 @@
                 </tr>
             </tbody>
         </table>
+        <h2>Survey</h2>
         <p id="surveyText"></p>
-        <p id="survey"></p><br><br>
+        <p class="text-center"><a id="survey" target="_blank" href="">12 Prove Survey</a></p>
         <div id="g_ponderSubmit"></div>
 
     </article>
