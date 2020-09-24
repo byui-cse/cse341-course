@@ -1,12 +1,16 @@
-// Set points via the dev console to see grades as point values instead of percentages
-let points = null
-
 $(() => {
+    let points = 0
+
     // Add tfoot to rubric
     $('table.rubric').append(`
     <tfoot style="display: none;">
         <tr style="font-weight: bold; border-top: 1px solid black;">
-            <td colspan="7" style="text-align: right;">Grade:</td>
+            <td colspan="7" style="text-align: right;">
+                <span class="float-left mt-1 mr-1">Points: </span>
+                <input type="number" min="0" class="form-control form-control-sm float-left" id="points" value="${points}">
+                <button class="btn btn-sm btn-danger float-left ml-1" id="percent">&times;</button>
+                <span class="mt-1 float-right">Grade:</span>
+            </td>
             <td id="grade"></td>
         </tr>
     </tfoot>
@@ -14,24 +18,26 @@ $(() => {
 
     // Add button to clear grade
     $('table.rubric thead tr:last-child th:last-child').html(
-        `<button style="display: none;" id="clear">&times;</button>`
+        `<button class="btn btn-danger btn-sm" style="display: none;" id="clear">&times;</button>`
     )
 
-    // Watch points for changes
-    let old = points
-    setInterval(() => {
-        if (old !== points) {
-            if (points !== null && (!+points || +points < 0)) points = null
-            old = points
-            calcGrade()
-        }
-    }, 500)
+    $('button#percent').click(function() {
+        $('input#points').val(0)
+        points = 0
+        calcGrade()
+    })
 
     $('button#clear').click(function() {
         $(this).hide()
         $('table.rubric td.selected').removeClass('selected')
         $('table.rubric tfoot').hide()
         points = null
+    })
+
+    $('input#points').change(function() {
+        points = $(this).val()
+        console.log(points)
+        calcGrade()
     })
 
     $('table.rubric tbody td:not(:first-child):not(:last-child)').click(function() {
@@ -65,7 +71,7 @@ $(() => {
         })
 
         // Display grade
-        $('#grade').text(`${(grade * (points || 100)).toFixed(2)}${points ? `/${points.toFixed(2)}` : '%'}`)
+        $('#grade').text(`${(grade * (points || 100)).toFixed(2)}${points > 0 ? `/${(+points).toFixed(2)}` : '%'}`)
         $('table.rubric tfoot').show()
     }
 })
