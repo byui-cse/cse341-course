@@ -7,7 +7,7 @@ $(() => {
         <tr style="font-weight: bold; border-top: 1px solid black;">
             <td colspan="7" style="text-align: right;">
                 <span class="float-left mt-1 mr-1">Points: </span>
-                <input type="number" min="0" class="form-control form-control-sm float-left" id="points" value="${points}">
+                <input type="number" min="0" step="10" class="form-control form-control-sm float-left" id="points" value="${points}">
                 <button class="btn btn-sm btn-danger float-left ml-1" id="percent">&times;</button>
                 <span class="mt-1 float-right">Grade:</span>
             </td>
@@ -31,12 +31,12 @@ $(() => {
         $(this).hide()
         $('table.rubric td.selected').removeClass('selected')
         $('table.rubric tfoot').hide()
-        points = null
+        points = 0
+        $('input#points').val(0)
     })
 
     $('input#points').change(function() {
         points = $(this).val()
-        console.log(points)
         calcGrade()
     })
 
