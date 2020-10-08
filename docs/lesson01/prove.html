@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
             document.getElementById('g_ponder').innerHTML       = g.n01 + " " + g.ponder;
             document.getElementById('survey').innerHTML         = g.survey[01];
             document.getElementById('surveyText').innerHTML     = g.surveyText;
         }
-    </script> 
+    </script>
  </head>
  <body>
     <div id="includedHeader"></div>
@@ -65,7 +66,7 @@
             <tbody>
                 <tr>
                     <td>Express</td>
-                    <td>Express and EJS are used, with routes in a separate file</td>
+                    <td>Express and EJS are used, and pages look professional</td>
                     <td>Express and EJS are used correctly</td>
                     <td>Express and EJS were used, but there are some errors</td>
                     <td>Express was used without EJS</td>
@@ -76,10 +77,10 @@
                 <tr>
                     <td>POST/GET Routes</td>
                     <td>User can submit additional information (more than two)</td>
-                    <td>User can input twice via POST or GET</td>
+                    <td>Two inputs are sent via POST or GET</td>
                     <td>Only one input is sent via POST or GET</td>
-                    <td>Attempt was made to send data through POST or GET</td>
-                    <td></td>
+                    <td>Form data is sent but not displayed</td>
+                    <td>Attempt was made to send data via POST or GET</td>
                     <td>No POST or GET route or form</td>
                     <td>50%</td>
                 </tr>
