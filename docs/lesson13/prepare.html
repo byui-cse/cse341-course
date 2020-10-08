@@ -1,59 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-        document.getElementById('g_prepare').innerHTML  = g.n13 + " " + g.prepare;}
-    </script> 
+        window.onload = function () { // load global variables
+            document.getElementById('g_prepare').innerHTML = g.n13 + " " + g.prepare;
+        }
+    </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
         <h2>Overview</h2>
-        <p>Please review the following list of topics you have learned this semester and study anything that you are not comfortable with. The final exam will be cumulative. </p>
+        <p>Throughout this semester, you have prepared yourself for your career by learning how to design and implement web services, how to interact with data storage, and how to use these tools to build functioning web application. This week, you'll prepare for your career by working on the personal skills involved in getting a job.</p>
+        <p>For your reading this week, you will study the following resources. Please take at least an hour to read through the different sections of these sites.</p>
         <ul>
-            <li><p>Section 1: Introduction                                             <span class="time"><i>37min    </i></span></p></li>
-            <li><p>Section 2: Optional: JavaScript - A Quick Refresher                 <span class="time"><i>50min    </i></span></p></li>
-            <li><p>Section 3: Understanding the Basics                                 <span class="time"><i>1hr 33min</i></span></p></li>
-            <li><p>Section 4: Improved Development Workflow and Debugging              <span class="time"><i>48min    </i></span></p></li>
-            <li><p>Section 5: Working with Express.js                                  <span class="time"><i>1hr 34min</i></span></p></li>
-            <li><p>Section 6: Working with Dynamic Content & Adding Templating Engines <span class="time"><i>2hr 3min </i></span></p></li>
-            <li><p>Section 7: The Model View Controller (MVC)                          <span class="time"><i>44min    </i></span></p></li>
-            <li><p>Section 8: Optional: Enhancing the App                              <span class="time"><i>36min    </i></span></p></li>
-            <li><p>Section 9: Dynamic Routes & Advanced Models                         <span class="time"><i>1hr 39min</i></span></p></li>
-            <li><p>Section 10: SQL Introduction                                        <span class="time"><i>53min    </i></span></p></li>
-            <li><p>Section 11: Understanding Sequelize                                 <span class="time"><i>1hr 52min</i></span></p></li>
-            <li><p>Section 12: Working with NoSQL & Using MongoDB                      <span class="time"><i>2hr 19min</i></span></p></li>
-            <li><p>Section 13: Working with Mongoose                                   <span class="time"><i>1hr 17min</i></span></p></li>
-            <li><p>Section 14: Sessions & Cookies                                      <span class="time"><i>1hr 13min</i></span></p></li>
-            <li><p>Section 15: Adding Authentication                                   <span class="time"><i>1hr 9min </i></span></p></li>
-            <li><p>Section 16: Sending Emails                                          <span class="time"><i>10min    </i></span></p></li>
-            <li><p>Section 17: Advanced Authentication                                 <span class="time"><i>36min    </i></span></p></li>
-            <li><p>Section 18: Understanding Validation                                <span class="time"><i>1hr 16min</i></span></p></li>
-            <li><p>Section 19: Error Handling                                          <span class="time"><i>48min    </i></span></p></li>
-            <li><p>Section 20: File Upload & Download                                  <span class="time"><i>1hr 11min</i></span></p></li>
-            <li><p>Section 21: Adding Pagination                                       <span class="time"><i>26min    </i></span></p></li>
-            <li><p>Section 22: Understanding Async Requests                            <span class="time"><i>23min    </i></span></p></li>
-            <li><p>Section 23: Adding Payments                                         <span class="time"><i>29min    </i></span></p></li>
-            <li><p>Section 24: Working with REST APIs - The Basics                     <span class="time"><i>1hr 3min </i></span></p></li>
-            <li><p>Section 25: Working with REST APIs - The Practical Application      <span class="time"><i>2hr 30min</i></span></p></li>
-            <li><p>Section 26: Understanding Async Await in Node.js                    <span class="time"><i>13min    </i></span></p></li>
-            <li><p>Section 27: Understanding Websockets & Socket.io                    <span class="time"><i>37min    </i></span></p></li>
-            <li><p>Section 28: Working with GraphQL                                    <span class="time"><i>2hr 47min</i></span></p></li>
-            <li><p>Section 29: Deploying our App                                       <span class="time"><i>1hr 2min </i></span></p></li>
-            <li><p>Section 30: Testing Node.js Applications                            <span class="time"><i>1hr 42min</i></span></p></li>
-            <li><p>Section 31: Node.js as a Build Tool & Using npm                     <span class="time"><i>22min    </i></span></p></li>
-            <li><p>Section 32: Roundup                                                 <span class="time"><i>3min     </i></span></p></li>
+            <li>
+                <p><a href="https://www.smashingmagazine.com/2018/06/web-developer-resume/">How To Craft The Perfect Web Developer Ré­su­mé</a></p>
+            </li>
+            <li>
+                <p>Sign up for a résumé review through <a href="https://app.joinhandshake.com/appointments">Handshake</a>.</p>
+            </li>
+            <li>
+                <p><a href="https://www.byui.edu/career/preparation/interview-skills">BYU-Idaho Career Center Powerful Job Interviews</a></p>
+            </li>
+        </ul>
+        <p>Here are some questions you should be prepared to answer for yourself:</p>
+        <ul>
+            <li>
+                <p>How do I schedule a practice/mock interview with the BYU-I career center?</p>
+            </li>
+            <li>
+                <p>What are the Wall Street Interviewing Strategies?</p>
+            </li>
+            <li>
+                <p>What is your market value?</p>
+            </li>
+            <li>
+                <p>How can you make a powerful introduction?</p>
+            </li>
+            <li>
+                <p>How should you dress for interviews? or career fairs? What does your appearance say about you?</p>
+            </li>
+        </ul>
+        <p>Here are some questions you should be prepared to answer in an interview regarding the technologies taught in this class:</p>
+        <ul>
+            <li>
+                <p>T/F: NPM is a programming language.</p>
+            </li>
+            <li>
+                <p>Node.js is a runtime for Javascript, NOT a Back End language.</p>
+            </li>
+            <li>
+                <p>Node.js is a back end language, NOT a runtime for JavaScript.</p>
+            </li>
+            <li>
+                <p>Node.JS allows JavaScript to be run outside of the browser.</p>
+            </li>
+            <li>
+                <p>What does NPM stand for?</p>
+            </li>
+            <li>
+                <p>What is the command to install the nodemon package globally?</p>
+            </li>
+            <li>
+                <p>How do you initialize a node js project that creates a package.json and node_modules for you?</p>
+            </li>
+            <li>
+                <p>What is the method to set up a server and make it run in a certain port?</p>
+            </li>
+            <li>
+                <p>What Node.JS code is compiled into?</p>
+            </li>
+            <li>
+                <p>What are Middleware functions?</p>
+            </li>
+            <li>
+                <p>What is Express.js?</p>
+            </li>
+            <li>
+                <p>How do you output a javascript expression with EJS?</p>
+            </li>
+            <li>
+                <p>What does MVC stand for?</p>
+            </li>
+            <li>
+                <p>How do you make use of an express router for your requests?</p>
+            </li>
+            <li>
+                <p>What is the responsibility of the Model?</p>
+            </li>
+            <li>
+                <p>What is the responsibility of the Controller?</p>
+            </li>
+            <li>
+                <p>How do you make relations in a NoSQL database such as MongoDB?</p>
+            </li>
+            <li>
+                <p>What are the most important pieces of the structure of a mongodb database?</p>
+            </li>
+            <li>
+                <p>How do you find the id of a MongoDB document</p>
+            </li>
+            <li>
+                <p>What is a Cookie?</p>
+            </li>
+            <li>
+                <p>What is a real disadvantage of using cookies on the client-side?</p>
+            </li>
+            <li>
+                <p>What is a CSRF attack?</p>
+            </li>
+            <li>
+                <p>The 300-399 range of http response status codes are for what?</p>
+            </li>
+            <li>
+                <p>The 200-299 range of http response status codes are for what?</p>
+            </li>
+            <li>
+                <p>The 400-499 range of http response status codes are for what?</p>
+            </li>
+            <li>
+                <p>The 500-599 range of http response status codes are for what?</p>
+            </li>
+            <li>
+                <p>What is the synchronous way of handling errors?</p>
+            </li>
+            <li>
+                <p>What does the term “Santizing” refer to in Node.js?</p>
+            </li>
+            <li>
+                <p>Where exactly do you inject your dependencies?</p>
+            </li>
+            <li>
+                <p>Is Node.js recommended for heavy calculations and 3D rendering?</p>
+            </li>
+            <li>
+                <p>What is risk?</p>
+            </li>
+            <li>
+                <p>What are the tasks of risk management?</p>
+            </li>
+            <li>
+                <p>When identifying and classifying risks, what are the 5 main risk impact areas?</p>
+            </li>
+            <li>
+                <p>Why isn’t it possible to pass images/files with the file picker through the body of the request?</p>
+            </li>
+            <li>
+                <p>What do the skip( ) and limit( ) methods do and where do you use them?</p>
+            </li>
+            <li>
+                <p>Which is the HTTP verb that should be used with client-side JavaScript in order to delete something upon request?</p>
+            </li>
+            <li>
+                <p>T/F: When performing an Asynchronous Request, the server has to send a response without reloading/re-rendering the page.</p>
+            </li>
+            <li>
+                <p>T/F: Because every company’s needs are unique, the payment process should not be outsourced and the development team should develop its own.</p>
+            </li>
         </ul>
     </article>
 </body>
+
 </html>

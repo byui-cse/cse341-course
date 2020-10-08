@@ -17,13 +17,13 @@ g.teachTime       = "Please spend at least 1 hour on this assignment before revi
 g.teachInstructor = "Instructor's Solution";
 g.teachSolution   = "As a part of this team activity, you are expected to look over a solution from the instructor, to compare your approach to that one. One of the questions on the I-Learn submission will ask you to provide insights from this comparison. <br><br> Please DO NOT open the solution until you have worked through this activity as a team for the one hour period. At the end of the hour, if you are still struggling with some of the core requirements, you are welcome to view the instructor's solution and use it to help you complete your own code. Even if you use the instructor's code to help you, you are welcome to report that you finished the core requirements, if you code them up yourself.";
 g.teachSubmit     = "When you have finished this activity, please fill out the assessment in I-Learn. You are welcome to complete any additional parts of this activity by yourself or with others after your meeting before submitting the assessment.";
-g.ponderSubmit    = "<h2>Submission</h2>" + 
-                     "<ol>" + 
-                        "<li><p>Ensure that your latest code is pushed to GitHub and Heroku.</p></li>" + 
-                        "<li><p>Download this assignment's <a href=\"prove.txt\" target=\"_blank\">submission form</a>, fill it out, and submit it to I-Learn.</p></li>" + 
+g.ponderSubmit    = "<h2>Submission</h2>" +
+                     "<ol>" +
+                        "<li><p>Ensure that your latest code is pushed to GitHub and Heroku.</p></li>" +
+                        "<li><p>Download this assignment's <a href=\"prove.txt\" target=\"_blank\">submission form</a>, fill it out, and submit it to I-Learn.</p></li>" +
                      "</ol>";
-g.project1req     = "Your assignment for this week will be 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>."                     
-g.project2req     = "Your assignment for this week will be 100% dedicated to your personal project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2-requirements.html'>read here</a>."                     
+g.project1req     = "Your assignment for this week will be 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>.<br>Your E-commerce project should be part of the same GitHub repository and Heroku app you've used for previous assignments. For an example of how to organize your course repo, <a target=\"_blank\" href=\"https://youtu.be/BGDJotc-GDU\">watch here</a>."
+g.project2req     = "Your assignment for this week will be 100% dedicated to your personal project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2-requirements.html'>read here</a>."
 
 // module numbers
 g.n01 = "01";

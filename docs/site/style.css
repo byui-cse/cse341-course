@@ -456,6 +456,11 @@ li heading {
      vertical-align: middle;
      text-align: center;
      font-size: 90%;
+     cursor: default;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
  }
  table.rubric thead tr:first-child > * {
      border-bottom: none;
@@ -473,6 +478,16 @@ li heading {
  table.rubric tbody td:first-child {
      text-align: left;
  }
- table.rubric tbody tr:nth-child(even) {
-     background-color: #00000011
+ table.rubric tbody tr:nth-child(even) td {
+     background-color: #00000011;
+ }
+ /* For grade calculator */
+ table.rubric tbody td:not(:first-child):not(:last-child) {
+     cursor: pointer;
+ }
+ table.rubric tbody td.selected {
+     background-color: #00000033 !important;
+ }
+ table.rubric tfoot input#points {
+     width: 10%;
  }
