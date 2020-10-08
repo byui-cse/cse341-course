@@ -15,6 +15,7 @@
         window.onload = function(){ // load global variables
                     document.getElementById('g_ponder').innerHTML       = g.n03 + " " + g.ponder;
                     document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+                    document.getElementById('survey').href              = g.survey[03];
                     document.getElementById('g_project1req').innerHTML  = g.project1req;
                     document.getElementById('survey').innerHTML         = g.survey[03];
                     document.getElementById('surveyText').innerHTML     = g.surveyText;
@@ -101,8 +102,9 @@
                 </tr>
             </tbody>
         </table>
+        <h2>Survey</h2>
         <p id="surveyText"></p>
-        <p id="survey"></p><br><br>
+        <p class="text-center"><a id="survey" target="_blank" href="">03 Prove Survey</a></p>
         <div id="g_ponderSubmit"></div>
 
     </article>
