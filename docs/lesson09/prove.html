@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
+    <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
         $(function(){
             $("#includedHeader").load("../site/header.html");
@@ -15,7 +16,7 @@
                 document.getElementById('g_ponder').innerHTML       = g.n09 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('g_project2req').innerHTML  = g.project2req;
-                document.getElementById('survey').innerHTML         = g.survey[09];
+                document.getElementById('survey').href         = g.survey[09];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script>
@@ -65,8 +66,9 @@
                 </tr>
             </tbody>
         </table>
+        <h2>Survey</h2>
         <p id="surveyText"></p>
-        <p id="survey"></p><br><br>
+        <p class="text-center"><a id="survey" target="_blank" href="">09 Prove Survey</a></p>
         <div id="g_ponderSubmit"></div>
 
     </article>
