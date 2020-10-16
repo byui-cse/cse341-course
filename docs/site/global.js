@@ -23,7 +23,7 @@ g.ponderSubmit    = "<h2>Submission</h2>" +
                         "<li><p>Download this assignment's <a href=\"prove.txt\" target=\"_blank\">submission form</a>, fill it out, and submit it to I-Learn.</p></li>" + 
                      "</ol>";
 g.project1req     = "Your assignment for this week will be 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>."                     
-g.project2req     = "Your assignment for this week will be 100% dedicated to your personal project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2-requirements.html'>read here</a>."                     
+g.project2req     = "Your assignment for this week will be 100% dedicated to your team project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2-requirements.html'>read here</a>."                     
 
 // module numbers
 g.n01 = "01";
