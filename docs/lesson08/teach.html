@@ -12,11 +12,9 @@
             $("#includedHeader").load("../site/header.html"); 
         });
         window.onload = function(){ // load global variables
-                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('g_project2req').innerHTML  = g.project2req;
-                document.getElementById('survey').innerHTML         = g.survey[08];
-                document.getElementById('surveyText').innerHTML     = g.surveyText;
                 document.getElementById('g_teach').innerHTML           = g.n08 + " " + g.teach;
+                document.getElementById('g_teachSubmit').innerHTML  = g.teachSubmit;
             }
    </script> 
 </head>
@@ -66,10 +64,8 @@
                 </tr>
             </tbody>
         </table>
-        <p id="surveyText"></p>
-        <p id="survey"></p><br><br>
-        <div id="g_ponderSubmit"></div>
-        
+        <h2>Submission</h2>
+        <p id="g_teachSubmit"></p>
     </article>
 </body>
 </html>

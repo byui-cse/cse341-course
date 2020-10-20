@@ -12,11 +12,10 @@
             $("#includedHeader").load("../site/header.html"); 
         });
         window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n11 + " " + g.teach;
-               document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
+            document.getElementById('g_teach').innerHTML       = g.n11 + " " + g.teach;
+            document.getElementById('g_project2req').innerHTML = g.project2req;
+            document.getElementById('g_teachSubmit').innerHTML = g.teachSubmit;
+        }
    </script> 
 </head>
 <body>
@@ -25,24 +24,46 @@
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>This week's team activity will focus on the potential uses of socket.io in your application.</p>
-        <ol>
-           <li><p>Using your code from the W10 activity, implement socket.io on both the client JS and server to emit an update to the list from one client to all other clients. This means that if a the client on one browser adds a new name, all other cleints should update the list with that new name as well.</p></li>
-           <li><p id="g_teachTime"></p></li>
-        </ol>
-        <div class="tips">
-            <p>Hints:</p>
-            <ul>
-                <li><p>You should not have to add many lines of code to implement socket.io</p></li>
-                <li><p>Make sure socket.io and socket.io-client are installed on your application</p></li>
-                <li><p>On your EJS page, consider including a script tag with src "/socket.io/socket.io.js" above your client-side script tag</p></li>
-                <li><p>A cheatsheet for emit methods can be found here: <a href="https://socket.io/docs/emit-cheatsheet/">Emit Cheatsheet (socket.io)</a> </p></li>
-                <li><p>It's a good idea to read documentation or guides for any web/software technology you may be unfamiliar with. This is a good starting point: <a href="https://socket.io/get-started/chat/">Get Started (socket.io)</a></p></li>
-            </ul>
-        </div>
-        <h2 id="g_teachInstructor"></h2>
-        <p id="g_teachSolution"></p>
-        <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson11/team-solution" target="_blank">Teacher Solution</a>
+        <p id="g_project2req"></p>
+        <h2>Assignment</h2>
+        <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weekly Plan</td>
+                    <td>Weekly goal achieved and some attempt was made in completing a stretch goal</td>
+                    <td>Weekly goal acheived with no errors</td>
+                    <td>Goal accomplished but has minor errors</td>
+                    <td>Goal close to completion with minor errors</td>
+                    <td>Weekly goal initiated but largely incomplete.</td>
+                    <td>No effort was made.</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
         <h2>Submission</h2>
         <p id="g_teachSubmit"></p>
     </article>

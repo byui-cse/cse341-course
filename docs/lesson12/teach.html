@@ -12,11 +12,9 @@
             $("#includedHeader").load("../site/header.html"); 
         });
         window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n12 + " " + g.teach;
-            //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
+            document.getElementById('g_teach').innerHTML       = g.n12 + " " + g.teach;
+            document.getElementById('g_project2req').innerHTML = g.project2req;
+        }
    </script> 
 </head>
 <body>
@@ -25,57 +23,56 @@
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>For this week's team activity, you'll have two options:</p> 
-        <ol>
-            <li>
-                <a href="#option1"><p>Meet together to discuss the new technology that you researched.</p></a>
-            </li>
-            <li>
-                <a href="#option2"><p>Create a livechat room using socket.io and sessions. You will be provided a tempalte, and this is easier than it sounds.</p></a>
-            </li>
-        </ol>
-        <p>The second option is more suitable for those that do not have significant work remaining on their personal project, and wish to practice their skills more.</p>
-
-        <h2 id="option1">Option 1: Research a new web technology</h2>
-        <h4>Overview</h4>
-        <p>Each member should take turns presenting the technology they learned about, what it is designed for, how it works, and it's strengths and limitations, etc.</p>
-
-        <p>At the end of this activity, each team member should write a short summary of their technologies presented (including their own and those of the other team members), and submit it to I-Learn.</p>
-
-        <h4>Core Requirements</h4>
-        <ol>
-            <li><p>Present your new technology to the team.</p></li>
-            <li><p>Actively participate in learning from at least one other team member.</p></li>
-            <li><p>Learn from ALL team members on the team.</p></li>
-        </ol>
-
-        <h4>Instructor Solution</h4>
-        <p>Due to the nature of this assignment, there is no instructor solution. If you have discussed these technologies with your team, please mark "True" to the question about looking over the instructor solution.</p>
-
-        <h2 id="option2">Option 2: Create a livechat room</h2>
-        <h4>Overview</h4>
-        <p>The primary task here is to combine some of your learning from the past semester and create a simple yet very useful web application. While the application does not have a backend, one could be easily implemented.</p>
-        <p>Start working with the files located within the zip folder <a href="">here</a>.</p>
-        <h4>Core Requirements</h4>
-        <ol>
-            <li><p>When a user logs in using the ta12-login.ejs, their username is stored as a session variable. There <strong>cannot</strong> be duplicate usernames. If a user enters a duplicate username, they are notified.</p>
-                <img src="images/challenge1.gif"></li>
-            <li><p>When a user logs in, other users logged into the chat are notified via an "admin" user.</p>
-                <img src="images/challenge2.gif"></li>
-            <li><p>When a user sends a message, it is appended to their own chatbox and all other connected users. (basically, the page follows the basic operations of a messaging application) </p></li>
-        </ol>
-        <p>This application has a lot of potential for creativity. For example, you could:</p>
-        <ul>
-            <li><p>Include the time a message was sent in the message.</p></li>
-            <li><p>Make the messages persistent using MongoDB.</p></li>
-            <li><p>Notify users when a client disconnects.</p></li>
-            <li><p>Use socket.io rooms (instead of a global chat)</p></li>
-        </ul>
-        <h4 id="g_teachInstructor"></h4>
-        <p id="g_teachSolution"></p>
-        <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson08/team-solution" target="_blank">Teacher Solution</a>
+        
+        <h3>You will submit your final draft of your project at the end of this week!</h3>
+        <p id="g_project2req"></p>
+        <h2>Assignment</h2>
+        <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
+        <p>At the end of this effort, you should be ready to submit your project. </p>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weekly Plan</td>
+                    <td>Weekly goal achieved and some attempt was made in completing a stretch goal</td>
+                    <td>Weekly goal acheived with no errors</td>
+                    <td>Goal accomplished but has minor errors</td>
+                    <td>Goal close to completion with minor errors</td>
+                    <td>Weekly goal initiated but largely incomplete.</td>
+                    <td>No effort was made.</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
         <h2>Submission</h2>
-        <p id="g_teachSubmit"></p>
+        <p>This week you will submit your completed project. The rubric can be found under <a href="../projectStuff/prj2-requirements.html">project 2 requirements</a>.</p>
+        <h2>Submission</h2>
+        <ol>
+            <li><p>Ensure that your latest code is pushed to GitHub and Heroku.</p></li>
+            <li><p>Download this assignment's <a href="teach.txt" target="_blank">submission form</a>, fill it out, and submit it to I-Learn.</p></li>
+        </ol>
 
     </article>
 </body>

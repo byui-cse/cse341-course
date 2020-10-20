@@ -15,7 +15,6 @@
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n12 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-                document.getElementById('g_project2req').innerHTML  = g.project2req;
                 document.getElementById('survey').href              = g.survey[12];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
@@ -26,50 +25,26 @@
     <article>
         <h1><span id="g_ponder"></span></h1>
         <h2>Overview</h2>
-        <h3>You will submit your final draft of your project at the end of this week!</h3>
-        <p id="g_project2req"></p>
-        <h2>Assignment</h2>
-        <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
-        <p>At the end of this effort, you should be ready to submit your project. </p>
-        <h2>Rubric</h2>
-        <table class="rubric">
-            <thead>
-                <tr>
-                    <th>Criteria</th>
-                    <th>Above and Beyond</th>
-                    <th>Meets Requirements</th>
-                    <th>Slightly Deficient</th>
-                    <th>Significantly Deficient</th>
-                    <th>Some Attempt Made</th>
-                    <th>No Attempt Made</th>
-                    <th>Weight</th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th>100%</th>
-                    <th>93%</th>
-                    <th>85%</th>
-                    <th>70%</th>
-                    <th>50%</th>
-                    <th>0%</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Weekly Plan</td>
-                    <td>Weekly goal achieved and some attempt was made in completing a stretch goal</td>
-                    <td>Weekly goal acheived with no errors</td>
-                    <td>Goal accomplished but has minor errors</td>
-                    <td>Goal close to completion with minor errors</td>
-                    <td>Weekly goal initiated but largely incomplete.</td>
-                    <td>No effort was made.</td>
-                    <td>100%</td>
-                </tr>
-            </tbody>
-        </table>
+        
+        <p>For this week's activity, you will create a livechat room using socket.io and sessions. You will be provided a template, and this is easier than it sounds.</p> 
+        <p>The primary task here is to combine some of your learning from the past semester and create a simple yet very useful web application. While the application does not have a backend, one could be easily implemented.</p>
+        <p>Start working with the files located within the zip folder <a href="">here</a>.</p>
+        <h4>Core Requirements</h4>
+        <ol>
+            <li><p>When a user logs in using the ta12-login.ejs, their username is stored as a session variable. There <strong>cannot</strong> be duplicate usernames. If a user enters a duplicate username, they are notified.</p>
+                <img src="images/challenge1.gif"></li>
+            <li><p>When a user logs in, other users logged into the chat are notified via an "admin" user.</p>
+                <img src="images/challenge2.gif"></li>
+            <li><p>When a user sends a message, it is appended to their own chatbox and all other connected users. (basically, the page follows the basic operations of a messaging application) </p></li>
+        </ol>
+        <p>This application has a lot of potential for creativity. For example, you could:</p>
+        <ul>
+            <li><p>Include the time a message was sent in the message.</p></li>
+            <li><p>Make the messages persistent using MongoDB.</p></li>
+            <li><p>Notify users when a client disconnects.</p></li>
+            <li><p>Use socket.io rooms (instead of a global chat)</p></li>
+        </ul>
         <h2>Survey</h2>
-        <p>This week you will submit your completed project. The rubric can be found under <a href="../projectStuff/prj2-requirements.html">project 2 requirements</a>.</p>
         <p id="surveyText"></p>
         <p class="text-center"><a id="survey" target="_blank" href="">12 Prove Survey</a></p>
         <div id="g_ponderSubmit"></div>

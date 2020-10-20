@@ -12,13 +12,12 @@
         $(function(){
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML       = g.n08 + " " + g.ponder;
-                //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;
-            }
+        window.onload = function(){
+            document.getElementById('g_ponder').innerHTML       = g.n08 + " " + g.ponder;
+            document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+            document.getElementById('survey').innerHTML         = g.survey[08];
+            document.getElementById('surveyText').innerHTML     = g.surveyText;
+        }
     </script>
  </head>
  <body>
@@ -32,8 +31,9 @@
            <li><p>Implement code to read the data from the remote json, and display it in your node application (You may use the code from week three if you wish).</p></li>
            <li><p>Write code to paginate it so that only 10 results are shown at a time.</p></li>
         </ol>
-        <h2>Submission</h2>
-        <p id="g_teachSubmit"></p>
+        <p id="surveyText"></p>
+        <p id="survey"></p><br><br>
+        <div id="g_ponderSubmit"></div>
 
     </article>
 </body>
