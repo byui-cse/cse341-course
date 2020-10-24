@@ -15,7 +15,6 @@
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n10 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-                document.getElementById('g_project2req').innerHTML  = g.project2req;
                 document.getElementById('survey').href         = g.survey[10];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
@@ -26,46 +25,71 @@
     <article>
         <h1><span id="g_ponder"></span></h1>
         <h2>Overview</h2>
-        <p id="g_project2req"></p>
-        <h2>Assignment</h2>
-        <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
-        <h2>Rubric</h2>
-        <table class="rubric">
-            <thead>
-                <tr>
-                    <th>Criteria</th>
-                    <th>Above and Beyond</th>
-                    <th>Meets Requirements</th>
-                    <th>Slightly Deficient</th>
-                    <th>Significantly Deficient</th>
-                    <th>Some Attempt Made</th>
-                    <th>No Attempt Made</th>
-                    <th>Weight</th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th>100%</th>
-                    <th>93%</th>
-                    <th>85%</th>
-                    <th>70%</th>
-                    <th>50%</th>
-                    <th>0%</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Weekly Plan</td>
-                    <td>Weekly goal achieved and some attempt was made in completing a stretch goal</td>
-                    <td>Weekly goal acheived with no errors</td>
-                    <td>Goal accomplished but has minor errors</td>
-                    <td>Goal close to completion with minor errors</td>
-                    <td>Weekly goal initiated but largely incomplete.</td>
-                    <td>No effort was made.</td>
-                    <td>100%</td>
-                </tr>
-            </tbody>
-        </table>
+        <p>For this week’s activity, you’ll be working with dummy data to create an update capability using fetch and asynchronous JavaScript. Below is your dummy data and starting code for your routes:</p>
+        <ul>
+            <li>
+            <p>Dummy data:</p>
+            <pre><code class="hljs">{
+        "avengers": [
+            {
+                "name": "Tony Stark"
+            },
+            {
+                "name": "Steve Rogers"
+            },
+            {
+                "name": "Thor Odinson"
+            },
+            {
+                "name": "Bruce Banner"
+            },
+            {
+                "name": "Natasha Romanova"
+            },
+            {
+                "name": "Clint Barton"
+            }
+        ]
+    }</code>
+            </pre>
+            </li>
+            <li>
+                <p>Starter code for your routehandler</p>
+<pre><code class="hljs">
+    const express = <span class="hljs-function">require</span>(<span class="hljs-string">'express'</span>);
+    const router = express.<span class="hljs-function">Router</span>();
+    
+    // Path to your JSON file, although it can be hardcoded in this file.
+    const dummyData = <span class="hljs-function">require</span>(<span class="hljs-string">'../../data/ta10-data.json'</span>) 
+    
+    router.<span class="hljs-function">get</span>(<span class="hljs-string">'/'</span>, (req, res, next) => {
+        res.render(<span class="hljs-string">'pages/teamActivities/ta10'</span>, {
+            title: <span class="hljs-string">'Team Activity 10'</span>,
+            path: <span class="hljs-string">'/teamActivities/10'</span>, 
+        });
+    });
+    
+    router.<span class="hljs-function">get</span>(<span class="hljs-string">'/fetchAll'</span>, (req, res, next) => {
+        res.json(dummyData);
+    });
+    
+    router.<span class="hljs-function">post</span>(<span class="hljs-string">'/insert'</span>, (req, res, next) => {
+    <span class="hljs-comment">/************************************************
+     * INSERT YOUR WEB ENDPOINT CODE HERE
+     ************************************************/</span>
+    });</code>
+</pre>
+            </li>
+        </ul>
+        <h2>Requirements</h2>
+        <ol>
+            <li><p>Loop through and display all the dummy data to the prove activity page.</p></li>
+            <li><p>Create a web endpoint that adds to the dummy data, preventing duplicates.</p></li>
+            <li><p>Utilize that web endpoint with a text input and client-side JavaScript. </p></li>
+        </ol>
+        <div class="tips">
+            <p>NOTE: The route to fetch all data has been completed for you, and for simplicity you will not create a controller. Remember that you will need to use async requests instead of HTML forms!</p>
+        </div>
         <h2>Survey</h2>
         <p id="surveyText"></p>
         <p class="text-center"><a id="survey" target="_blank" href="">10 Prove Survey</a></p>

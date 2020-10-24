@@ -12,35 +12,58 @@
             $("#includedHeader").load("../site/header.html"); 
         });
         window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n09 + " " + g.teach;
-               document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-            //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
+                document.getElementById('g_teach').innerHTML        = g.n09 + " " + g.teach;
+                document.getElementById('g_project2req').innerHTML  = g.project2req;
+                document.getElementById('g_teachSubmit').innerHTML  = g.teachSubmit;}
    </script> 
 </head>
 <body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_teach"></span></h1>
-
         <h2>Overview</h2>
-        <p>For this week’s team activity, you’ll work on pulling from a 3rd party API using async requests. The API you will be using is <a href="https://pokeapi.co/">pokeapi.co</a>, a popular RESTful API for Pokemon information. JavaScript’s “fetch” method will be used to make the async requests. For now, you’ll only be using GET for the request method.</p>
-        <p>Here are your main tasks:</p>
-        <ol>
-           <li>
-               <p>Populate an unordered list of the first 10 Pokémon using the url <strong><a href="https://pokeapi.co/api/v2/pokemon?offset=0&limit=10">https://pokeapi.co/api/v2/pokemon?offset=0&limit=10</a></strong> for your fetch request.</p>
-               <div class="tips">
-                   NOTE: Clicking the above link will lead you to a JSON output of the API. 
-               </div>
-           </li>
-           <li><p>Create a button which clears the list and populates it with the next paginated result (this url is identified by the “next” key in the responding JSON object)</p></li>
-           <li><p>Create another button which clears the list and populates it with the previous paginated result. (like next, this url is the value of the “previous key in the responding JSON object)</p></li>
-           <li><p id="g_teachTime"></p></li>
-        </ol>
-        <h2 id="g_teachInstructor"></h2>
-        <p id="g_teachSolution"></p>
-        <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson009/team-solution" target="_blank">Teacher Solution</a>
+        <p id="g_project2req"></p>
+        <h2>Assignment</h2>
+        <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
+        <p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p>
+
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weekly Plan</td>
+                    <td>Weekly goal achieved and some attempt was made in completing a stretch goal</td>
+                    <td>Weekly goal acheived with no errors</td>
+                    <td>Goal accomplished but has minor errors</td>
+                    <td>Goal close to completion with minor errors</td>
+                    <td>Weekly goal initiated but largely incomplete.</td>
+                    <td>No effort was made.</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
         <h2>Submission</h2>
         <p id="g_teachSubmit"></p>
     </article>

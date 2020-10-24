@@ -22,8 +22,8 @@ g.ponderSubmit    = "<h2>Submission</h2>" +
                         "<li><p>Ensure that your latest code is pushed to GitHub and Heroku.</p></li>" +
                         "<li><p>Download this assignment's <a href=\"prove.txt\" target=\"_blank\">submission form</a>, fill it out, and submit it to I-Learn.</p></li>" +
                      "</ol>";
-g.project1req     = "Your assignment for this week will be 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>.<br>Your E-commerce project should be part of the same GitHub repository and Heroku app you've used for previous assignments. For an example of how to organize your course repo, <a target=\"_blank\" href=\"https://youtu.be/BGDJotc-GDU\">watch here</a>."
-g.project2req     = "Your assignment for this week will be 100% dedicated to your personal project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2-requirements.html'>read here</a>."
+g.project1req     = "Your assignment for this week will be 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>."
+g.project2req     = "Your assignment for this week will be 100% dedicated to your team project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2-requirements.html'>read here</a>."
 
 // module numbers
 g.n01 = "01";
