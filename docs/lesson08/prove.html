@@ -15,7 +15,7 @@
         window.onload = function(){
             document.getElementById('g_ponder').innerHTML       = g.n08 + " " + g.ponder;
             document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-            document.getElementById('survey').innerHTML         = g.survey[08];
+            document.getElementById('survey').href              = g.survey[08];
             document.getElementById('surveyText').innerHTML     = g.surveyText;
         }
     </script>
@@ -27,6 +27,7 @@
     <article>
         <h2>Overview</h2>
         <p>For this activity, you will use the same json that you read from in the week 3 team activity. </p>
+        <h2>Assignment</h2>
         <ol>
            <li><p>Implement code to read the data from the remote json, and display it in your node application (You may use the code from week three if you wish).</p></li>
            <li><p>Write code to paginate it so that only 10 results are shown at a time.</p></li>
@@ -78,8 +79,9 @@
                 </tr>
             </tbody>
         </table>
+        <h2>Survey</h2>
         <p id="surveyText"></p>
-        <p id="survey"></p><br><br>
+        <p class="text-center"><a target="_blank" href="" id="survey">08 Prove Survey</a></p>
         <div id="g_ponderSubmit"></div>
 
     </article>

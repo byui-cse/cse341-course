@@ -6,14 +6,14 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   <script type="text/javascript" src="../site/global.js"></script> 
+   <script type="text/javascript" src="../site/global.js"></script>
    <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
                document.getElementById('g_teach').innerHTML           = g.n04 + " " + g.teach;}
-   </script> 
+   </script>
 </head>
 <body>
     <div id="includedHeader"></div>
@@ -24,18 +24,18 @@
         <p>Your team activity this week is extremely simple. <strong>Once you all have completed the reading</strong>, assist one another in making some modifications to your apps for MongoDB compatability with Heroku. Please read the instructions below:</p>
          <h3>Using MongoDB on Heroku</h3>
         <p>
-          In order to manage the use of external services and ports, Heroku's architecture requires the use of 
+          In order to manage the use of external services and ports, Heroku's architecture requires the use of
           <a href="https://devcenter.heroku.com/articles/config-vars" target="_blank">config vars</a>.</br>
-          For example, for your app to run on both Heroku and localhost, Express calls .listen(PORT), which makes use of 
-          of the Heroku config var, .</br> 
+          For example, for your app to run on both Heroku and localhost, Express calls .listen(PORT), which makes use of
+          of the Heroku config var, .</br>
           PORT is initialized with:
-            <code class="bash hljs">const PORT = process.env.PORT || 5000</code> 
-          Using the ||, PORT's value is initialized to the first defined variable.</p> 
+            <code class="bash hljs">const PORT = process.env.PORT || 5000</code>
+          Using the ||, PORT's value is initialized to the first defined variable.</p>
           <p>So, when the application is run on Heroku, <code>process.env.PORT</code>
           is defined and passed to .listen(). Running locally, the config var is undefined, so the localhost port 5000 is passed to .listen() instead.</br>
           A similar process must be used for the MongoDB implementation you created using the online video course.
         </p>
-        <h2>Preparation Material</h2>
+        <h2>Instructions</h2>
         <h3>Create MongoDB Account and Cluster</h3>
         <ol>
             <li><p>Navigate to the <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> Site</p></li>
@@ -81,7 +81,7 @@
                 <p>Click add when the correct values are placed.</p>
             </li>
             <li>
-                <p>Finally, within your app.js or index.js file (or wherever else you decided to place your Mongoose setup), add the 
+                <p>Finally, within your app.js or index.js file (or wherever else you decided to place your Mongoose setup), add the
                     following lines of code:</p>
                     <pre>
                         <code class="hljs">
@@ -125,7 +125,7 @@ mongoose
             <li><p>Finally, push your application to Heroku master and check if your app works on Heroku.</p></li>
         </ol>
     <h2>Conclusion</h2>
-    <p>If you ever have any questions or issues, make sure to look at your Heroku logs with <code>Heroku logs --tail</code> and search online for solutions before seeking help in the class. If you find helpful resources or tutorials as you configure your project this week, please post them in the help channel to help your peers.</p>
+    <p>If you ever have any questions or issues, make sure to look at your Heroku logs with <code>heroku logs --tail</code> and search online for solutions before seeking help in the class. If you find helpful resources or tutorials as you configure your project this week, please post them in the help channel to help your peers.</p>
     </article>
 </body>
 </html>

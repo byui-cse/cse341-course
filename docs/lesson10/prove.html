@@ -58,21 +58,21 @@
 <pre><code class="hljs">
     const express = <span class="hljs-function">require</span>(<span class="hljs-string">'express'</span>);
     const router = express.<span class="hljs-function">Router</span>();
-    
+
     // Path to your JSON file, although it can be hardcoded in this file.
-    const dummyData = <span class="hljs-function">require</span>(<span class="hljs-string">'../../data/ta10-data.json'</span>) 
-    
+    const dummyData = <span class="hljs-function">require</span>(<span class="hljs-string">'../../data/ta10-data.json'</span>)
+
     router.<span class="hljs-function">get</span>(<span class="hljs-string">'/'</span>, (req, res, next) => {
         res.render(<span class="hljs-string">'pages/teamActivities/ta10'</span>, {
             title: <span class="hljs-string">'Team Activity 10'</span>,
-            path: <span class="hljs-string">'/teamActivities/10'</span>, 
+            path: <span class="hljs-string">'/teamActivities/10'</span>,
         });
     });
-    
+
     router.<span class="hljs-function">get</span>(<span class="hljs-string">'/fetchAll'</span>, (req, res, next) => {
         res.json(dummyData);
     });
-    
+
     router.<span class="hljs-function">post</span>(<span class="hljs-string">'/insert'</span>, (req, res, next) => {
     <span class="hljs-comment">/************************************************
      * INSERT YOUR WEB ENDPOINT CODE HERE
@@ -81,7 +81,7 @@
 </pre>
             </li>
         </ul>
-        <h2>Requirements</h2>
+        <h2>Assignment</h2>
         <ol>
             <li><p>Loop through and display all the dummy data to the prove activity page.</p></li>
             <li><p>Create a web endpoint that adds to the dummy data, preventing duplicates.</p></li>
