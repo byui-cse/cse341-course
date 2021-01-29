@@ -58,21 +58,21 @@
 <pre><code class="hljs">
     const express = <span class="hljs-function">require</span>(<span class="hljs-string">'express'</span>);
     const router = express.<span class="hljs-function">Router</span>();
-    
+
     // Path to your JSON file, although it can be hardcoded in this file.
-    const dummyData = <span class="hljs-function">require</span>(<span class="hljs-string">'../../data/ta10-data.json'</span>) 
-    
+    const dummyData = <span class="hljs-function">require</span>(<span class="hljs-string">'../../data/ta10-data.json'</span>)
+
     router.<span class="hljs-function">get</span>(<span class="hljs-string">'/'</span>, (req, res, next) => {
         res.render(<span class="hljs-string">'pages/teamActivities/ta10'</span>, {
             title: <span class="hljs-string">'Team Activity 10'</span>,
-            path: <span class="hljs-string">'/teamActivities/10'</span>, 
+            path: <span class="hljs-string">'/teamActivities/10'</span>,
         });
     });
-    
+
     router.<span class="hljs-function">get</span>(<span class="hljs-string">'/fetchAll'</span>, (req, res, next) => {
         res.json(dummyData);
     });
-    
+
     router.<span class="hljs-function">post</span>(<span class="hljs-string">'/insert'</span>, (req, res, next) => {
     <span class="hljs-comment">/************************************************
      * INSERT YOUR WEB ENDPOINT CODE HERE
@@ -81,7 +81,7 @@
 </pre>
             </li>
         </ul>
-        <h2>Requirements</h2>
+        <h2>Assignment</h2>
         <ol>
             <li><p>Loop through and display all the dummy data to the prove activity page.</p></li>
             <li><p>Create a web endpoint that adds to the dummy data, preventing duplicates.</p></li>
@@ -90,6 +90,53 @@
         <div class="tips">
             <p>NOTE: The route to fetch all data has been completed for you, and for simplicity you will not create a controller. Remember that you will need to use async requests instead of HTML forms!</p>
         </div>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>JSON is brought in and displayed correctly with extra styling</td>
+                    <td>JSON is brought in and displayed correctly</td>
+                    <td>JSON data is brought in but displayed incorrectly</td>
+                    <td>JSON data is partially brought in</td>
+                    <td>JSON data is read in incorrectly or errors out</td>
+                    <td>JSON data is not read in</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>Insertion</td>
+                    <td>Extra variables added to dummy code with extra inputs to insert extra data (ex. powers)</td>
+                    <td>Text input allows for insertion and prevents duplicates</td>
+                    <td>Text input allows for insertion but does not prevent duplicates</td>
+                    <td>Text input attempts to insert but errors prevent insertion</td>
+                    <td>Text input but does not insert data</td>
+                    <td>No text inputs</td>
+                    <td>75%</td>
+                </tr>
+            </tbody>
+        </table>
         <h2>Survey</h2>
         <p id="surveyText"></p>
         <p class="text-center"><a id="survey" target="_blank" href="">10 Prove Survey</a></p>

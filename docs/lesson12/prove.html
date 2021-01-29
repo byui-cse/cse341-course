@@ -25,10 +25,11 @@
     <article>
         <h1><span id="g_ponder"></span></h1>
         <h2>Overview</h2>
-        
-        <p>For this week's activity, you will create a livechat room using socket.io and sessions. You will be provided a template, and this is easier than it sounds.</p> 
+
+        <p>For this week's activity, you will create a livechat room using socket.io and sessions. You will be provided a template, and this is easier than it sounds.</p>
         <p>The primary task here is to combine some of your learning from the past semester and create a simple yet very useful web application. While the application does not have a backend, one could be easily implemented.</p>
-        <p>Start working with the files located within the zip folder <a href="">here</a>.</p>
+        <p>Start working with the files located within the zip folder <a href="starter/PR12Starter.zip">here</a>.</p>
+        <h2>Assignment</h2>
         <h4>Core Requirements</h4>
         <ol>
             <li><p>When a user logs in using the ta12-login.ejs, their username is stored as a session variable. There <strong>cannot</strong> be duplicate usernames. If a user enters a duplicate username, they are notified.</p>
@@ -44,6 +45,79 @@
             <li><p>Notify users when a client disconnects.</p></li>
             <li><p>Use socket.io rooms (instead of a global chat)</p></li>
         </ul>
+
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Login</td>
+                    <td>Username is saved as a session variable, 
+                        no duplicate names, duplicate name results 
+                        in user being notified</td>
+                    <td>Username is saved as a session variable, 
+                        no duplicate names</td>
+                    <td>Username is saved as a session variable, 
+                        duplicates are permitted</td>
+                    <td>Username is saved locally duplicates are permitted</td>
+                    <td>Attempt to login results in application error</td>
+                    <td>No Login</td>
+                    <td>31%</td>
+                </tr>
+                <tr>
+                    <td>Live Chat</td>
+                    <td>Admin user notifies the logging in of other chat members</td>
+                    <td>Notifications of logging in of chat members recived but not done through Admin</td>
+                    <td>Notifications of logging in not done through admin and not received at time of event</td>
+                    <td>Chat member login notification received but not displayed</td>
+                    <td>Chat member login results in application error</td>
+                    <td>No implementation of chat memeber notifications</td>
+                    <td>31%</td>
+                </tr>
+                <tr>
+                    <td>Messaging</td>
+                    <td>All clients are updated with the submission of messages</td>
+                    <td>All clients are updated with the submission of messages but not at the time of the event</td>
+                    <td>All clients are updated with the submission of messages but not all text is displayed</td>
+                    <td>Messages received by members but not displayed</td>
+                    <td>Submission of messages results in an application error</td>
+                    <td>No implementation of messaging</td>
+                    <td>31%</td>
+                </tr>
+                <tr>
+                    <td>Extra functionality</td>
+                    <td>Addition of one of the suggested features (Or a feature you've chosen)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Attempt shown to add additional feature but results in error</td>
+                    <td>No additional features added</td>
+                    <td>7%</td>
+                </tr>
+            </tbody>
+        </table>
+
         <h2>Survey</h2>
         <p id="surveyText"></p>
         <p class="text-center"><a id="survey" target="_blank" href="">12 Prove Survey</a></p>

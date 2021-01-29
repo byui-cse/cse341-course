@@ -6,18 +6,18 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   <script type="text/javascript" src="../site/global.js"></script> 
+   <script type="text/javascript" src="../site/global.js"></script>
    <script>
         $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+            $("#includedHeader").load("../site/header.html");
         });
         window.onload = function(){ // load global variables
                document.getElementById('g_teach').innerHTML           = g.n05 + " " + g.teach;
                document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-            //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
                document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
                document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
-   </script> 
+   </script>
 </head>
 <body>
     <div id="includedHeader"></div>
@@ -25,14 +25,15 @@
         <h1><span id="g_teach"></span></h1>
 
         <h2>Overview</h2>
-        <p>For this week's team activity, things will be pretty straight forward. 
-           You'll be experimenting with sessions using the MVC architecture we've used 
+        <p>For this week's team activity, things will be pretty straight forward.
+           You'll be experimenting with sessions using the MVC architecture we've used
            so far this semester.</p>
-         <p>Make sure express-session is installed using npm.  
+        <h2>Instructions</h2>
+         <p>Make sure express-session is installed using npm.
          </p>
         <ol>
-           <li><p> In the route path "/" for this Team Activities routes, initiliaze two session variables, "style" and 
-                  "counter", if they are undefined.  
+           <li><p> In the route path "/" for this Team Activities routes, initiliaze two session variables, "style" and
+                  "counter", if they are undefined.
               </p>
            </li>
            <li><p>Create a form that utilizes the route "/change-style" and associated controller that will use the session
@@ -52,11 +53,11 @@
          <h4>Tips</h4>
            <ul>
              <li><p>Remember to redirect to the Team Activity 05's root "/" any time a session variable is modified
-                in order to see the changes. 
+                in order to see the changes.
              </p></li>
              <li><p>The ability to specify a desired CSS layout (AKA, a theme) using sessions may be useful for a guest user.
-                For example, many websites like YouTube and StackOverflow utilize a "dark mode" that can be used regardless if 
-                the user is signed in on their YouTube or StackOverflow account.  
+                For example, many websites like YouTube and StackOverflow utilize a "dark mode" that can be used regardless if
+                the user is signed in on their YouTube or StackOverflow account.
              </p></li>
              <li><p>If a variable used on an EJS page is not specified in the render method, an error message will be displayed.</p></li>
            </ul>

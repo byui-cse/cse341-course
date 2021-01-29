@@ -14,7 +14,7 @@
         });
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n07 + " " + g.ponder;
-                document.getElementById('survey').innerHTML         = g.survey[07];
+                document.getElementById('survey').href              = g.survey[07];
                 document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script>
@@ -25,17 +25,75 @@
         <h1><span id="g_ponder"></span></h1>
         <h2>Overview</h2>
         <p>Your prove assignment this week is intended to assist you in planning out your next project, as well as understanding how you should always plan out projects before code is written. </p>
-        <h2>Tasks</h2>
+        <h2>Assignment</h2>
         <ol>
            <li><p>After having completed the readings, research examples of risk analysis and mitigation documents. </p></li>
            <li><p>Create a personal risk analysis assessment document of your project along with mitigation techniques that will carry you through to the end of the semester.</p></li>
            <li><p>After having completed your document, share it with your team members.</p></li>
            <li><p>Provide constructive feedback. Think of additional risks that your teammate did not include. Brainstorm ways in which those risks could be mitigated or avoided all together.</p></li>
         </ol>
+        <h2>Rubric</h2>
+        <table class="rubric">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Above and Beyond</th>
+                    <th>Meets Requirements</th>
+                    <th>Slightly Deficient</th>
+                    <th>Significantly Deficient</th>
+                    <th>Some Attempt Made</th>
+                    <th>No Attempt Made</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>100%</th>
+                    <th>93%</th>
+                    <th>85%</th>
+                    <th>70%</th>
+                    <th>50%</th>
+                    <th>0%</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Risk Analysis</td>
+                    <td>Detailed risk mitigation including details for each week until the end of the project including possible solutions</td>
+                    <td>Risk mitigation plan including details for each week until the end of the project</td>
+                    <td>Risk mitigation plan including details for a majority of the weeks until the end of the project</td>
+                    <td>Risk mitigation plan including details for half of the weeks until the end of the project</td>
+                    <td>One or two items planned for risk mitigation</td>
+                    <td>No risk analysis completed</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Sharing</td>
+                    <td>Shared risk mitigatioin plan with teammates</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Did not share risk mitigation plan with teammates</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>Feedback</td>
+                    <td>Actively engaged and provided helpful feedback and planned solutions to problems brought up</td>
+                    <td>Provided helpful feedback and solutions for possible problems brought up</td>
+                    <td>Provided feedback to a few teammated with no solutions offered</td>
+                    <td>Provided feedback for one teammate with no solutions offered</td>
+                    <td>Commented but did not provide reasonable feedback</td>
+                    <td>No feedback</td>
+                    <td>15%</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Survey</h2>
+        <p id="surveyText"></p>
+        <p class="text-center"><a id="survey" target="_blank" href="">07 Prove Survey</a></p>
         <h2>Submission</h2>
         <p>Submit your document in I-learn.</p>
-        <p id="surveyText"></p>
-        <p id="survey"></p><br><br>
     </article>
 </body>
 </html>
