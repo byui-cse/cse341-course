@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#includedHeader").load("../../../site/header.html"); 
+        });
+        window.onload = function(){ // load global variables
+               document.getElementById('g_teach').innerHTML           = g.n04 + " " + g.teach;}
+   </script> 
+</head>
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Project 2 (CSE341/WDD33 group) High-level Tasks</h1>
+        <h3>Overview</h3>
+        <p>Your team assignments for the second half of the semester are very flexible in how you implement them.</p>
+        <p>To avoid falling behind, and to ensure successful and timely delivery of your project, it is recommended that you consider how you will spread out the work throughout the duration of the project.</p>
+        <p>You are only required to develop the backend of the application and ensure that it works flawlessly with the frontend that WDD330 students will implement. </p>
+        <h3>High-level tasks to build your project, start to finish</h3>
+        <ul>
+            <li><p>App planning and risk analysis (This will be done with your team in the class, and also with your project team across both classes)</p></li>
+            <li><p>API Contracts to know what data you need to provide the frontend, and what data the frontend needs to supply the backend with.</p></li>
+            <li><p>Database (or data api) set up</p></li>
+            <li><p>REST service calls to read, update, and delete data</p></li>
+            <li><p>Authentication setup, implement form validation in app</p></li>
+            <li><p>Overall app refinement and testing</p></li>
+        </ul>
+    </article>
+</body>
+</html>
