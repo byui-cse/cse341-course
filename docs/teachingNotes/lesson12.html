@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <link rel="stylesheet" type="text/css" href="teachingStyle.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html"); 
+        });
+    </script>
+</head>
+<body>
+    <div id="includedHeader"></div>
+    <div class="teachingContainer">
+        <h1>Lesson # - Lesson Title</h1>
+        <br>
+        <div class="teachingRow">
+            <div class="teachingColumn adminNotes">
+                <h2>Administrative Notes</h2>
+                <ul>
+                    <li><p>Post an announcement for your students this week in I-learn.</p></li>
+                </ul>
+            </div>
+            <div class="teachingColumn">
+                <h2>Instructor Preparation</h2>
+                <p>This week is all about...</p>
+                <p>Make sure students know...and are prepared for...</p>
+            </div>
+            <div class="teachingColumn">
+                <h2>Teaching Notes</h2>
+                <p>Important topics to teach your students this week. These topics will come primarily from the reading and should contain information they will help them with their assignments. </p>
+                <ul>
+                    <li><p></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
