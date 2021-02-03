@@ -128,7 +128,7 @@ p code, li code {
 	color:red;
 }
 /*
-article ol li code {
+ol li code {
 	margin-left: 0.5em;
 }
 */
@@ -143,30 +143,30 @@ article {
 	padding: 20px;
 }
 
-article p {
+p {
 	font-size: 22px;
 	line-height: 1.4em;
 	margin-bottom: 1em;
 }
 
-article em {
+em {
 	font-style: italic;
 	color: #666;
 	font-size: 17px;
 }
 
-article strong {
+strong {
 	font-weight: bold;
 	color: #CC0000;
 }
 
-article h1 {
+h1 {
 	text-align: center;
 	font-size: 36px;
 	margin-bottom: 1em;
 }
 
-article h2 {
+h2 {
 	font-size: 26px;
 	font-weight: bold;
 	margin: 40px 0 10px 0;
@@ -174,7 +174,7 @@ article h2 {
 	border-bottom: 1px solid #040404;
 }
 
-article h3 {
+h3 {
 	color: #006AB9;
 	text-transform: uppercase;
 	padding-top: 10px;
@@ -182,7 +182,7 @@ article h3 {
 	font-weight: bold;
 }
 
-article h4 {
+h4 {
 	padding-top: 10px;
 	margin-bottom: 0.5em;
 	font-weight: bold;
@@ -213,15 +213,15 @@ aside.pull-right strong, aside.pull-left strong {
 }
 
 /* Lists */
-article ul  {
+ul  {
 	margin: 0 0 1em 2em;
 }
 
-article ol  {
+ol  {
 	margin: 0 0 1em 3em;
 }
 
-article ol li {
+ol li {
 	list-style: decimal-leading-zero;
 	font-size: 18px;
 	color: #006AB9;
@@ -229,13 +229,13 @@ article ol li {
 	border-left: 2px solid #CCC;
 }
 
-article h3:before {
+h3:before {
 	content: counter(h3, upper-roman) ".";
     counter-increment: h3 1;
     margin-right: 10px;
 }
 
-article li p {
+li p {
 	font-size: 18px;
 	margin-bottom: 0.5em;
 	color: #040404;
@@ -246,12 +246,12 @@ li .indent1 {
 	padding-left: 20px;
 }
 
-article ol ul li {
+ol ul li {
 	list-style: none;
 	border-left: none;
 }
 
-article ul li p:before {
+ul li p:before {
 	content: "»";
 	color: #006AB9;
 	font-size: 24px;
