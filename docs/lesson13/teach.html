@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="../site/global.js"></script>
+   <script>
+        $(function(){
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function(){ // load global variables
+            document.getElementById('g_teach').innerHTML       = g.n13 + " " + g.teach;
+            document.getElementById('g_project2req').innerHTML = g.project2req;
+        }
+   </script>
+</head>
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1><span id="g_teach"></span></h1>
+        <h2>Overview</h2>
+        <h3>You will submit your final draft of your project this week!</h3>
+        <p id="g_project2req"></p>
+        <h2>Assignment</h2>
+        <p>Your assignment for this week should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2-breakdown.html">project 2 breakdown</a>.</p>
+        <p>At the end of this effort, you should be ready to submit your project. </p>
+        <p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p>
+        <h2>Rubric</h2>
+        <p>The rubric for this assignment can be found under <a href="../projectStuff/prj2-requirements.html#rubric">project 2 requirements</a>.</p>
+        <h2>Submission</h2>
+        <p>This week you will submit your completed project.</p>
+        <ol>
+            <li><p>Ensure that your latest code is pushed to GitHub and Heroku.</p></li>
+            <li><p>Download this assignment's <a href="teach.txt" target="_blank">submission form</a>, fill it out, and submit it to I-Learn.</p></li>
+        </ol>
+
+            <h3>
+                You will submit your final draft of your project this week!
+            </h3>
+            <p id="g_project2req"></p>
+            <h2>Assignment</h2>
+            <p>
+                Your assignment for this week should roughly follow
+                one of the tasks listed in the
+                <a href="../projectStuff/prj2/prj2-breakdown.html">project 2 breakdown</a>.
+            </p>
+            <p>
+                At the end of this effort, you should be ready to
+                submit your project.
+            </p>
+            <p>
+                Please review rubric below to see how you'll be graded
+                and to ensure you've completed each aspect of this
+                assignment.
+            </p>
+            
+            <h2>Submission</h2>
+            <p>
+                This week you will submit your completed project. The
+                rubric can be found under
+                <a href="../projectStuff/prj2/prj2-requirements.html">project 2 requirements</a>.
+            </p>
+            <h2>Submission</h2>
+            <ol>
+                <li>
+                    <p>
+                        Ensure that your latest code is pushed to
+                        GitHub and Heroku.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Download this assignment's
+                        <a href="teach.txt" target="_blank">submission form</a>, fill it out, and submit it to I-Learn.
+                    </p>
+                </li>
+            </ol>
+        </article>
+    </body>
+</html>
