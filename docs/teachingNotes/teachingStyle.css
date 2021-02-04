@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+.teachingContainer {
+    width: 90%;
+    margin:30px 50px;
+}
+.teachingRow {
+    width:100% !important;
+}
+.teachingColumn {
+    float: left;
+    width: 33.33%;
+    padding: 0px 20px 0px 20px;
+}
+.teachingRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 1500px) {
+    .teachingColumn {
+        width: 50%;
+    }
+    .adminNotes {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .teachingColumn {
+        width: 100%;
+    }
+    .adminNotes {
+        width: 100%;
+    }
+}
