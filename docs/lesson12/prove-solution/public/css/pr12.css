@@ -1,0 +1,44 @@
+.container {
+    height: 80vh;
+    overflow-y: auto;
+    width: 50%;
+}
+
+.container ul {
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+}
+
+ul.chat li.message {
+    border: solid #DCDCDC 0.5rem;
+    border-radius: 1rem;
+    background-color: #F8F8FF;
+    margin: 1rem 0 1rem 0;
+    width: max-content;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+ul.chat li.uMessage {
+    border: solid #008000 0.5rem;
+    margin-left: auto;
+    background-color: #008000;
+    color: #F8F8FF;
+}
+
+.input {
+    width: 30%;
+    margin: 0 auto 0 auto;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.input textarea {
+    border: solid #000000 0.5rem;
+    width: 75%;
+}
+
+.displayname {
+    font-size: 1.5em;
+}
