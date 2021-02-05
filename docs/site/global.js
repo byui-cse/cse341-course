@@ -17,6 +17,8 @@ g.teachTime       = "Please spend at least 1 hour on this assignment before revi
 g.teachInstructor = "Instructor's Solution";
 g.teachSolution =
     "As a part of this team activity, you are expected to look over a solution from the instructor, to compare your approach to that one. One of the questions on the I-Learn submission will ask you to provide insights from this comparison. <br><br> Please DO NOT open the solution until you have worked through this activity as a team for the one hour period. At the end of the hour, if you are still struggling with some of the core requirements, you are welcome to view the instructor's solution and use it to help you complete your own code. Even if you use the instructor's code to help you, you are welcome to report that you finished the core requirements, if you code them up yourself.";
+g.proveSolution =
+    "As a part of this prove assignment, you are expected to look over a solution from the instructor, to compare your approach to that one. <br><br> Please DO NOT open the solution until you have spent at least one hour working on this assignment. After you have spent at least an hour working on this assignment, you are welcome to view the instructor's solution and use it to help you complete your own code. Even if you use the instructor's code to help you, you can still recieve full credit for this assignment, if you code it yourself (please don't copy/paste any of the instructor code)."
 g.teachSubmit =
     'When you have finished this activity, please fill out the assessment in I-Learn. You are welcome to complete any additional parts of this activity by yourself or with others after your meeting before submitting the assessment.';
 g.ponderSubmit =
