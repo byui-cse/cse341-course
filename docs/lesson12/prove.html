@@ -15,6 +15,8 @@
         window.onload = function(){ // load global variables
                 document.getElementById('g_ponder').innerHTML       = g.n12 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+                document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+                document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
             }
     </script>
  </head>
@@ -71,12 +73,12 @@
             <tbody>
                 <tr>
                     <td>Login</td>
-                    <td>Username is saved as a session variable, 
-                        no duplicate names, duplicate name results 
+                    <td>Username is saved as a session variable,
+                        no duplicate names, duplicate name results
                         in user being notified</td>
-                    <td>Username is saved as a session variable, 
+                    <td>Username is saved as a session variable,
                         no duplicate names</td>
-                    <td>Username is saved as a session variable, 
+                    <td>Username is saved as a session variable,
                         duplicates are permitted</td>
                     <td>Username is saved locally duplicates are permitted</td>
                     <td>Attempt to login results in application error</td>
@@ -115,6 +117,12 @@
                 </tr>
             </tbody>
         </table>
+        <h2 id="g_teachInstructor"></h2>
+        <p id="g_proveSolution"></p>
+        <p class="text-center">
+            <a href="https://github.com/byui-cse/cse341-course/tree/master/docs/lesson12/prove-solution" target="_blank">Teacher Solution</a>
+            (<a href="prove-solution.zip" target="_blank">Download .zip</a>)
+        </p>
         <div id="g_ponderSubmit"></div>
     </article>
 </body>

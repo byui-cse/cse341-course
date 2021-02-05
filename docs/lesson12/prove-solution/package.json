@@ -1,0 +1,28 @@
+{
+    "name": "W12_Solution",
+    "version": "1.0.0",
+    "description": "CSE341 W12 Solution",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js",
+        "start-server": "node app.js"
+    },
+    "author": "Alex Baker",
+    "contributors": [
+        "Andrew Schimelpfening"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^1.18.3"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "ejs": "^2.7.4",
+        "express": "^4.16.3",
+        "express-session": "^1.17.1",
+        "express-sessions": "^1.0.6",
+        "socket.io": "^2.3.0"
+    }
+}
