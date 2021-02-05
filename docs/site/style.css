@@ -258,6 +258,14 @@ ul li p:before {
 	margin-right: 0.5em;
 }
 
+.tips iframe {
+	width:560px;
+	height:315px;
+	margin-left: auto; 
+	margin-right: auto; 
+	display: block;
+}
+
 @media only screen and (max-width: 1250px) {
     aside.pull-right, aside.pull-left {
     	width: 96.5%;

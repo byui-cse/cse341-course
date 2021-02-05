@@ -15,8 +15,6 @@
         window.onload = function(){ // load global variables
             document.getElementById('g_ponder').innerHTML       = g.n02 + " " + g.ponder;
             document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-            document.getElementById('survey').href         = g.survey[02];
-            document.getElementById('surveyText').innerHTML     = g.surveyText;
         }
     </script>
  </head>
@@ -34,6 +32,12 @@
             <li><p>While not required, a way to go above and beyond to reach full credit would be to save multiple
                 user entries. This would entail using a JSON file <b>or</b> a local variable containing book titles and summaries.</p></li>
             <li><p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p></li>
+            <li><p>Push code to Heroku</p></li>
+            <div class="tips">
+                <p>Getting Heroku set up with a project can be difficult at first. If you are having issues, these videos may help.</p>
+                <iframe src="https://www.youtube.com/embed/C01PyCGjnEs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/MxfxiR8TVNU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </ol>
         <h2>Rubric</h2>
         <table class="rubric">
@@ -92,11 +96,7 @@
                 </tr>
             </tbody>
         </table>
-        <h2>Survey</h2>
-        <p id="surveyText"></p>
-        <p class="text-center"><a id="survey" target="_blank" href="">02 Prove Survey</a></p>
         <div id="g_ponderSubmit"></div>
-
     </article>
 </body>
 </html>

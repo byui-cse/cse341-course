@@ -16,8 +16,6 @@
                 document.getElementById('g_ponder').innerHTML       = g.n04 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('g_project1req').innerHTML  = g.project1req;
-                document.getElementById('survey').href         = g.survey[04];
-                document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script>
  </head>
@@ -34,6 +32,11 @@
             <li><p>Your app should have products and the ability to add, delete and update products in the cart (Create, Read, Update, Delete).</p></li>
             <li><p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p></li>
         </ol>
+        <div class="tips">
+            <p>Instructor tip</p>
+            If after completing the Team Activity you still feel a bit lost with MongoDB, it is okay. This video goes through many of the important concepts that you will need to know.
+            <iframe src="https://www.youtube.com/embed/-56x56UppqQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <h2>Rubric</h2>
         <table class="rubric">
             <thead>
@@ -91,9 +94,6 @@
                 </tr>
             </tbody>
         </table>
-        <h2>Survey</h2>
-        <p id="surveyText"></p>
-        <p class="text-center"><a id="survey" target="_blank" href="">04 Prove Survey</a></p>
         <div id="g_ponderSubmit"></div>
 
     </article>

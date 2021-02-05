@@ -16,8 +16,6 @@
                 document.getElementById('g_ponder').innerHTML       = g.n06 + " " + g.ponder;
                 document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
                 document.getElementById('g_project1req').innerHTML  = g.project1req;
-                document.getElementById('survey').href         = g.survey[06];
-                document.getElementById('surveyText').innerHTML     = g.surveyText;
             }
     </script>
  </head>
@@ -33,13 +31,14 @@
             <li><p>Complete your project</p></li>
             <li><p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p></li>
         </ol>
+        <div class="tips">
+            <p>Instructor Tip</p>
+            Remember, to get 100% on your project, you need to go above and beyond...you need to make it your own. For ideas on how to do that, a TA for this course, Andrew Schimelpfening, made a video that you may find helpful.<br><br>
+            <iframe src="https://www.youtube.com/embed/ZhPaumi_5so" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <h2>Rubric</h2>
         <p>The rubric for this assignment can be found under <a href="../projectStuff/prj1-requirements.html#rubric">project 1 requirements</a>.</p>
-        <h2>Survey</h2>
-        <p id="surveyText"></p>
-        <p class="text-center"><a id="survey" target="_blank" href="">06 Prove Survey</a></p>
         <div id="g_ponderSubmit"></div>
-
     </article>
 </body>
 </html>
