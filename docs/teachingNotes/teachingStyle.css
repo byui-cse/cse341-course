@@ -18,6 +18,26 @@
     display: table;
     clear: both;
 }
+.quote {
+    padding-left: 30px;
+}
+.quoteBullet {
+    padding-left:30px;
+    padding-bottom:5px;
+    display: block;
+}
+.quote:before {
+	content: "“";
+	color: #006AB9;
+	font-weight: bolder;
+    font-family: "Apple Chancery";
+}
+.quote:after {
+	content: "”";
+	color: #006AB9;
+	font-weight: bolder;
+    font-family: "Apple Chancery";
+}
 @media screen and (max-width: 3000px) {
     .teachingColumn {
         width: 50%;
