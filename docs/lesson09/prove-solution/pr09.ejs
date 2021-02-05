@@ -1,0 +1,26 @@
+<!-- This is your EJS page. -->
+<% include ../../includes/header.ejs %>
+<title><%= title %></title>
+<link href="/stylesheets/ta03.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<% include ../../includes/nav.ejs %>
+<div class="container">
+    <h1>Pokemon:</h1>
+    <ul id="pokeList" class="">
+    </ul>
+    <div class="actions_container">
+        <!-- If you want to include your listeners inline... -->
+        <!-- <button id="prevBtn" onclick="populatePrev()">Previous</button>
+        <button id="nextBtn" onclick="populateNext()">Next</button> -->
+        <!-- WIth listeners set from script... -->
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+</div>
+<!--NOTE: Declare script here.
+    Entire HTML page should be allowed to load
+    before executing javascript.-->
+<script src="/js/pr09.js"></script>
+</body>
+</html>

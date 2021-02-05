@@ -1,0 +1,25 @@
+<% include ../../includes/header.ejs %>
+<title><%= title %></title>
+<link href="/stylesheets/ta03.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<% include ../../includes/nav.ejs %>
+<!-- This is really just a copy of W10 with an extra script attached -->
+<div class="container">
+    <h1>Names:</h1>
+    <ul id="nameList" class="">
+    </ul>
+    <h2>Submit a name</h2>
+    <div class="actions_container">
+        <input type="text" id="newName">
+        <button id="submitName" onclick="submitName()">Submit</button>
+    </div>
+</div>
+<!--This is a one implementation of socket.io-client
+    on the EJS page rendered to the client. You do not
+    necessarily have to have separate client and server
+    applications as stated in the online course videos-->
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/pr11-client.js"></script>
+</body>
+</html>
