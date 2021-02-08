@@ -16,26 +16,115 @@
 <body>
     <div id="includedHeader"></div>
     <div class="teachingContainer">
-        <h1>Lesson # - Lesson Title</h1>
+        <h1>Lesson 5 Instructor Guide</h1>
         <br>
         <div class="teachingRow">
             <div class="teachingColumn adminNotes">
                 <h2>Administrative Notes</h2>
                 <ul>
-                    <li><p>Post an announcement for your students this week in I-learn.</p></li>
+                    <li><p>Post an announcement for your students this week in Teams.</p></li>
+                    <li><p>For on-campus sections working with WDD 330 students, our CSE341 students should be in contact with them and deciding on what they're going to do for a project.</p></li>
                 </ul>
             </div>
             <div class="teachingColumn">
                 <h2>Teaching Notes</h2>
                 <p>Important topics to teach your students this week. These topics will come primarily from the reading and should contain information that will help them with their assignments. </p>
+                <h3>Cookies</h3>
+                <h4>What are they?</h4>
+                <p>Files that contain small pieces of data that are exchanged between a user's computer and a web server to identify specific users and improve their browsing experience.</p>
                 <ul>
-                    <li><p></p></li>
+                    <li><p>are stored on the client</p></li>
+                    <li><p>use key/value pairs to store information</p></li>
                 </ul>
+                <h4><a href="https://www.adpushup.com/blog/types-of-cookies/" target="_blank">Different Types</a>:</h4>
+                <h5>First-party Cookies</h5>
+                <p>First-party cookies are set by the website visited by the user. The data collected using first-party cookies is used for purposes like calculating pageviews, sessions, and number of users. </p>
+                <p>Primarily, publishers have access to data collected using first-party cookies, which can later be shared with advertisers or agencies for ad targeting. Apart from that, analytics tools – like Google Analytics – use first-party cookies to understand user behavior and present it in tabular or graphical form for the publisher’s understanding.</p>
+                <h5>Third-party Cookies</h5>
+                <p>Third-party cookies are set by domains that are not directly visited by the user. This happens when publishers add third-party elements (like chatbot, social plugins, or ads) on their website. </p>
+                <p>Once installed, third-party cookies also track users and save their information for ad targeting and behavioral advertising. For example: Let’s say that you added a YouTube link to one of your blogs. Whenever this YouTube link gets a click, a YouTube cookie will be added to the user’s browser. This cookie can track him/her until it expires.</p>
+                <h5>Session Cookies</h5>
+                <p>Session cookies either expire immediately or within a few seconds of the user leaving the web browser. Among other uses, these cookies are used by e-commerce websites to remember the product placed in cart by the user, to keep users logged in, and to calculate each user session for analytical purposes.</p>
+                <p>For example, if an e-commerce website does not use session cookies, then the items added in cart will be removed by the time the user reaches the checkout page. And the server will forget the user and treat him/her like a completely new visitor. </p>
+                <h5>Persistent Cookies  </h5>
+                <p>As the name suggests, persistent cookies stay on the user’s browser for a very long time. Generally, persistent cookies are required to have an expiration date which could be anything between a second to 10 years. The above shared screenshot is an example of persistent cookies with expiration date.</p>
+                <p>Persistent cookies are used by publishers to track a single user and his/her interaction with their website. To check whether your browser has persistent cookies, try this. If you are logged in to Gmail on the browser, then close the tab(s) and restart your device. When your device turns back on, open the same browser and visit the same service or account (Gmail), if you are still logged in, then you have persistent cookies saved on the browser, dropped by Google mail service.</p>
+                <p>Browsers are making it harder to use cookies. Web browsers like Firefox and Safari are updating their products to kill these cookies as soon as users are done with the websites. And Chrome is soon to join this bandwagon and will start blocking third-party cookies by 2022.</p>
+                <h5>Secure Cookies   </h5>
+                <p>Only HTTPS websites can set secure cookies, i.e., cookies with encrypted data. Mostly, the checkout or payment pages of e-commerce websites have secure cookies to facilitate safer transactions. Similarly, online banking websites are required to use secure cookies for security reasons.</p>
+                <h4>What data can cookies hold?</h4>
+                <p>Strings, functioning as key value pairs frequently hold: </p>
+                <ul>
+                    <li><p>your movements within the site</p></li>
+                    <li><p>help you resume where you left off</p></li>
+                    <li><p>remember your registered login</p></li>
+                    <li><p>theme selection</p></li>
+                    <li><p>Preferences</p></li>
+                    <li><p>and other customization functions.</p></li>
+                </ul>
+                <h4>Code example</h4>
+                <img src="lesson05_01.jpg" alt="" class="img-tutorial">
+                <h4>Viewing Cookies in Google Chrome</h4>
+                <img src="lesson05_02.jpg" alt="" class="img-tutorial">
+                <img src="lesson05_03.jpg" alt="" class="img-tutorial">
+
+                <h3>Sessions</h3>
+                <h4><a href="https://www.sohamkamani.com/blog/2017/01/08/web-security-session-cookies/#:~:text=A%20%E2%80%9Csession%E2%80%9D%20is%20a%20single,person%20who%20is%20logged%20in." target="_blank">What are they?</a></h4>
+                <p>A “session” is a single interval of time in which the user is authenticated.  What makes this secure is that each session comes with a different session token, and the session token by itself gives no indication about the person who is logged in.</p>
+                <ul>
+                    <li><p>Data stored on the server to uniquely identify users</p></li>
+                    <li><p>Track any user that uses the site</p></li>
+                    <li><p>Allow users to stay logged in</p></li>
+                </ul>
+                <h4><a href="https://redislabs.com/blog/cache-vs-session-store/#:~:text=Session%20data%20may%20include%20user,targeted%20promotions%20and%20discounts%2C%20etc.&text=The%20following%20points%20contrast%20session,the%20sessions%20of%20different%20users." target="_blank">What data can they store</a>?</h4>
+                <p>Session data may include user profile information, messages, personalized data and themes, recommendations, targeted promotions and discounts, etc. The following points contrast session store from a cache: In a session store, the data is not shared between the sessions of different users.</p>
+                <h4>Code example</h4>
+                <img src="lesson05_04.jpg" alt="" class="img-tutorial">
+                <h3>Cookies and Sessions</h3>
+                <p>More often than not, cookies and sessions are used together. </p>
+                <ul>
+                    <li><p>Cookie to identify user on the client</p></li>
+                    <li><p>Sensitive data on the server</p></li>
+                    <li><p>Session cookie (will expire when browser closes) with hashed information from server to be saved on client</p></li>
+                    <li><p>Keep sensitive data away from the client</p></li>
+                    <li><p>Sessions can store user data, shopping cart info, anything while cookies are limited to strings.</p></li>
+                    <li><p>Cookie used to identify session</p></li>
+                </ul>
+                <h4>Cookies vs Sessions</h4>
+                <table class="table-small">
+                    <thead>
+                        <td>Cookies</td>
+                        <td>Sessions</td>
+                    </thead>
+                    <tr>
+                        <td>Cookies are stored on the client</td>
+                        <td>Sessions are stored on the server</td>
+                    </tr>
+                    <tr>
+                        <td>Cookies can only store strings</td>
+                        <td>Sessions can store objects</td>
+                    </tr>
+                    <tr>
+                        <td>Cookies can be set to a long lifespan</td>
+                        <td>When users close their browser, they destroy the session</td>
+                    </tr>
+                    <tr>
+                        <td>Less secure</td>
+                        <td>More secure</td>
+                    </tr>
+                </table>
+                <h3>Authentication Overview</h3>
+                <img src="lesson05_05.jpg" alt="" class="img-tutorial">
+                <h3>Class Activity</h3>
+                <p>To help students gain experience working with authentication systems, here is a class activity. The following zip file can be distributed to your students. It has tasks in it instructing them regarding what they should do. This can be done in a class setting as a group, in teams, or individually. </p>
+                <h4><a href="lesson05-start.zip">Lesson 5 Class Activity START zip to share with students</a></h4>
+                <p>For your reference, here is an example of a completed copy of the class activity:</p>
+                <h4><a href="lesson05-completed.zip">Lesson 5 Class Activity COMPLETED zip</a></h4>
             </div>
             <div class="teachingColumn">
                 <h2>Instructor Preparation</h2>
-                <p>This week is all about...</p>
-                <p>Make sure students know...and are prepared for...</p>
+                <p>This week is all about authentication. Students will learn about cookies, sessions and how to implement an authentication system. The class activity for this week has everything they'll need for a basic authenticatio system. </p>
+                <p>Make sure students are prepared to submit their finished projects next week. As they work through the Academind course, they should know that while it will incorporate most everything they need to get 93% on their project, they will need to go above and beyond to get 100%. Many students try to do this simply by changing the CSS, but encourage your students to add functionality to their application that is unique to their app. </p>
             </div>
         </div>
     </div>
