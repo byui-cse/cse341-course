@@ -1,3 +1,15 @@
+// window.onload = function(){
+    // favicon
+    var link = top.document.createElement("link");
+    link.type = "image/x-icon";
+    link.rel = "shortcut icon";
+    var today = new Date();
+    var url = "https://byui-cse.github.io/cse341-course/site/";
+    link.href = url + "fav.png";
+    if(today.getDay() == 6 || today.getDay() == 0) link.href = url + "happy-fav.png";   
+    top.document.getElementsByTagName("head")[0].appendChild(link);
+// }
+
 // global constants
 var g = {};
 

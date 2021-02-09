@@ -1,9 +1,5 @@
-// load global variables
+window.onload = function(){
 
-        $(function(){
-            $("#includedHeader").load("../site/header.html"); 
-        });
-        window.onload = function(){
    document.title = g.courseMaterials;
    if(document.getElementById('g_courseMaterials')){
         document.getElementById('g_courseMaterials').innerHTML  = g.courseMaterials;
