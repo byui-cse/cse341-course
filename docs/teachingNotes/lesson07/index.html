@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../site/style.css" />
     <link rel="stylesheet" type="text/css" href="../teachingStyle.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script> 
     <script>
         $(function(){
             $("#includedHeader").load("../../site/header.html"); 
@@ -16,26 +17,128 @@
 <body>
     <div id="includedHeader"></div>
     <div class="teachingContainer">
-        <h1>Lesson # - Lesson Title</h1>
+        <h1>Lesson 7 Instructor Guide</h1>
         <br>
         <div class="teachingRow">
             <div class="teachingColumn adminNotes">
                 <h2>Administrative Notes</h2>
                 <ul>
-                    <li><p>Post an announcement for your students this week in I-learn.</p></li>
+                    <li><p>Post an announcement for your students this week in Teams.</p></li>
+                    <li><p>Ensure that communication in their teams is good as they plan out their projects for the remainder of the semester.</p></li>
                 </ul>
             </div>
             <div class="teachingColumn">
                 <h2>Teaching Notes</h2>
                 <p>Important topics to teach your students this week. These topics will come primarily from the reading and should contain information that will help them with their assignments. </p>
+                <h3>Goals for This Week</h3>
                 <ul>
-                    <li><p></p></li>
+                    <li><p>To prepare students to build an awesome Node.JS app on their own</p></li>
+                    <li><p>To prepare students for future jobs</p></li>
+                    <li><p>To build their understanding of projects, requirements, planning and risks regardless of language or platform</p></li>
+                    <li><p>To further expand their knowledge of Node.JS</p></li>
                 </ul>
+                <h3>Important Concepts from the Reading</h3>
+                <ul>
+                    <li><p><a href="https://docs.google.com/document/d/18_2XYUs37LzNnGw8tl-7Si5aY9S50d0U-eMOPq4rTBU/edit?usp=sharing" target="_blank">Risk Management in Software Development and Software Engineering Projects</a></p></li>
+                    <li><p><a href="https://docs.google.com/document/d/18_2XYUs37LzNnGw8tl-7Si5aY9S50d0U-eMOPq4rTBU/edit#heading=h.8er6zxskoj9l" target="_blank">Building a Stable Node.js Project Architecture. Best Practices for Node.js Development</a></p></li>
+                    <li><p><a href="https://docs.google.com/document/d/18_2XYUs37LzNnGw8tl-7Si5aY9S50d0U-eMOPq4rTBU/edit#heading=h.9fczyzzechf7" target="_blank">A Comprehensive Website Planning Guide (Part 1)</a></p></li>
+                </ul>
+                <h3>Risk Management</h3>
+                <h4>What is risk in software engineering?</h4>
+                <ul>
+                    <li><p>potential problem</p></li>
+                    <li><p>an activity or event that may compromise the success of a software development project</p></li>
+                    <li><p>the possibility of suffering loss</p></li>
+                    <li><p>total risk exposure to a specific project will account for both the probability and the size of the potential loss. </p></li>
+                </ul>
+                <h4>What Is Risk Management In Software Engineering?</h4>
+                <ul>
+                    <li><p>Risk containment and mitigation. </p></li>
+                    <li><p>Identify risks and plan accordingly. </p></li>
+                    <li><p>Be ready to act when a risk arises, drawing upon the experience and knowledge of the entire team to minimize the impact to the project. </p></li>
+                </ul>
+                <h4>Common tasks of risk management</h4>
+                <ul>
+                    <li><p>Identify risks and their triggers</p></li>
+                    <li><p>Classify and prioritize all risks</p></li>
+                    <li><p>Craft a plan that links each risk to a mitigation</p></li>
+                    <li><p>Monitor for risk triggers during the project</p></li>
+                    <li><p>Implement the mitigating action if any risk materializes</p></li>
+                    <li><p>Communicate risk status throughout project</p></li>
+                </ul>
+                <h4>Five Types of Risk In Software Project Management</h4>
+                <ul>
+                    <li><p><strong>New, unproven technologies</strong> - The majority of software projects entail the use of new technologies. Training and knowledge are of critical importance</p></li>
+                    <li><p><strong>User and functional requirements</strong> - Software requirements frequently change and adapt throughout project development causing poor product development.</p></li>
+                    <li><p><strong>Application and system architecture</strong> - Taking the wrong direction with a platform, component, or architecture can have disastrous consequences. Do your research!</p></li>
+                    <li><p><strong>Performance</strong></p></li>
+                    <li><p><strong>Organizational</strong> - Balance: needs of the dev. team and the expectations of customers</p></li>
+                </ul>
+                <h3>Best Practices</h3>
+                <h4>Planning Properly</h4>
+                <ul>
+                    <li><p>Code style</p></li>
+                    <li><p>Your experience with the integration of third-party means and devices in your application (i.e. Google Maps, data collection, analytics tools, e-communication means,etc.)</p></li>
+                    <li><p>Data models you’re up to work with (files, databases or third-party APIs)</p></li>
+                    <li><p>Communication and data exchange tools you’re going to use (REST API, Blouse Protocol, Socket io, GraphQl, DDP protocol)</p></li>
+                    <li><p>Possibility to utilize 3rd party libraries (hardware libraries, special algorithms)</p></li>
+                </ul>
+                <h4>NPM Packages</h4>
+                <ul>
+                    <li><p>Node.js community is up and thriving. A lot of neat features are invented and written by other developers already. So before you create a particular functionality for your application, make sure if someone else has not encountered the exact problem before.</p></li>
+                    <li><p>Be aware of duplicates and malicious code</p></li>
+                    <li><p>Keep them up to date</p></li>
+                    <li><p><a href="https://www.npmjs.com/browse/depended" target="_blank">Most depended upon packages</a></p></li>
+                </ul>
+                <h4>Tips</h4>
+                <ul>
+                    <li><p>Use code quality control tools, like Lint</p></li>
+                    <li><p>Keep track of your  files size - shoot for 300-500 lines or less</p></li>
+                    <li><p>Comment your code!</p></li>
+                    <li><p>Handle Errors</p></li>
+                    <li><p>Be aware of common node development tools like:</p>
+                        <ul>
+                            <li><p>Gulp</p></li>
+                            <li><p>Nodemon</p></li>
+                            <li><p>Forever, pm2</p></li>
+                            <li><p>Winston</p></li>
+                            <li><p>Threads</p></li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Website Planning Guide</h3>
+                <ul>
+                    <li><p>Identify purpose of website</p></li>
+                    <li><p>Plan with the end in mind</p>
+                        <ul>
+                            <li><p>Customer usage</p></li>
+                            <li><p>Potential employer viewage</p></li>
+                            <li><p>Planning documentation</p></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Desmond Tutu once wisely said that “there is only one way to eat an elephant: a bite at a time.” Web applications frequently seem daunting when we are first planning them out. Work from the top down, starting with who your audience is and what it needs to do, then break it down into features, the smaller more manageable tasks.</p>
+                <img src="lesson07_01.jpg" alt="" class="img-tutorial">
+                <h3>Questions to Ask Yourself</h3>
+                <ul>
+                    <li><p>How would you like to be perceived through your website?</p></li>
+                    <li><p>What is the single most important thing visitors want from your site? </p></li>
+                    <li><p>What is the single most important thing you want to convey on your site? </p></li>
+                    <li><p>Describe your target audience.</p></li>
+                    <li><p>Who is your competition?</p></li>
+                    <li><p>Why should clients choose your products or services over the competition?</p></li>
+                    <li><p>How will you judge if this is a successful project?</p></li>
+                    <li><p>List three or more websites you like that are similar to what you are going to create.</p></li>
+                </ul>
+                <h3>Class Activity</h3>
+                <p>The class activity this week is going to be a little different. They will not do any programming, they will simply get practice taking a large task and breaking it up into smaller ones, and planning on a project. This activity is intended to be done in groups during class time. With about 10-15 minutes left, it is helpful for students to come together as a class and discuss different challenges they faced, things they learned, or strategies they implemented.</p>
+                <h4><a href="lesson07.docx">Lesson 7 Class Activity to share with students</a></h4>
             </div>
             <div class="teachingColumn">
                 <h2>Instructor Preparation</h2>
-                <p>This week is all about...</p>
-                <p>Make sure students know...and are prepared for...</p>
+                <p>This week is all about project planning. </p>
+                <p>Make sure students know that the better they plan, the more likely they are to be succesful with their projects.</p>
+                <p>Instructors that are pairing up with WDD 330, check in on your teams to make sure that each team is doing well and has a good handle on project scope expectations.</p>
             </div>
         </div>
     </div>
