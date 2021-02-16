@@ -43,6 +43,29 @@
                     </li>
                     <li><p>Help the students to understand that while not required to implement into project 2, the readings for the remainder of the semester can greatly enhance the usability of their web applications</p></li>
                 </ul>
+                <h3>Pagination</h3>
+                <p>What is pagination?</p>
+                <p>Let's think about the following data: </p>
+                <img src="lesson08_01.jpg" alt="" class="img-tutorial">
+                <p>When paginating data, you can have the server drive it or the client. When decided how to do this, here are some things to consider: </p>
+                <ul>
+                    <li><p>How complex is the data? The more complex the data is or more connections it has to other tables in a database, the slower retrieving the data from the database will be. </p></li>
+                    <li><p>How large is the dataset? A larger dataset means more data is being sent to the client.</p></li>
+                    <li><p>How is the main audience going to interact with the data?</p></li>
+                    <li><p>How often will they be searching and sorting? For someone who is interacting with the data frequently, the more the Client has to request the data from the server.</p></li>
+                </ul>
+                <p>Summing everything up...</p>
+                <ul>
+                    <li><p>If the data is simple and easily managed - paginate on the client.</p></li>
+                    <li><p>If the data is complex, large, or has the potential to become so in the near future - take the time to set up server-side pagination</p></li>
+                </ul>
+                <h4>Client-side Pagination Example</h4>
+                <img src="lesson08_02.jpg" alt="" class="img-tutorial">
+                <h4>Server-side Pagination Example</h4>
+                <img src="lesson08_03.jpg" alt="" class="img-tutorial">
+                <h4>Server-side Pagination Example Mongoose Implementation</h4>
+                <img src="lesson08_04.jpg" alt="" class="img-tutorial">
+
                 <h3>Project 2</h3>
                 <ul>
                     <li><p>Students should begin building their project</p></li>
