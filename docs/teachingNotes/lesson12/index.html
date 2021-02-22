@@ -17,7 +17,7 @@
 <body>
     <div id="includedHeader"></div>
     <div class="teachingContainer">
-        <h1>Lesson # - Lesson Title</h1>
+        <h1>Lesson 12 Instructor Guide</h1>
         <br>
         <div class="teachingRow">
             <div class="teachingColumn adminNotes">
@@ -29,14 +29,54 @@
             <div class="teachingColumn">
                 <h2>Teaching Notes</h2>
                 <p>Important topics to teach your students this week. These topics will come primarily from the reading and should contain information that will help them with their assignments. </p>
+                <h3>Goals for the week</h3>
                 <ul>
-                    <li><p></p></li>
+                    <li><p>Encourage the students to continue with their project plan.</p></li>
+                    <li><p>Students should be finishing up their projects. The final week
+                        should be reserved for cleanup of the already implemented code.
+                    </p></li>
+                    <li><p>Teach the following concepts</p>
+                        <ol>
+                            <li>App deployment</li>
+                            <li>Testing Node.js Applications</li>
+                            <li>Node.js as a build Tool & Using npm</li>
+                            <li>Socket.io</li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>Socket.io</h3>
+                <p>What is Socket.io?</p>
+                <p>The following example shows what a Socket.io can accomplish:</p>
+                <img src="./socket-chat.gif"  class="img-tutorial" alt="Socket.io message example">
+                <p>In this example we see a two key characteristics of what socket.io can accomplish:</p>
+                <ul>
+                    <li><p>Real time event based communication</p></li>
+                    <li><p>Bi-directional communication between browser and server</p></li>
+                </ul>
+                <img src="./bidirectional-communication.png"  class="img-tutorial" alt="Bi-directional communication between browser and server">
+                <p>Socket.io allows for the browser/client to be updated without a refresh due to it's communication with the server </p>
+                <ol>
+                    <li><p>The server listens for changes to the client</p></li>
+                    <li><p>Upon receiving a change it emits the event</p></li>
+                    <li><p>This updates all clients associated with the server</p></li>
+                </ol>
+                <p>In conclusion...</p>
+                <ul>
+                    <li><p>Socket.io allows for asyncronous communication</p></li>
+                    <li><p>Clients do not need to refresh to view changes from a seperate client (i.e messages sent in a messaging application)</p></li>
+                </ul>
+                <h3>Prove 12</h3>
+                <p>Overview:</p>
+                <ul>
+                    <li><p>Assure students understand socket.io and how it is implemented</p></li>
+                    <li><p>Students will create a basic chat room application using socket.io</p></li>
+                    <li><p>A template will be available to the students as a staring off point</p></li>
                 </ul>
             </div>
             <div class="teachingColumn">
                 <h2>Instructor Preparation</h2>
-                <p>This week is all about...</p>
-                <p>Make sure students know...and are prepared for...</p>
+                <p>Assure students are actively working on their projects in accordance with their plans they created.</p>
+                <p>Encourage the students to maintain contact with the member of their team from WDD 330 to assure the team is on the same page.</p>
             </div>
         </div>
     </div>
