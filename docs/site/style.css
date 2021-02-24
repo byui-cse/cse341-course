@@ -261,8 +261,8 @@ ul li p:before {
 .tips iframe {
 	width:560px;
 	height:315px;
-	margin-left: auto; 
-	margin-right: auto; 
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
 }
 
@@ -509,4 +509,38 @@ li heading {
  }
  table.rubric tfoot input#points {
      width: 10%;
+ }
+
+ /* Image captions */
+ /*
+    div.caption
+        img
+        span.tr|br|tl|bl Caption Text
+ */
+ div.caption {
+     position: relative;
+     text-align: center;
+     color: lightgray;
+ }
+ div.caption a, div.caption a:hover {
+     color: lightgray;;
+ }
+ div.caption > span {
+     position: absolute;
+ }
+ div.caption > span.tr {
+     top: 4px;
+     right: 20px;
+ }
+ div.caption > span.br {
+     bottom: 4px;
+     right: 20px;
+ }
+ div.caption > span.tl {
+     top: 4px;
+     left: 20px;
+ }
+ div.caption > span.bl {
+     bottom: 4px;
+     left: 20px;
  }
