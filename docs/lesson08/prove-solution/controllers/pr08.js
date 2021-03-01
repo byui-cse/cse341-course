@@ -17,7 +17,7 @@ const renderIndex = (req, res, json) => {
     let stuff = {
         data: filteredData.slice(indexStart, indexEnd), // For JSON/Array and not Mongoose, .slice() works best.
         path: 'proveAssignments/03',
-        title: 'Week 3 Prove Assignment',
+        title: 'Lesson 3 Prove Assignment',
         searchedValue: searchedValue,
         page: page,
         numPages: Math.ceil(filteredData.length / ITEMS_PER_PAGE)

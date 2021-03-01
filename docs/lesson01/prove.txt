@@ -1,4 +1,4 @@
-After completing the assignment, be sure to push to Github. You do not have to worry about pushing to Heroku this week.
+After completing the assignment, be sure to push to Github. You do not have to worry about pushing to Heroku this lesson.
 Please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your source code repository (e.g., GitHub):

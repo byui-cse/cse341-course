@@ -4,7 +4,7 @@
  * Name: routes.js
  * For: Team Activity 01 Teacher's Solution
  * Description: This is part of the solution
- * example for the Team Activity of Week 01
+ * example for the Team Activity of Lesson 01
  * in CSE341. This is the file containing the
  * logic for handling requests to localhost:3000
  ************************************************/

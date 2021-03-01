@@ -23,7 +23,7 @@ g.courseMaterials = g.courseCode + ' - Course Materials';
 g.prepare         = "Prepare: Reading Material";
 g.teach           = "Teach: Team Activity";
 g.ponder          = "Prove: Assignment";
-g.reading         = "For your technical reading this week, you will complete the following sections of the course: ";
+g.reading         = "For your technical reading this lesson, you will complete the following sections of the course: ";
 g.reading2        = g.reading.slice(0,-2) + ". Now that you are working on your team project for the remainder of the semester, you will notice that not all of the readings will apply to your team project. However, to continue your professional development and to be prepared for your prove assignments, you should be familiar with these concepts.";
 g.teachTime       = "Please spend at least 1 hour on this assignment before reviewing the solution.";
 g.teachInstructor = "Instructor's Solution";
@@ -40,9 +40,9 @@ g.ponderSubmit =
     '<li><p>Download this assignment\'s <a href="prove.txt" target="_blank">submission form</a>, fill it out, and submit it to I-Learn.</p></li>' +
     '</ol>';
 g.project1req =
-    "Your assignment for this week will be 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>.";
+    "Your assignment for this lesson will be 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>.";
 g.project2req =
-    "Your assignment for this week will be 100% dedicated to your team project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2/prj2-requirements.html'>read here</a>.";
+    "Your assignment for this lesson will be 100% dedicated to your team project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2/prj2-requirements.html'>read here</a>.";
 
 // module numbers
 g.n01 = '01';
