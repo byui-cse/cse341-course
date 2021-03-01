@@ -7,36 +7,121 @@
     <link rel="stylesheet" type="text/css" href="../../site/style.css" />
     <link rel="stylesheet" type="text/css" href="../teachingStyle.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script> 
+    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script>
     <script>
         $(function(){
-            $("#includedHeader").load("../../site/header.html"); 
+            $("#includedHeader").load("../../site/header.html");
         });
     </script>
 </head>
 <body>
     <div id="includedHeader"></div>
     <div class="teachingContainer">
-        <h1>Lesson # - Lesson Title</h1>
+        <h1>Lesson 11 - Async Await, Websockets, GraphQL</h1>
         <br>
         <div class="teachingRow">
             <div class="teachingColumn adminNotes">
                 <h2>Administrative Notes</h2>
                 <ul>
                     <li><p>Post an announcement for your students this week in I-learn.</p></li>
+                    <li><p>Ensure that communication in their teams is good as they plan out their projects for the remainder of the semester.</p></li>
                 </ul>
             </div>
             <div class="teachingColumn">
                 <h2>Teaching Notes</h2>
                 <p>Important topics to teach your students this week. These topics will come primarily from the reading and should contain information that will help them with their assignments. </p>
+                <h3>Goals for this week</h3>
                 <ul>
-                    <li><p></p></li>
+                    <li><p>Encourage students to continue with their project plan</p></li>
+                    <li>
+                        <p>Teach the following concepts</p>
+                        <ol>
+                            <li>Async and Await</li>
+                            <li>Websockets</li>
+                            <li>GraphQL</li>
+                        </ol>
+                    </li>
+                    <li><p>Help the students to understand that while not required to implement into project 2, the readings for the remainder of the semester can greatly enhance the usability of their web applications</p></li>
                 </ul>
+                <h3>Websockets</h3>
+                <p>Websockets allow for bi-directional communication between the client and the server. The client can emit events to the server, and the server can emit events to one or more clients. This allows for real-time communication between clients without needing to reload the page.</p>
+                <div class="caption">
+                    <img src="lesson11_01.png" alt="" class="img-tutorial">
+                    <span class="tr"><a href="https://pro.academind.com/courses/767386/lectures/13902645" target="_blank">Source</a></span>
+                </div>
+                <h4>Socket.io</h4>
+                <p><a href="https://socket.io" target="_blank">Socket.io</a> is a package that makes it easy to work with websockets in an Express.js app.</p>
+                <ul>
+                    <li>
+                        <p>Socket.io needs to be used on both the frontend and the backend</p>
+                        <ul>
+                            <li>
+                                <p>Backend: <code>npm install socket.io</code></p>
+                            </li>
+                            <li>
+                                <p>Frontend: <code>npm install socket.io-client</code></p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><p>Socket.io uses your existing Express.js server to handle requests</p></li>
+                </ul>
+                <p>Here's a simple example of how to set up socket.io in an Express app. You can find a more complete example at <a href="https://socket.io/get-started/chat" target="_blank">https://socket.io/get-started/chat</a>.</p>
+                <h5>Server-Side Example</h5>
+                <div class="caption">
+                    <img src="lesson11_02.png" alt="" class="img-tutorial">
+                    <span class="tr">app.js</span>
+                </div>
+                <h5>Client-Side Example</h5>
+                <div class="caption">
+                    <img src="lesson11_03.png" alt="" class="img-tutorial">
+                    <span class="tr">index.html</span>
+                </div>
+                <h3>GraphQL</h3>
+                <p><a href="https://graphql.org/" target="_blank">GraphQL</a> is an alternative to RESTful services for an API. It provides a number of advantages compared to REST, including a rich query language that allows the client to specify what parts of the data the server should send in the response.</p>
+                <h4>Overview</h4>
+                <ul>
+                    <li><p>GraphQL uses a single endpoint for all requests: <code>POST /graphql</code></p></li>
+                    <li>
+                        <p>Create a mongoose-like schema that defines types, queries, and mutations</p>
+                        <ul>
+                            <li><p>Queries are for retrieving data, like a GET request in a RESTful API</p></li>
+                            <li><p>Mutations are for any changes made to data, like POST, PUT, PATCH, and DELETE requests in a RESTful API</p></li>
+                        </ul>
+                    </li>
+                    <li><p>Use GraphQL's query language in the request body to make requests on the frontend</p></li>
+                </ul>
+                <p>Here's a simple example of how to use GraphQL in an Express app:</p>
+                <h5>Server-Side Example</h5>
+                <p>Install GraphQL for Express with:</p>
+                <ul><li><p><code>npm install graphql express-graphql</code></p></li></ul>
+                <div class="caption">
+                    <img src="lesson11_04.png" alt="" class="img-tutorial">
+                    <span class="tr">app.js</span>
+                </div>
+                <div class="caption">
+                    <img src="lesson11_05.png" alt="" class="img-tutorial">
+                    <span class="tr">graphql/schema.js</span>
+                </div>
+                <div class="caption">
+                    <img src="lesson11_06.png" alt="" class="img-tutorial">
+                    <span class="tr">graphql/resolvers.js</span>
+                </div>
+                <h5>Client-Side Example</h5>
+                <div class="caption">
+                    <img src="lesson11_07.png" alt="" class="img-tutorial">
+                    <span class="tr">public/signup.js</span>
+                </div>
+                <!-- Still need to actually create the class activity -->
+                <h3>Class Activity</h3>
+                <p>To help students gain experience working with websockets, here is a class activity. The following zip file can be distributed to your students. It has tasks in it instructing them regarding what they should do. This can be done in a class setting as a group, in teams, or individually.</p>
+                <h4><a href="lesson11-start.zip">Lesson 11 Class Activity START zip to share with students</a></h4>
+                <p>For your reference, here is an example of a completed copy of the class activity:</p>
+                <h4><a href="lesson11-completed.zip">Lesson 11 Class Activity COMPLETED zip</a></h4>
             </div>
             <div class="teachingColumn">
                 <h2>Instructor Preparation</h2>
-                <p>This week is all about...</p>
-                <p>Make sure students know...and are prepared for...</p>
+                <p>This week covers a few different topics. While they might not be directly related to students' team projects, they're important to understand and are widely used in backend development.</p>
+                <p>The prove assignment for this week is about websockets and socket.io, so you might want to focus on that this week and make sure students understand how it works.</p>
             </div>
         </div>
     </div>
