@@ -1,53 +1,47 @@
-// A simple async GET request function
-const getData = async (url = '') => {
-    const response = await fetch(url, {
-        // Await the response.
-        method: 'GET'
-    })
-    return response.json() // Wrap in a promise using JSON formatting.
-}
-
-// A simple async POST request function
-const postData = async (url = '', data = {}) => {
-    const response = await fetch(url, {
-        // Await the response.
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data) // Data must be sent as a string
-    })
-    return response.json() // Wrap in a promise using JSON formatting.
-}
-
 const populateList = () => {
     const nameList = document.getElementById('nameList')
-    nameList.innerHTML = '' // Clear list first
 
-    const data = getData('/proveAssignments/10/fetchAll') // fetching from our own server
+    fetch('/proveAssignments/10/fetchAll')
+        .then(res => res.json())
+        .then(data => {
+            // Clear the list first
+            while (nameList.firstChild) nameList.firstChild.remove()
 
-    data.then(json => {
-        json.avengers.forEach(item => {
-            nameList.innerHTML += `<li>${item.name}</li>`
+            // Repopulate the list
+            for (const avenger of data.avengers) {
+                const li = document.createElement('li')
+                li.appendChild(document.createTextNode(avenger.name))
+                nameList.appendChild(li)
+            }
         })
-    })
+        .catch(err => {
+            console.error(err)
+        })
 }
 
 const submitName = () => {
     const newName = document.getElementById('newName').value // Grab the value of our new name
 
-    const data = postData('/proveAssignments/10/insertName', {
-        newName: newName
+    fetch('/proveAssignments/10/insertName', {
+        method: 'POST', // Send a POST request
+        headers: {
+            // Set the Content-Type, since our server expects JSON
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ newName })
     })
+        .then(res => {
+            // Clear the input
+            document.getElementById('newName').value = ''
 
-    data.then(response => {
-        console.log(response)
-        if (response.status == 200) {
-            populateList() // Repopulate the list
-        } else {
-            console.error(status) // Console log our status code
-        }
-    })
+            // Repopulate the list with our new name added
+            populateList()
+        })
+        .catch(err => {
+            // Clear the input
+            document.getElementById('newName').value = ''
+            console.error(err)
+        })
 }
 
 // Initialize the list
