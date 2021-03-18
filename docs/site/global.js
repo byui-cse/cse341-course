@@ -92,3 +92,7 @@ g.u13 = 'Lesson ' + g.n13 + ' - Wrap Up';
 // other repeated statements
 g.otherUnofficial =
     'This is an unofficial listing of the course content. Please consult I-Learn for the official list of materials, including quizzes and due-dates.';
+g.secondHalfProveMessage =
+    '<div class="tips">Special note:<p> While this prove assignment contains very valuable information, the concepts found in this prove are not required to be implemented into ' +
+    'the second project. These concepts are great stretch goals that can be added to the project and can help to reach 100%. This prove assignment can ' +
+    'be done in your groups or done individually.</p></div>';
