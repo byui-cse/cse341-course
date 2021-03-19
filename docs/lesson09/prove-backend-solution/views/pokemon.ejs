@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/pokemon.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <div class="row m-0 p-0 justify-content-center mt-3 mb-3">
+        <h1 style="color: white">Pokemon List:</h1>
+    </div>
+    <div class="row m-0 p-0 justify-content-center">
+        <% pokemonList.forEach( pokemon => { %>
+            <div class="col-5 m-0 p-0 pt-2 pb-2 pokemon"><h4><%=pokemon.name.toUpperCase()%></h4></div>
+        <% }); %>
+    </div>
+    
+    <div class="row justify-content-center m-0 p-0">
+        <% if(page != 1) { %>
+            <a href="http://localhost:5000/pokemon/1"><button class="btn btn-secondary m-2">First</button></a>
+            <a href="http://localhost:5000/pokemon/<%=parseInt(page) - 1%>"><button class="btn btn-secondary m-2">Previous</button></a>
+        <% } %>
+        
+        <button class="btn btn-primary m-2"><%=page%></button>
+        
+        <% if(page != 112) { %>
+            <a href="http://localhost:5000/pokemon/<%=parseInt(page) + 1%>"><button class="btn btn-secondary m-2">Next</button></a>
+            <a href="http://localhost:5000/pokemon/112"><button class="btn btn-secondary m-2">Last</button></a>
+        <% } %>
+    </div>
+</body>
+
+</html>

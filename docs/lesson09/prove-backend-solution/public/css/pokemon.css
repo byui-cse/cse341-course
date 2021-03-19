@@ -1,0 +1,10 @@
+body {
+    background-color: #343a40;
+}
+
+.pokemon {
+    text-align: center;
+    border: solid 2px #343a40;
+    background-color: #868e96;
+    color: white;
+}

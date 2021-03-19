@@ -95,4 +95,4 @@ g.otherUnofficial =
 g.secondHalfProveMessage =
     '<div class="tips">Special note:<p> While this prove assignment contains very valuable information, the concepts found in this prove are not required to be implemented into ' +
     'the second project. These concepts are great stretch goals that can be added to the project and can help to reach 100%. This prove assignment can ' +
-    'be done in your groups or done individually.</p></div>';
+    'be done in your groups or done individually. <b>Don\'t spend over an hour working on this on your own. Please use the teacher solution after an hour to finish the assignment.</b></p></div>';
