@@ -388,7 +388,13 @@ border-bottom: 1px solid #EEE;
 border-bottom: none;
 }
 
-
+.videoOut {
+	width:560px;
+	height:315px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 /* Instructor Tips */
 
 .tips {
