@@ -11,7 +11,7 @@ socket.on('update-list', () => {
 const populateList = () => {
     const nameList = document.getElementById('nameList')
 
-    fetch('/proveAssignments/10/fetchAll')
+    fetch('/proveAssignments/11/fetchAll')
         .then(res => res.json())
         .then(data => {
             // Clear the list first
@@ -32,7 +32,7 @@ const populateList = () => {
 const submitName = () => {
     const newName = document.getElementById('newName').value // Grab the value of our new name
 
-    fetch('/proveAssignments/10/insertName', {
+    fetch('/proveAssignments/11/insertName', {
         method: 'POST', // Send a POST request
         headers: {
             // Set the Content-Type, since our server expects JSON
