@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../../site/rubric.js"></script>
-    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script> 
+    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script>
     <script>
         $(function(){
             $("#includedHeader").load("../../site/header.html");
@@ -66,64 +66,74 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Professional Look and Feel</td>
-                    <td>Shows creativity and excels above and beyond requirements</td>
-                    <td>Meets requirements</td>
-                    <td>Slightly deficient, but still mostly adequate</td>
-                    <td>Developing, but significantly deficient</td>
-                    <td>Some attempt was made</td>
-                    <td>No attempt was made</td>
-                    <td>15%</td>
+                    <td>Professional look and feel</td>
+                    <td>Styling is professional-looking and responsive, organization/navigation is good</td>
+                    <td>Site is styled well and navigation is organized</td>
+                    <td>Styling or organization/navigation slightly deficient</td>
+                    <td>Styling and organization/navigation slightly deficient</td>
+                    <td>Some styling was done</td>
+                    <td>No styling or navigation</td>
+                    <td>5%</td>
                 </tr>
                 <tr>
                     <td>Accomplishes a meaningful task/does something interesting</td>
-                    <td>Shows creativity and excels above and beyond requirements</td>
-                    <td>Meets requirements</td>
-                    <td>Slightly deficient, but still mostly adequate</td>
-                    <td>Developing, but significantly deficient</td>
-                    <td>Some attempt was made</td>
-                    <td>No attempt was made</td>
-                    <td>15%</td>
+                    <td>Application accomplishes an obvious task and provides a good user experience</td>
+                    <td>Application task is obvious and fulfilled</td>
+                    <td>Application task is clear, but not fulfilled well</td>
+                    <td>Application task is unclear</td>
+                    <td>Application accomplishes some task</td>
+                    <td>Application does not serve a specific purpose</td>
+                    <td>10%</td>
                 </tr>
                 <tr>
-                    <td>Demonstrates understanding of Node.js and Express principles</td>
-                    <td>Shows creativity and excels above and beyond requirements</td>
-                    <td>Meets requirements</td>
-                    <td>Slightly deficient, but still mostly adequate</td>
-                    <td>Developing, but significantly deficient</td>
-                    <td>Some attempt was made</td>
-                    <td>No attempt was made</td>
-                    <td>15%</td>
+                    <td>Demonstrates understanding of Node.js principles</td>
+                    <td>Dynamic routing and middleware are used well</td>
+                    <td>Routing and middleware are used appropriately</td>
+                    <td>Routes are difficult to follow/understand or middleware is not used appropriately</td>
+                    <td>Routes are difficult to follow/understand and middleware is not used appropriately</td>
+                    <td>All code runs in a single file, routing and middleware are not used</td>
+                    <td>Express is not used or the app doesn't run on Heroku</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Demonstrates web security principles</td>
+                    <td>App uses CORS, CSRF protection and route protection, and code does not contain sensitive data</td>
+                    <td>App uses CORS and route protection, and code does not contain sensitive data</td>
+                    <td>Code contains API keys, database credentials, or other sensitive data</td>
+                    <td>CORS or route protection is not used</td>
+                    <td>Passwords are hashed properly</td>
+                    <td>No attempt to make the app secure</td>
+                    <td>10%</td>
                 </tr>
                 <tr>
                     <td>Demonstrates mastery of Client-side and Server-side communication</td>
-                    <td>Shows creativity and excels above and beyond requirements</td>
-                    <td>Meets requirements</td>
-                    <td>Slightly deficient, but still mostly adequate</td>
-                    <td>Developing, but significantly deficient</td>
-                    <td>Some attempt was made</td>
-                    <td>No attempt was made</td>
+                    <td>App uses client-side JavaScript and asynchronous request, or socket.io is used</td>
+                    <td>Code is organized well following a pattern like MVC, and is easy to understand</td>
+                    <td>Code is mostly organized well and is easy to understand</td>
+                    <td>Code is unorganized or difficult to read/understand</td>
+                    <td>Code is organized in some way, but is difficult to follow</td>
+                    <td>Code is not organized or readable</td>
                     <td>15%</td>
                 </tr>
                 <tr>
                     <td>Successfully Incorporates Data Layer</td>
-                    <td>Shows creativity and excels above and beyond requirements</td>
-                    <td>Meets requirements</td>
-                    <td>Slightly deficient, but still mostly adequate</td>
-                    <td>Developing, but significantly deficient</td>
-                    <td>Some attempt was made</td>
-                    <td>No attempt was made</td>
-                    <td>15%</td>
+                    <td>A database and an external API are used for CRUD operations</td>
+                    <td>A database or an external API is used for CRUD operations</td>
+                    <td>3/4 CRUD operations are working</td>
+                    <td>2/4 CRUD operations are working</td>
+                    <td>1/4 CRUD operations is working</td>
+                    <td>The app has no data layer</td>
+                    <td>20%</td>
                 </tr>
                 <tr>
                     <td>Successfully Incorporates Login/Authentication System</td>
-                    <td>Shows creativity and excels above and beyond requirements</td>
-                    <td>Meets requirements</td>
-                    <td>Slightly deficient, but still mostly adequate</td>
-                    <td>Developing, but significantly deficient</td>
-                    <td>Some attempt was made</td>
-                    <td>No attempt was made</td>
-                    <td>15%</td>
+                    <td>Extra authentication functionality (password resets, permissions, etc.) is added</td>
+                    <td>Users can create accounts and log in, and user input is validated on the server-side</td>
+                    <td>Users can create accounts and log in, but no validation is done</td>
+                    <td>Either sign-ups or log-ins aren't functioning</td>
+                    <td>User authentication isn't working properly</td>
+                    <td>No attempt at user authentication</td>
+                    <td>20%</td>
                 </tr>
                 <tr>
                     <td>Overall Project</td>
