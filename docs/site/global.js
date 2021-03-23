@@ -6,7 +6,7 @@
     var today = new Date();
     var url = "https://byui-cse.github.io/cse341-course/site/";
     link.href = url + "fav.png?";
-    if(today.getDay() == 6 || today.getDay() == 0) link.href = url + "happy-fav.png?";   
+    if(today.getDay() == 6 || today.getDay() == 0) link.href = url + "happy-fav.png?";
     top.document.getElementsByTagName("head")[0].appendChild(link);
 // }
 
@@ -42,7 +42,7 @@ g.ponderSubmit =
 g.project1req =
     "Your assignment for this lesson will be 100% dedicated to your personal E-commerce project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>.";
 g.project2req =
-    "Your assignment for this lesson will be 100% dedicated to your team project for this portion of the semester. To review project requirements please <a href='../projectStuff/prj2/prj2-requirements.html'>read here</a>.";
+    "Your assignment for this lesson will be 100% dedicated to your team project for this portion of the semester. To review project requirements please read here (<a href='../projectStuff/prj2/prj2-requirements.html'>full-stack</a>) (<a href='../projectStuff/prj2/wdd330_cse341/prj2-requirements.html'>backend</a>).";
 
 // module numbers
 g.n01 = '01';
