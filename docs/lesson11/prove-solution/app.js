@@ -9,11 +9,9 @@ const io = require('socket.io')(server)
 
 io.on('connection', socket => {
     console.log('Client connected')
-    socket.on('new-name', update => {
-        if (update) {
-            socket.broadcast.emit('update-list')
-        } else {
-            console.log('Looks like something went wrong')
-        }
+
+    socket.on('new-name', () => {
+        // Someone added a name! Tell everyone else to update the list.
+        socket.broadcast.emit('update-list')
     })
 })
