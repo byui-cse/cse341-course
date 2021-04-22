@@ -22,19 +22,23 @@
     <article>
         <h1><span id="g_ponder"></span></h1>
         <h2>Overview</h2>
-        <p>After completing the assigned reading for the lesson and your team activity, you are prepared to complete your personal assignment. Your assignment will be done in the repo you downloaded as part of your team activity and will consist of creating a form, sending data to the server, then displaying that data in a different part of your webpage. This will help you learn how to work with git, data, pages, and client-server communication.</p>
+        <p>After completing the assigned reading for the lesson and your team activity, you are prepared to complete your personal assignment. Your assignment will consist of completing the assignment found in <a href="https://pro.academind.com/courses/767386/lectures/13901622">Understanding the Basics</a> from the tutorial videos. You will then publish your completed code to a personal GitHub repository. This will help you learn how to work with git, data, pages, and client-server communication.</p>
         <h2>Instructions</h2>
-        <p>Your first assignment will be to create a server that handles at least two different endpoints.</p>
+        <p>Complete the <a href="https://pro.academind.com/courses/767386/lectures/13901635">Assignment - Basics (Problem)</a> from the Academind tutorial by doing the following:</p>
         <ol>
-            <li><p>Create <code>prove01.js</code> (name is up to you) file in the routes folder. (Folder already exists from download in team activity)    </p></li>
-            <li><p>Create a route to your <code>prove01.js</code> file in your index.js file         </p></li>
-            <li><p>In your views folder create a two <code>.ejs</code> files (Or pug/handlebars if you chose to use either of those)</p>
+            <li><p>In the main directory of the project template you downloaded during the team activity, create a new file called prove01.js and 
+                spin up a Node.js-driven server running on port 3000. (Just ignore the additional folders and files in the project for now.)</p></li>
+            <li><p>Create another file called prove01-routes.js that can handle two routes: "/" and "/users"</p>
                 <ul>
-                    <li><p>One view with a simple form with two inputs</p></li>
-                    <li><p>Another view to display the input back to the user</p></li>
+                    <li><p>Return a greeting message on the "/" route</p></li>
+                    <li><p>Return a list of dummy users on the "/users" route</p></li>
                 </ul>
             </li>
-            <li><p>Parse the users input on the server and send the input to second view    </p></li>
+            <li><p>In the "package.json" file included with the project, add a new startup configuration called "prove01" to the "scripts" section that will run your prove01.js file using nodemon. (Hint: Add "prove01": "nodemon prove01.js" under "scripts")</p>
+            <p>You'll need to start your project by typing <kbd>npm run prove01</kbd> in the terminal.</p></li>
+            <li><p>On the "/" page, add a &lt;form&gt; with a "username" &lt;input&gt; that is submitted using a POST request to "/create-user" when the submit button is clicked</p></li>
+            <li><p>Add the "/create-user" route to routes.js and parse the incoming data from the form submission, then display it in the console.</p>
+            <p>In order to get 100%, in addition to displaying the submitted data in the console, update the list of users on the /users page.</p></li>
             <li><p>Be sure to use nodemon                                               </p></li>
             <li><p>Push your code up to Github. </p></li>
             <div class="tips">
@@ -69,24 +73,14 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Express</td>
-                    <td>Express and EJS are used, and pages look professional</td>
-                    <td>Express and EJS are used correctly</td>
-                    <td>Express and EJS were used, but there are some errors</td>
-                    <td>Express was used without EJS</td>
-                    <td>Some attempt was made to use Express</td>
-                    <td>Express and EJS not used</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>POST/GET Routes</td>
-                    <td>User can submit additional information (more than two)</td>
-                    <td>Two inputs are sent via POST or GET</td>
-                    <td>Only one input is sent via POST or GET</td>
-                    <td>Form data is sent but not displayed</td>
-                    <td>Attempt was made to send data via POST or GET</td>
-                    <td>No POST or GET route or form</td>
-                    <td>50%</td>
+                    <td>Routes</td>
+                    <td>User list on /users page is updated using information submitted in the form</td>
+                    <td>Three routes are handled and names submitted in the form are displayed in the console.</td>
+                    <td>Two routes are handled</td>
+                    <td>One route is handled</td>
+                    <td>Some attempt was made handle routes</td>
+                    <td>No routes or form</td>
+                    <td>100%</td>
                 </tr>
             </tbody>
         </table>
