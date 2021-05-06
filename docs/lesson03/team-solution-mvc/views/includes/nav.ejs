@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><a href="/" style="padding: 0 2rem; margin: 0"><img class="logo" src="/images/BYUI-logo.png" alt="BYU Idaho logo"></a></li>
+      <li class="<%= path === '/' ? 'active' : ''%>">
+        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Team Activities <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="<%= path === '/ta01' ? 'active' : ''%>"><a href="/ta01">TA01</a></li>
+            <li class="<%= path === '/ta02' ? 'active' : ''%>"><a href="/ta02">TA02</a></li>
+            <li class="<%= path === '/ta03' ? 'active' : ''%>"><a href="/ta03">TA03</a></li>
+            <li class="<%= path === '/ta04' ? 'active' : ''%>"><a href="/ta04">TA04</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Prove Assignments <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="<%= path === '/prove02' ? 'active' : ''%>"><a href="/prove02">Prove 02</a></li>
+          </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
