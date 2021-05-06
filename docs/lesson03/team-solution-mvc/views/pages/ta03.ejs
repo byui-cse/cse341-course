@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../includes/header.ejs %>
+  <link rel="stylesheet" href="/stylesheets/ta03.css">
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1><%= title %></h1>
+    </div>
+  </div>
+  <div class="container">
+    <% if (products.length > 0) { %>
+    <h2>Product Listing</h2>
+    <form action="/ta03/search" method="get">
+      <input type="text" name="query" id="query">
+      <button type="submit">Search</button>
+    </form>
+    <div class="product-container">
+      <% for (product of products) { %>
+      <div class="product">
+        <div>
+          <h3><%= product.name %> - $<%= product.price %></h3>
+          <div class="product-image">
+            <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
+          </div>
+        </div>
+        <div>
+          <p><%= product.description %></p>
+          <p>Tags: <%= product.tags.join(", ") %></p>
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <% } else { %>
+    <h2>No Products Found!</h2>
+    <% } %>
+  </div>
+
+
+</body>
+
+</html>
