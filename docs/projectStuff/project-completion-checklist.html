@@ -24,24 +24,35 @@
         <h2>How do I know when my app is done?</h2>
         <p>While there are always ways to add on to a project that we have worked on, there are
             also things that should always be done before our apps are published for wide-spread
-            use. Here are some ideas to help you think about what you should be checking as you prepare to publish an app.</p>
-        <h3>Performance: Pass Google Page Speed Insights Test</h3>
-        <ul>
+            use. Here are some ideas to help you think about what you should be checking as you
+            prepare to publish an app.</p>
+        <h3>Performance</h3>
+        <ol>
             <li>
-                <p>Plug the site into Google PageSpeed Insights to see your results</p>
-            </li>
-            <li>
-                <p>If the site requires login / credentials, login to the site first and check
-                    the performance with <a
+                <p>Pass Google Page Speed Insights Test</p>
+                <p>Plug the site into Google PageSpeed Insights to see your results. If the site
+                    requires login / credentials, login to the site first and
+                    check the performance with <a
                         href="https://chrome.google.com/webstore/detail/pagespeed-insights-with-p/lanlbpjbalfkflkhegagflkgcfklnbnh"
                         target="_blank">Chrome Page Speed Insights Extension</a></p>
+                <img src="page-speed-insights.jpg" alt="" class="img-tutorial">
+
             </li>
-            <img src="page-speed-insights.jpg" alt="" class="img-tutorial">
+            </ul>
+            </li>
+            <li>
+                <p>Use the Lighthouse Audit tool built into Chrome Developer Tools. This tool is
+                    similar to PageSpeed Insights, but includes Accessibility and SEO tests in
+                    addition to Performance. You can also run Lighthouse after logging into your
+                    site.</p>
+                <img src="lighthouse-audit.png" alt="" class="img-tutorial">
+            </li>
             <li>
                 <p>Another useful tool is <a href="https://gtmetrix.com/" target="_blank">Pass
                         GTMetrix Analysis</a></p>
             </li>
-        </ul>
+        </ol>
+
         <h3>Security</h3>
         <ul>
             <li>
