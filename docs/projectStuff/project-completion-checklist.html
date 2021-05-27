@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../site/rubric.js"></script>
+    <script type="text/javascript"
+        src="https://byui-cse.github.io/cse341-course/site/global.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Project Completion Checklist</h1>
+        <h2>How do I know when my app is done?</h2>
+        <p>While there are always ways to add on to a project that we have worked on, there are
+            also things that should always be done before our apps are published for wide-spread
+            use. Here are some ideas to help you think about what you should be checking as you
+            prepare to publish an app.</p>
+        <h3>Performance</h3>
+        <ol>
+            <li>
+                <p>Pass Google Page Speed Insights Test</p>
+                <p>Plug the site into Google PageSpeed Insights to see your results. If the site
+                    requires login / credentials, login to the site first and
+                    check the performance with <a
+                        href="https://chrome.google.com/webstore/detail/pagespeed-insights-with-p/lanlbpjbalfkflkhegagflkgcfklnbnh"
+                        target="_blank">Chrome Page Speed Insights Extension</a></p>
+                <img src="page-speed-insights.jpg" alt="" class="img-tutorial">
+
+            </li>
+            </ul>
+            </li>
+            <li>
+                <p>Use the Lighthouse Audit tool built into Chrome Developer Tools. This tool is
+                    similar to PageSpeed Insights, but includes Accessibility and SEO tests in
+                    addition to Performance. You can also run Lighthouse after logging into your
+                    site.</p>
+                <img src="lighthouse-audit.png" alt="" class="img-tutorial">
+            </li>
+            <li>
+                <p>Another useful tool is <a href="https://gtmetrix.com/" target="_blank">Pass
+                        GTMetrix Analysis</a></p>
+            </li>
+        </ol>
+
+        <h3>Security</h3>
+        <ul>
+            <li>
+                <p>Use HTTPS only. HTTP should always redirect to HTTPS.</p>
+            </li>
+            <li>
+                <p>Qualys SSL Server Test - Aim for a score of A and above</p>
+            </li>
+            <li>
+                <p>Consider these free / open source scanning tools (among others): Qualys,
+                    OpenVAS, Nmap, OSSEC, Security Onion, OpenSSH</p>
+            </li>
+            <li>
+                <p>All inputs are validated on the server before processing</p>
+            </li>
+            <li>
+                <p>All input data is encoded before sending the response to the browser</p>
+            </li>
+            <li>
+                <p>Web server directory listing has been disabled</p>
+            </li>
+            <li>
+                <p>CSRF tokens are included in all requests that change state</p>
+            </li>
+            <li>
+                <p>Errors shown to users or on the client do not contain stack traces, source
+                    code, full paths or any other internal data.</p>
+            </li>
+            <li>
+                <p>Content type of uploaded files is always verified before uploading.</p>
+            </li>
+            <li>
+                <p>If XML files are handled, external entity is disabled and DTD processing
+                    enabled</p>
+            </li>
+            <li>
+                <p>HTTPS is used and Strict-Transport-Security is sent.</p>
+            </li>
+            <li>
+                <p>TLS 1.2 or higher required</p>
+            </li>
+            <li>
+                <p>Session cookies set Secure, HttpOnly and SameSite-lax attributes</p>
+            </li>
+            <li>
+                <p>All other cookies set Secure and if possible, HttpOnly also</p>
+            </li>
+            <li>
+                <p>All 3rd-party libraries that the app uses are updated to the latest version
+                </p>
+            </li>
+        </ul>
+        <h5>Authentication Security</h5>
+        <ul>
+            <li>
+                <p>Passwords are stored using strong cryptography (PBKDF2, HMAC-SHA256, bcrypt)
+                </p>
+            </li>
+            <li>
+                <p>The password is required to change any account information</p>
+            </li>
+            <li>
+                <p>Passwords require at least 12 characters and reject at least the most common
+                    1000 passwords</p>
+            </li>
+            <li>
+                <p>Multi-factor authentication is supported</p>
+            </li>
+            <li>
+                <p>The number of attempts to endpoints such as login, password reset, and 2FA
+                    validation is restricted and monitored. </p>
+            </li>
+            <li>
+                <p>Language libraries are used to create and validate JWT tokens</p>
+            </li>
+            <li>
+                <p>When a user logs out (or when a session expires), the session on the server
+                    is destroyed and JWT tokens associated with it are invalidated</p>
+            </li>
+            <li>
+                <p>The password reset token is destroyed after use or after expiration.</p>
+            </li>
+        </ul>
+        <h3>Broken Links</h3>
+        <ul>
+            <li>
+                <p>Check that all pages get no broken links on <a href="https://monkeytest.it/"
+                        target="_blank">Monkeytest</a></p>
+            </li>
+            <li>
+                <p>Check that all pages get no invalid links on <a
+                        href="https://www.screamingfrog.co.uk/" target="_blank">Screaming
+                        Frog</a></p>
+            </li>
+        </ul>
+        <h3>Compatibility</h3>
+        <ul>
+            <li>
+                <p>Check compatibility with major desktop browsers and their versions (Chrome,
+                    Firefox, Safari, Opera, Internet Explorer)</p>
+            </li>
+            <li>
+                <p>Check mobile browsers too!</p>
+            </li>
+            <li>
+                <p>Also, check how Safari (iOS) and Chrome (Android) perform on various screen
+                    sizes.</p>
+            </li>
+        </ul>
+        <h3>SEO / Social</h3>
+        <ul>
+            <li>
+                <p>Is it fetched correctly by Google? (Check with <a
+                        href="https://www.google.com/webmasters/" target="_blank">Google
+                        Webmaster Tools</a>)</p>
+            </li>
+            <li>
+                <p>Is it in the first page of Google Search Results Pages (SERPs)?</p>
+            </li>
+            <li>
+                <p>Does it contain correct OpenGraph tags for social sharing? Test by dropping
+                    the link into Facebook / Twitter / Pinterest to see what image, title, and
+                    description is generated</p>
+            </li>
+            <li>
+                <p>Does the site or app have the correct Title / Meta Description Tag?</p>
+            </li>
+            <li>
+                <p>Does it have a Favicon?</p>
+            </li>
+        </ul>
+        <h3>Nice to Haves</h3>
+        <ul>
+            <li>
+                <p>Validate HTML/CSS with <a href="https://validator.w3.org"
+                        target="_blank">https://validator.w3.org</a></p>
+            </li>
+            <li>
+                <p>Check basic Web Accessibility with WAVE or with tools at <a
+                        href="https://www.w3.org/WAI/ER/tools/"
+                        target="_blank">https://www.w3.org/WAI/ER/tools/</a></p>
+            </li>
+            <li>
+                <p>Are the 404 pages informative?</p>
+            </li>
+            <li>
+                <p>Does your site need a <a href="https://github.com/cognitom/paper-css"
+                        target="_blank">print stylesheet</a>?</p>
+            </li>
+            <li>
+                <p>Make sure your JavaScript is error free when your page loads (check from
+                    Google Chrome’s Developer Tools)</p>
+            </li>
+            <li>
+                <p>Are the URLs reasonable/descriptive? Reasonable URLs helps visitors and
+                    search engines understand your content.</p>
+            </li>
+            <li>
+                <p>Does Canonical domain work? (www.abc.com vs abc.com, and so on)</p>
+            </li>
+        </ul>
+    </article>
+</body>
+
+</html>
