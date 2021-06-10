@@ -22,21 +22,30 @@
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
+        <h2>Overview</h2>
+        <p>This assignment is the start of your first semester project, your E-Commerce Application. Your prove assignments for lessons 2-6 will be primarily derived from the Academind Videos. This is intentional and is designed to help you learn how to develop a well-structured application. Lessons 7-13, you will prove your understanding by building a project of your own design.</p> 
+        <p>Your assignment for this lesson will follow the Academind videos very closely. You will build an express app that handles several routes. If you just follow along with the videos successfully, then you'll be eligible for 93% on this project. Below, there are some ideas for how you could go above and beyond in order to receive 100%.</p>
+
         <h2>Assignment</h2>
-        <p>Your assignment for this lesson will be to build an express app that handles two routes.</p>
+        <p>Your tasks are as follows:</p>
         <ol>
-            <li><p>Use GET to display a page with inputs for a user to input a book and summary</p></li>
-            <li><p>Using a form and POST submit the inputs to a display page that looks nice and shows the title and summary 
-                back to the user (use template engines for this (Use EJS, because this is what we are going to 
-                continue to use for the rest of the semester)</p></li>
-            <li><p>While not required, a way to go above and beyond to reach full credit would be to save multiple
-                user entries. This would entail using a JSON file <b>or</b> a local variable containing book titles and summaries.</p></li>
+            <li><p>Use GET to display a page with all books. (When this page first loads, no products will be present).</p></li>
+            <li><p>Include a link to another page called Add Product. This page should be loaded using GET as well. Include a form on this add product page that will submit a POST request when submitted. This form should include at least the title of the new book. When the form is submitted,
+                add the new book to the array of products and go to the original page which shows all products.</p></li>
+        </ol>   
+        <h2>Stretch Challenges</h2> 
+        <ul>
+            <li><p>Allow user save multiple entries (for example: title, price, description, ratings, etc.).</p></li>
+            <li><p>Allow a way for the user to delete a product.</p></li>
+            <li><p>Anything else you can think of to make this app more productive. Amazon has implemented a lot of good ideas. :)</p></li>
+        </ul>
+        <h2>Submission</h2>
+        <ol>
             <li><p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p></li>
-            <li><p>Push code to Heroku</p></li>
+            <li><p>Push code to Heroku (Seeing that this is the start of your E-Commerce App, perhaps you'd like to make a new git repository for it, this is up to you). </p></li>
             <div class="tips">
-                <p>Getting Heroku set up with a project can be difficult at first. If you are having issues, these videos may help.</p>
+                <p>Getting Heroku set up with a project can be difficult at first. If you are having issues, this video may help.</p>
                 <iframe src="https://www.youtube.com/embed/C01PyCGjnEs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/MxfxiR8TVNU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </ol>
         <h2>Rubric</h2>
