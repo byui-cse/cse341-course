@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,51 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-            document.title                                         = g.courseMaterials;
+        window.onload = function () { // load global variables
+            document.title = g.courseMaterials;
             document.getElementById('g_otherUnofficial').innerHTML = g.otherUnofficial;
-            document.getElementById('g_u07').innerHTML             = g.u07;
-            document.getElementById('g_prepare').innerHTML         = g.prepare;
-            document.getElementById('g_teach').innerHTML           = g.teach;
-            document.getElementById('g_ponder').innerHTML          = g.ponder;
+            document.getElementById('g_u07').innerHTML = g.u07;
+            document.getElementById('g_prepare').innerHTML = g.prepare;
+            document.getElementById('g_teach').innerHTML = g.teach;
+            document.getElementById('g_ponder').innerHTML = g.ponder;
         };
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
-        <h1 id="g_u07">                                        </h1>
-        <h2>Summary                                            </h2>
+        <h1 id="g_u07"> </h1>
+        <h2>Summary </h2>
         <p>Welcome to Lesson Seven of CSE 341! This lesson you will begin work on your large team project. You have finished your e-commerce app. You may choose to continue to work on it and add functionality to it on the side, but we will not do anything else with it in class this semester. From here on out, you'll be working on your team projects, starting with a proposal this lesson.</p>
-        <p>Our goals for this lesson are as follows:             </p>
+        <p>Our goals for this lesson are as follows: </p>
         <ul>
-         <li><p>Learn more about project architecture     </p></li>
-         <li><p>Learn how to plan for a project           </p></li>
-         <li><p>Discuss risk analysis and mitigation plans</p></li>
+            <li>
+                <p>Learn more about project architecture </p>
+            </li>
+            <li>
+                <p>Learn how to plan for a project </p>
+            </li>
+            <li>
+                <p>Discuss risk analysis and mitigation plans</p>
+            </li>
         </ul>
         <h2>Assignments</h2>
         <ul>
-            <li><p><a href="prepare.html" id="g_prepare"></a></p></li>
-            <li><p><a href="teach.html"   id="g_teach">  </a></p></li>
+            <li>
+                <p><a href="prepare.html" id="g_prepare"></a></p>
+            </li>
+            <li>
+                <p><a href="teach.html" id="g_teach"> </a></p>
+            </li>
             <!-- <li><p><a href="prove.html"   id="g_ponder"> </a></p></li> -->
         </ul>
 
         <h6 id="g_otherUnofficial"></h6>
     </article>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -21,16 +23,34 @@
         <h2>Overview</h2>
         <p>Please be sure to complete all of these before continuing.</p>
         <ul>
-            <li><p><heading><a href="#vsCode">Visual Studio Code</a></heading> - Or another editor of your choice                           </p></li>
-            <li><p><heading><a href="#slack">Slack              </a></heading> - For all course communication and collaboration             </p></li>
-            <li><p><heading><a href="#github">Github            </a></heading> - To store and submit your code throughout the semester.     </p></li>
-            <li><p><heading><a href="#heroku">Heroku            </a></heading> - The cloud computing service that will host our applications</p></li>
+            <li>
+                <p>
+                    <heading><a href="#vsCode">Visual Studio Code</a></heading> - Or another editor of your choice
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#slack">Slack </a></heading> - For all course communication and collaboration
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#github">Github </a></heading> - To store and submit your code throughout the semester.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#heroku">Heroku </a></heading> - The cloud computing service that will host our applications
+                </p>
+            </li>
         </ul>
         <h2>Getting all set up</h2>
         <h3><a id="vsCode">Visual Studio Code</a></h3>
         <p>You may choose to download and install VS Code from <a href="https://code.visualstudio.com/download" target="_blank">here</a>. You may also watch the following media content that include helpful tips and tricks to help you work efficiently with this program. If you prefer, you may work with another text/code editor or IDE of your choice.</p>
         <ul>
-            <li><p><iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/5FE7L8syBm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></li>
+            <li>
+                <p><iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/5FE7L8syBm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            </li>
         </ul>
 
         <h3 id="slack">Slack</h3>
@@ -41,15 +61,26 @@
         <p>GitHub is essentially a big database of source code for people all around the world. You can make your source code public or private and configure many different permissions and settings. Each project has its own repository, or "repo". This repository will be a clone of the one on your local computer. Thus, you will have three copies of your code, 1) on your local computer, 2) at Heroku starting in lesson 2, and 3) at GitHub.</p>
         <h4>Install Git</h4>
         <ol>
-            <li><p>If you haven't before, you'll need to and install git. If you already have git installed, <a href="#newRepo">skip this step</a>.</p></li>
-            <li><p>Go to <a href="https://git-scm.com/downloads" target="_blank">git-scm.com</a> and choose the appropriate download for your operating system.</p></li>
-            <li><p>Run the installer with the default settings and wait for the installation to finish.</p></li>
+            <li>
+                <p>If you haven't before, you'll need to and install git. If you already have git installed, <a href="#newRepo">skip this step</a>.</p>
+            </li>
+            <li>
+                <p>Go to <a href="https://git-scm.com/downloads" target="_blank">git-scm.com</a> and choose the appropriate download for your operating system.</p>
+            </li>
+            <li>
+                <p>Run the installer with the default settings and wait for the installation to finish.</p>
+            </li>
             <img src="images/git.png" alt="Run the git installer" class="img-tutorial">
-            <li><p>Restart VS Code if you have it open, and open a new terminal window by selecting New Terminal inside of the Terminal menu.</p></li>
+            <li>
+                <p>Restart VS Code if you have it open, and open a new terminal window by selecting New Terminal inside of the Terminal menu.</p>
+            </li>
             <img class="img-tutorial" src="images/read3.png" alt="Terminal > New terminal">
-            <li><p>In your terminal, execute <code>git --version</code>.</p></li>
+            <li>
+                <p>In your terminal, execute <code>git --version</code>.</p>
+            </li>
             <img src="images/git2.png" alt="git --version" class="img-tutorial">
-            <li><p>If "git --version" produces an error, make sure git has been <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/" target="_blank">added to your PATH environment variable</a>, then restart VS Code.</p>
+            <li>
+                <p>If "git --version" produces an error, make sure git has been <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/" target="_blank">added to your PATH environment variable</a>, then restart VS Code.</p>
                 <div class="tips">
                     <p>Instructor Tip:</p>
                     <p>On Windows, Git is usually installed at <code>C:\Program Files\Git\cmd</code>. This is the location that should be added to your PATH.</p>
@@ -58,29 +89,50 @@
         </ol>
         <h4 id="newRepo">Create a new repository</h4>
         <ol>
-            <li><p>Go to <a href="http://github.com" target="_blank">GitHub.com</a> and sign up for a new account if you haven't already. If you already have an account, that is perfect, you can use it here.</p></li>
-            <li><p>After creating an account, return to GitHub.com and sign in. In the upper right corner of the screen you should see a "+" icon. Click this and select "New Repository".</p></li>
-            <li><p>Choose a name for your repository (likely cse341-node or something similar).</p></li>
-            <li><p>Leave the repo public and do not check the box for a readme. Leave .gitignore and license as "none".</p>
-                    <div class="tips">
+            <li>
+                <p>Go to <a href="http://github.com" target="_blank">GitHub.com</a> and sign up for a new account if you haven't already. If you already have an account, that is perfect, you can use it here.</p>
+            </li>
+            <li>
+                <p>After creating an account, return to GitHub.com and sign in. In the upper right corner of the screen you should see a "+" icon. Click this and select "New Repository".</p>
+            </li>
+            <li>
+                <p>Choose a name for your repository (likely cse341-node or something similar).</p>
+            </li>
+            <li>
+                <p>Leave the repo public and do not check the box for a readme. Leave .gitignore and license as "none".</p>
+                <div class="tips">
                     <p>Instructor Tip:</p>
                     <p>It's not technically a problem if you add these other files now, but it makes it a little more difficult when you go to push to GitHub for the first time, because you'll have conflicts that you'll have to resolve. So at this point, it's easiest to leave everything blank.</p>
                 </div>
             </li>
-            <li><p>Click the button to create the repository.</p></li>
-            <li><p>On the page that follows, you should see a URL for your new repository (e.g., "https://github.com/username/repositoryname.git"). Copy this URL for use later on.</p></li>
+            <li>
+                <p>Click the button to create the repository.</p>
+            </li>
+            <li>
+                <p>On the page that follows, you should see a URL for your new repository (e.g., "https://github.com/username/repositoryname.git"). Copy this URL for use later on.</p>
+            </li>
         </ol>
         <h4>Set up the repository on your computer</h4>
         <ol>
-            <li><p>Create a directory on the root of your computer called git. Inside of git, create a directory called cse341.</p></li>
+            <li>
+                <p>Create a directory on the root of your computer called git. Inside of git, create a directory called cse341.</p>
+            </li>
             <img class="img-tutorial" src="images/read.png" alt="C:/git/cse341">
-            <li><p>In VS Code, select Open Folder from the File menu. Open the /git/cse341 folder you just created.</p></li>
+            <li>
+                <p>In VS Code, select Open Folder from the File menu. Open the /git/cse341 folder you just created.</p>
+            </li>
             <img class="img-tutorial" src="images/read2.png" alt="File > Open Folder">
-            <li><p>Open a new terminal window by selecting New Terminal inside of the Terminal menu.</p></li>
+            <li>
+                <p>Open a new terminal window by selecting New Terminal inside of the Terminal menu.</p>
+            </li>
             <img class="img-tutorial" src="images/read3.png" alt="Terminal > New terminal">
-            <li><p>Return to GitHub, open your project repository, copy the link to clone it</p></li>
+            <li>
+                <p>Return to GitHub, open your project repository, copy the link to clone it</p>
+            </li>
             <img class="img-tutorial" src="images/read4.png" alt="">
-            <li><p>In your terminal, execute "git clone --your url--"</p></li>
+            <li>
+                <p>In your terminal, execute "git clone --your url--"</p>
+            </li>
             <img class="img-tutorial" src="images/read5.png" alt="git clone ...">
         </ol>
 
@@ -96,11 +148,20 @@
         <h3 id="heroku">Heroku</h3>
         <ol>
             <h4>Create a Cloud Account</h4>
-            <li><p>Go to <a href="http://heroku.com" target="_blank">Heroku</a> and click the "Sign up" link.      </p></li>
-            <li><p>Provide the request information and click on the "Create Free Account" button.                  </p></li>
-            <li><p>Respond to the email that you will sent to confirm your email address and activate your account.</p></li>
-            <li><p>You are now the proud owner of a cloud platform account!</p></li>
+            <li>
+                <p>Go to <a href="http://heroku.com" target="_blank">Heroku</a> and click the "Sign up" link. </p>
+            </li>
+            <li>
+                <p>Provide the request information and click on the "Create Free Account" button. </p>
+            </li>
+            <li>
+                <p>Respond to the email that you will sent to confirm your email address and activate your account.</p>
+            </li>
+            <li>
+                <p>You are now the proud owner of a cloud platform account!</p>
+            </li>
         </ol>
     </article>
 </body>
+
 </html>

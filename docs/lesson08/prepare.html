@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-        document.getElementById('g_prepare').innerHTML  = g.n08 + " " + g.prepare;
-        document.getElementById('g_reading2').innerHTML  = g.reading2;}
+        window.onload = function () { // load global variables
+            document.getElementById('g_prepare').innerHTML = g.n08 + " " + g.prepare;
+            document.getElementById('g_reading2').innerHTML = g.reading2;
+        }
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -25,14 +28,23 @@
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/vbnr4hRoaSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p id="g_reading2"></p>
         <ul>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13902236" target="_blank">File Upload & Download      </a><span class="time"><i>1hr 11min</i></span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13902260" target="_blank">Adding Pagination           </a><span class="time"><i>26min    </i></span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13902304" target="_blank">Understanding Async Requests</a><span class="time"><i>23min    </i></span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13902386" target="_blank">Adding Payments             </a><span class="time"><i>29min    </i></span></p></li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13902236" target="_blank">File Upload & Download </a><span class="time"><i>1hr 11min</i></span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13902260" target="_blank">Adding Pagination </a><span class="time"><i>26min </i></span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13902304" target="_blank">Understanding Async Requests</a><span class="time"><i>23min </i></span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13902386" target="_blank">Adding Payments </a><span class="time"><i>29min </i></span></p>
+            </li>
             <p class="disclaimer">Disclaimer: To successfully configure payments with Stripe you need to use legitimate information (valid bank info, ssn, etc.). If your app does not need a payment system configured, you do not need to feel pressured to configure this.</p>
             <br>
             <li>Total: Roughly 2.5 hours</li>
         </ul>
     </article>
 </body>
+
 </html>

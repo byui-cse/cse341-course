@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-            document.getElementById('g_prepare').innerHTML  = g.n01 + " " + g.prepare;
-            document.getElementById('g_reading').innerHTML  = g.reading;}
+        window.onload = function () { // load global variables
+            document.getElementById('g_prepare').innerHTML = g.n01 + " " + g.prepare;
+            document.getElementById('g_reading').innerHTML = g.reading;
+        }
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -32,10 +35,18 @@
         <p>Now you are ready to begin the online course. Please use the link provided by your instructor in the syllabus to purchase: <b>NodeJS - The Complete Guide</b> (the videos course that we will be using for our textbook).</p>
         <p id="g_reading"></p>
         <ul>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901566" target="_blank">Getting Started</a><span class="time">37min</span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901578" target="_blank">Optional: JavaScript - A Quick Refresher    </a><span class="time">50min    </span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901622" target="_blank">Understanding the Basics                    </a><span class="time">1hr 33min</span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901646" target="_blank">Improved Development Workflow and Debugging </a><span class="time">48min    </span></p></li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901566" target="_blank">Getting Started</a><span class="time">37min</span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901578" target="_blank">Optional: JavaScript - A Quick Refresher </a><span class="time">50min </span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901622" target="_blank">Understanding the Basics </a><span class="time">1hr 33min</span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901646" target="_blank">Improved Development Workflow and Debugging </a><span class="time">48min </span></p>
+            </li>
             <br>
             <li>Total: Roughly 3-4 hours</li>
         </ul>
@@ -43,4 +54,5 @@
         <img class="img-tutorial" src="images/teach2.png" alt="Numbers 6 and 7 of Section 1">
     </article>
 </body>
+
 </html>

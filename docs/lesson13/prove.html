@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,16 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML       = g.n13 + " Ponder: Reflection";
-            }
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n13 + " Ponder: Reflection";
+        }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -28,4 +30,5 @@
         <p>Please submit the quiz in I-Learn.</p>
     </article>
 </body>
+
 </html>

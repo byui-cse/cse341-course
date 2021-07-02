@@ -1,65 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
-    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script> 
-    <script>
-        $(function(){
-            $("#includedHeader").load("../site/header.html"); 
-        });
-    </script> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../site/style.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../site/global.js"></script>
+  <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script>
+  <script>
+    $(function () {
+      $("#includedHeader").load("../site/header.html");
+    });
+  </script>
 </head>
+
 <body>
-    <div id="includedHeader"></div>
-    <article>
-        <h1>Midterm Exam Study Guide</h1>
-        <h2>Overview</h2>
-        <p>The following are concepts that are covered in the first seven lessons of the course. You should be familiar and comfortable with these concepts prior to taking the midterm exam at the end of lesson 7.</p>
-        <h3>Topics that may be covered in the exam</h3>
-        <ul>   
-           <li><h4>Lesson 1</h4></li>
-             <li><p>NPM</p></li>
-             <li><p>Node basics</p></li>
-             <li><p>Node HTTP</p></li>
-             <li><p>Asynchronous programming</p></li>
-           <li><h4>Lesson 2</h4></li>
-             <li><p>Express</p></li>
-             <li><p>Middleware</p></li>
-             <li><p>EJS</p></li>
-           <li><h4>Lesson 3</h4></li>
-             <li><p>MVC</p></li>
-             <li><p>Express routing</p></li>
-             <li><p>Dynamic routes</p></li>
-           <li><h4>Lesson 4</h4></li>
-             <li><p>MongoDB/MongoClient</p></li>
-             <li><p>Relations in MongoDB collection</p></li>
-             <li><p>MongoDB structure</p></li>
-             <li><p>MongoDB connection patterns</p></li>
-             <li><p>MongoDB ID generation</p></li>
-           <li><h4>Lesson 5</h4></li>
-             <li><p>Route Restrictions</p></li>
-             <li><p>Setting Cookies</p></li>
-             <li><p>Pros/Cons of using cookies</p></li>
-             <li><p>Authentication</p></li>
-             <li><p>CSRF</p></li>
-           <li><h4>Lesson 6</h4></li>
-             <li><p>Status codes</p></li>
-             <li><p>Error handling</p></li>
-             <li><p>Middleware error handling with express</p></li>
-             <li><p>Sanitization (Node.js)</p></li>
-             <li><p>Error types</p></li>
-           <li><h4>Lesson 7</h4></li>
-             <li><p>Risk (associated with code)</p></li>
-             <li><p>Risk management tasks</p></li>
-             <li><p>Risk impact areas</p></li>
-           
-        </ul>
-        <p>For a description of exam logistics (rules, question types, time limit, due date, etc.), please reference the exam in I-learn.</p>
-    </article>
+  <div id="includedHeader"></div>
+  <article>
+    <h1>Midterm Exam Study Guide</h1>
+    <h2>Overview</h2>
+    <p>The following are concepts that are covered in the first seven lessons of the course. You should be familiar and comfortable with these concepts prior to taking the midterm exam at the end of lesson 7.</p>
+    <h3>Topics that may be covered in the exam</h3>
+    <ul>
+      <li>
+        <h4>Lesson 1</h4>
+      </li>
+      <li>
+        <p>NPM</p>
+      </li>
+      <li>
+        <p>Node basics</p>
+      </li>
+      <li>
+        <p>Node HTTP</p>
+      </li>
+      <li>
+        <p>Asynchronous programming</p>
+      </li>
+      <li>
+        <h4>Lesson 2</h4>
+      </li>
+      <li>
+        <p>Express</p>
+      </li>
+      <li>
+        <p>Middleware</p>
+      </li>
+      <li>
+        <p>EJS</p>
+      </li>
+      <li>
+        <h4>Lesson 3</h4>
+      </li>
+      <li>
+        <p>MVC</p>
+      </li>
+      <li>
+        <p>Express routing</p>
+      </li>
+      <li>
+        <p>Dynamic routes</p>
+      </li>
+      <li>
+        <h4>Lesson 4</h4>
+      </li>
+      <li>
+        <p>MongoDB/MongoClient</p>
+      </li>
+      <li>
+        <p>Relations in MongoDB collection</p>
+      </li>
+      <li>
+        <p>MongoDB structure</p>
+      </li>
+      <li>
+        <p>MongoDB connection patterns</p>
+      </li>
+      <li>
+        <p>MongoDB ID generation</p>
+      </li>
+      <li>
+        <h4>Lesson 5</h4>
+      </li>
+      <li>
+        <p>Route Restrictions</p>
+      </li>
+      <li>
+        <p>Setting Cookies</p>
+      </li>
+      <li>
+        <p>Pros/Cons of using cookies</p>
+      </li>
+      <li>
+        <p>Authentication</p>
+      </li>
+      <li>
+        <p>CSRF</p>
+      </li>
+      <li>
+        <h4>Lesson 6</h4>
+      </li>
+      <li>
+        <p>Status codes</p>
+      </li>
+      <li>
+        <p>Error handling</p>
+      </li>
+      <li>
+        <p>Middleware error handling with express</p>
+      </li>
+      <li>
+        <p>Sanitization (Node.js)</p>
+      </li>
+      <li>
+        <p>Error types</p>
+      </li>
+      <li>
+        <h4>Lesson 7</h4>
+      </li>
+      <li>
+        <p>Risk (associated with code)</p>
+      </li>
+      <li>
+        <p>Risk management tasks</p>
+      </li>
+      <li>
+        <p>Risk impact areas</p>
+      </li>
+
+    </ul>
+    <p>For a description of exam logistics (rules, question types, time limit, due date, etc.), please reference the exam in I-learn.</p>
+  </article>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,12 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../../site/header.html");
         });
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <div class="teachingContainer">
@@ -23,8 +25,12 @@
             <div class="teachingColumn adminNotes">
                 <h2>Administrative Notes</h2>
                 <ul>
-                    <li><p>Post an announcement for your students this lesson in I-learn.</p></li>
-                    <li><p>Ensure that communication in their teams is good as they plan out their projects for the remainder of the semester.</p></li>
+                    <li>
+                        <p>Post an announcement for your students this lesson in I-learn.</p>
+                    </li>
+                    <li>
+                        <p>Ensure that communication in their teams is good as they plan out their projects for the remainder of the semester.</p>
+                    </li>
                 </ul>
             </div>
             <div class="teachingColumn">
@@ -32,7 +38,9 @@
                 <p>Important topics to teach your students this lesson. These topics will come primarily from the reading and should contain information that will help them with their assignments. </p>
                 <h3>Goals for this lesson</h3>
                 <ul>
-                    <li><p>Encourage students to continue with their project plan</p></li>
+                    <li>
+                        <p>Encourage students to continue with their project plan</p>
+                    </li>
                     <li>
                         <p>Teach the following concepts</p>
                         <ol>
@@ -41,7 +49,9 @@
                             <li>GraphQL</li>
                         </ol>
                     </li>
-                    <li><p>Help the students to understand that while not required to implement into project 2, the readings for the remainder of the semester can greatly enhance the usability of their web applications</p></li>
+                    <li>
+                        <p>Help the students to understand that while not required to implement into project 2, the readings for the remainder of the semester can greatly enhance the usability of their web applications</p>
+                    </li>
                 </ul>
                 <h3>Websockets</h3>
                 <p>Websockets allow for bi-directional communication between the client and the server. The client can emit events to the server, and the server can emit events to one or more clients. This allows for real-time communication between clients without needing to reload the page.</p>
@@ -63,7 +73,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li><p>Socket.io uses your existing Express.js server to handle requests</p></li>
+                    <li>
+                        <p>Socket.io uses your existing Express.js server to handle requests</p>
+                    </li>
                 </ul>
                 <p>Here's a simple example of how to set up socket.io in an Express app. You can find a more complete example at <a href="https://socket.io/get-started/chat" target="_blank">https://socket.io/get-started/chat</a>.</p>
                 <h5>Server-Side Example</h5>
@@ -80,20 +92,32 @@
                 <p><a href="https://graphql.org/" target="_blank">GraphQL</a> is an alternative to RESTful services for an API. It provides a number of advantages compared to REST, including a rich query language that allows the client to specify what parts of the data the server should send in the response.</p>
                 <h4>Overview</h4>
                 <ul>
-                    <li><p>GraphQL uses a single endpoint for all requests: <code>POST /graphql</code></p></li>
+                    <li>
+                        <p>GraphQL uses a single endpoint for all requests: <code>POST /graphql</code></p>
+                    </li>
                     <li>
                         <p>Create a mongoose-like schema that defines types, queries, and mutations</p>
                         <ul>
-                            <li><p>Queries are for retrieving data, like a GET request in a RESTful API</p></li>
-                            <li><p>Mutations are for any changes made to data, like POST, PUT, PATCH, and DELETE requests in a RESTful API</p></li>
+                            <li>
+                                <p>Queries are for retrieving data, like a GET request in a RESTful API</p>
+                            </li>
+                            <li>
+                                <p>Mutations are for any changes made to data, like POST, PUT, PATCH, and DELETE requests in a RESTful API</p>
+                            </li>
                         </ul>
                     </li>
-                    <li><p>Use GraphQL's query language in the request body to make requests on the frontend</p></li>
+                    <li>
+                        <p>Use GraphQL's query language in the request body to make requests on the frontend</p>
+                    </li>
                 </ul>
                 <p>Here's a simple example of how to use GraphQL in an Express app:</p>
                 <h5>Server-Side Example</h5>
                 <p>Install GraphQL for Express with:</p>
-                <ul><li><p><code>npm install graphql express-graphql</code></p></li></ul>
+                <ul>
+                    <li>
+                        <p><code>npm install graphql express-graphql</code></p>
+                    </li>
+                </ul>
                 <div class="caption">
                     <img src="lesson11_04.png" alt="" class="img-tutorial">
                     <span class="tr">app.js</span>
@@ -126,4 +150,5 @@
         </div>
     </div>
 </body>
+
 </html>

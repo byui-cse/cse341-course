@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-        document.getElementById('g_prepare').innerHTML  = g.n07 + " " + g.prepare;
-        document.getElementById('g_reading').innerHTML  = g.reading;}
-    </script> 
+        window.onload = function () { // load global variables
+            document.getElementById('g_prepare').innerHTML = g.n07 + " " + g.prepare;
+            document.getElementById('g_reading').innerHTML = g.reading;
+        }
+    </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -25,12 +28,21 @@
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/wxOCXDSRMHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p id="g_reading"></p>
         <h2>Readings</h2>
-        <ul>   
-            <li><p><a href="https://www.castsoftware.com/research-labs/risk-management-in-software-development-and-software-engineering-projects">Risk Management in Software Development and Software Engineering Projects</a></p></li>
-            <li><p><a href="https://apiko.com/blog/node-js-architecture-tips/">Building a Stable Node.js Project Architecture.</a></p></li>
-            <li><p><a href="https://www.smashingmagazine.com/2018/02/comprehensive-website-planning-guide-part1/">A Comprehensive Website Planning Guide (Part 1)</a></p></li>
-            <li><p><a href="https://docs.google.com/presentation/d/1znGXMIvLGHHZgRepoNI7kxCoJJ3ojrDhYIFCqarUXTY/edit?usp=sharing">Planning a Web Application - CSE341 Class Slides</a></p></li>
+        <ul>
+            <li>
+                <p><a href="https://www.castsoftware.com/research-labs/risk-management-in-software-development-and-software-engineering-projects">Risk Management in Software Development and Software Engineering Projects</a></p>
+            </li>
+            <li>
+                <p><a href="https://apiko.com/blog/node-js-architecture-tips/">Building a Stable Node.js Project Architecture.</a></p>
+            </li>
+            <li>
+                <p><a href="https://www.smashingmagazine.com/2018/02/comprehensive-website-planning-guide-part1/">A Comprehensive Website Planning Guide (Part 1)</a></p>
+            </li>
+            <li>
+                <p><a href="https://docs.google.com/presentation/d/1znGXMIvLGHHZgRepoNI7kxCoJJ3ojrDhYIFCqarUXTY/edit?usp=sharing">Planning a Web Application - CSE341 Class Slides</a></p>
+            </li>
         </ul>
     </article>
 </body>
+
 </html>

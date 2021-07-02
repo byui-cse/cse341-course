@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-        document.getElementById('g_prepare').innerHTML  = g.n09 + " " + g.prepare;
-        document.getElementById('g_reading2').innerHTML  = g.reading2;}
+        window.onload = function () { // load global variables
+            document.getElementById('g_prepare').innerHTML = g.n09 + " " + g.prepare;
+            document.getElementById('g_reading2').innerHTML = g.reading2;
+        }
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -25,7 +28,9 @@
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/7D1Y0_dVi5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p id="g_reading2"></p>
         <ul>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13902389" target="_blank">Working with REST APIs - The Basics </a><span class="time"><i>1hr 3min </i></span></p></li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13902389" target="_blank">Working with REST APIs - The Basics </a><span class="time"><i>1hr 3min </i></span></p>
+            </li>
         </ul>
         <div class="tips">
             <p>The following video is optional, but goes through some really good examples of how to implement REST APIs.</p>
@@ -33,4 +38,5 @@
         </div>
     </article>
 </body>
+
 </html>

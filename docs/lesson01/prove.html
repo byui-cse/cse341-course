@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <script type="text/javascript" src="../site/global.js"></script>
     <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-            document.getElementById('g_ponder').innerHTML       = g.n01 + " " + g.ponder;
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n01 + " " + g.ponder;
         }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -26,26 +28,45 @@
         <h2>Instructions</h2>
         <p>Complete the <a href="https://pro.academind.com/courses/767386/lectures/13901635">Assignment - Basics (Problem)</a> from the Academind tutorial by doing the following:</p>
         <ol>
-            <li><p>In the main directory of the project template you downloaded during the team activity, create a new file called prove01.js and 
-                spin up a Node.js-driven server running on port 3000. (Just ignore the additional folders and files in the project for now.)</p></li>
-            <li><p>Create another file called prove01-routes.js that can handle two routes: "/" and "/users"</p>
+            <li>
+                <p>In the main directory of the project template you downloaded during the team activity, create a new file called prove01.js and
+                    spin up a Node.js-driven server running on port 3000. (Just ignore the additional folders and files in the project for now.)</p>
+            </li>
+            <li>
+                <p>Create another file called prove01-routes.js that can handle two routes: "/" and "/users"</p>
                 <ul>
-                    <li><p>Return a greeting message on the "/" route</p></li>
-                    <li><p>Return a list of dummy users on the "/users" route</p></li>
+                    <li>
+                        <p>Return a greeting message on the "/" route</p>
+                    </li>
+                    <li>
+                        <p>Return a list of dummy users on the "/users" route</p>
+                    </li>
                 </ul>
             </li>
-            <li><p>In the "package.json" file included with the project, add a new startup configuration called "prove01" to the "scripts" section that will run your prove01.js file using nodemon. (Hint: Add "prove01": "nodemon prove01.js" under "scripts")</p>
-            <p>You'll need to start your project by typing <kbd>npm run prove01</kbd> in the terminal.</p></li>
-            <li><p>On the "/" page, add a &lt;form&gt; with a "username" &lt;input&gt; that is submitted using a POST request to "/create-user" when the submit button is clicked</p></li>
-            <li><p>Add the "/create-user" route to routes.js and parse the incoming data from the form submission, then display it in the console.</p>
-            <p>In order to get 100%, in addition to displaying the submitted data in the console, update the list of users on the /users page.</p></li>
-            <li><p>Be sure to use nodemon                                               </p></li>
-            <li><p>Push your code up to Github. </p></li>
+            <li>
+                <p>In the "package.json" file included with the project, add a new startup configuration called "prove01" to the "scripts" section that will run your prove01.js file using nodemon. (Hint: Add "prove01": "nodemon prove01.js" under "scripts")</p>
+                <p>You'll need to start your project by typing <kbd>npm run prove01</kbd> in the terminal.</p>
+            </li>
+            <li>
+                <p>On the "/" page, add a &lt;form&gt; with a "username" &lt;input&gt; that is submitted using a POST request to "/create-user" when the submit button is clicked</p>
+            </li>
+            <li>
+                <p>Add the "/create-user" route to routes.js and parse the incoming data from the form submission, then display it in the console.</p>
+                <p>In order to get 100%, in addition to displaying the submitted data in the console, update the list of users on the /users page.</p>
+            </li>
+            <li>
+                <p>Be sure to use nodemon </p>
+            </li>
+            <li>
+                <p>Push your code up to Github. </p>
+            </li>
             <div class="tips">
                 <p>If you would like help getting started with git this video may be helpful.</p>
                 <iframe src="https://www.youtube.com/embed/SWYqp7iY_Tc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <li><p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p></li>
+            <li>
+                <p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p>
+            </li>
         </ol>
         <h2>Rubric</h2>
         <table class="rubric">
@@ -87,10 +108,15 @@
         <div>
             <h2>Submission</h2>
             <ol>
-                <li><p>Ensure that your latest code is pushed to GitHub.</p></li>
-                <li><p>Download this assignment's <a href="prove.txt" target="_blank">submission form</a>, fill it out, and submit it to I-Learn.</p></li>
+                <li>
+                    <p>Ensure that your latest code is pushed to GitHub.</p>
+                </li>
+                <li>
+                    <p>Download this assignment's <a href="prove.txt" target="_blank">submission form</a>, fill it out, and submit it to I-Learn.</p>
+                </li>
             </ol>
         </div>
     </article>
 </body>
+
 </html>

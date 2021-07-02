@@ -1,88 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   <script type="text/javascript" src="../site/global.js"></script> 
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="../site/global.js"></script>
    <script>
-        $(function(){
-            $("#includedHeader").load("../site/header.html"); 
-        });
-        window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n06 + " " + g.teach;
-            //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-            //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-            //    document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
-   </script> 
+      $(function () {
+         $("#includedHeader").load("../site/header.html");
+      });
+      window.onload = function () { // load global variables
+         document.getElementById('g_teach').innerHTML = g.n06 + " " + g.teach;
+         //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
+         //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+         //    document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
+         document.getElementById('g_teachSubmit').innerHTML = g.teachSubmit;
+      }
+   </script>
 </head>
-<body>
-    <div id="includedHeader"></div>
-    <article>
-        <h1><span id="g_teach"></span></h1>
 
-        <h2>Overview</h2>
-        <p>For your team activity this lesson, you'll review your teammates e-commerce web applications.<br>
-           In most computer science or software engineering careers, you'll be asked to review the work of your peers and give feedback.
-           For this review, you'll want to consider what requirements are met for the 
-           <a href="./prove.html">Prove 06</a> assignment.</p> 
-         <p>The final application should contain functionality for:</p>
-           <ul>
-              <li>
-                 <p>
-                   Store Product CRUD (Create, Read, Update Delete) operations using Mongoose Schemas or a similar external backend (e.g. Firebase)</br>
-                   This means a user can:
-                 </p>
-                 <ul>
-                    <li><p>Add a product to the store.</p></li>
-                    <li><p>Edit products they have added to the store.</p></li>
-                    <li><p>Remove products they have added to the store.</p></li>
-                 </ul>
-                 <p>The user <strong>cannot</strong> remove or edit product's submitted by another user.</p>
-              </li>
-              <li>
-                 <p>
-                   Authentication methods are used to:
-                 </p>
-                 <ul>
-                    <li><p>Sign users up for the website</p></li>
-                    <li><p>Log existing users into the website</p></li>
-                    <li><p>Send a confirmation email to a newly created account's email.</p></li>
-                    <li><p>Prevent duplicate accounts (email is always unique)</p></li>
-                    <li><p>Prevent access to administrative web endpoints of other users (CRUD operations for products).</p></li>
-                    <li><p>Prevent rendering of administrative web endpoints in the navigation bar given the user is not signed in.</p></li>
-                 </ul>
-              </li>
-           </ul>
-           <p>While the applications produced may not be totally unique in purpose, some of your teammates may choose 
-              to go above and beyond. Basically, these are features that were not covered in the preparation material. 
-              Such features could include:</p>
-              <ul>
-                 <li><p>Optimizing the CSS for both mobile and desktop browsers.</p></li>
-                 <li><p>A unique and professional looking CSS layout.</p></li>
-                 <li><p>Utilizing AJAX requests through JavaScript rather than &ltform&gt actions/methods.</p></li>
-                 <li><p>Adding extra fields to database items, such as stock quantity, and associated features (orders decrement item stock, users cannot purchase more than the available stock).</p></li>
-                 <li><p>User has the ability to decrement the quantity of a certain item in a cart.</p></li>
-                 <li><p>User has the ability to decrement the quantity of a certain item in a cart.</p></li>
-              </ul>
-           <p>Make sure to list feedback in a comprehensive and constructive manner.</p>
-           <ol>
-              <li><p>Positive features (if any) with reasonable explanations as to why they are good should be listed first.</p></li>
-              <li><p>Negative features (if any) with reasonable explanations as to why they are bad should be listed second.</p></li>
-              <li><p>Finally, each negative feature should contain a recommendation for improvement.</p></li>
-           </ol>
-        <ol>
-           <!-- <li><p>Display data in a professional manner.</p></li> -->
-           <!-- <li><p id="g_teachTime"></p></li> -->
-        </ol>
-        <!-- <h2 id="g_teachInstructor"></h2>
+<body>
+   <div id="includedHeader"></div>
+   <article>
+      <h1><span id="g_teach"></span></h1>
+
+      <h2>Overview</h2>
+      <p>For your team activity this lesson, you'll review your teammates e-commerce web applications.<br>
+         In most computer science or software engineering careers, you'll be asked to review the work of your peers and give feedback.
+         For this review, you'll want to consider what requirements are met for the
+         <a href="./prove.html">Prove 06</a> assignment.
+      </p>
+      <p>The final application should contain functionality for:</p>
+      <ul>
+         <li>
+            <p>
+               Store Product CRUD (Create, Read, Update Delete) operations using Mongoose Schemas or a similar external backend (e.g. Firebase)</br>
+               This means a user can:
+            </p>
+            <ul>
+               <li>
+                  <p>Add a product to the store.</p>
+               </li>
+               <li>
+                  <p>Edit products they have added to the store.</p>
+               </li>
+               <li>
+                  <p>Remove products they have added to the store.</p>
+               </li>
+            </ul>
+            <p>The user <strong>cannot</strong> remove or edit product's submitted by another user.</p>
+         </li>
+         <li>
+            <p>
+               Authentication methods are used to:
+            </p>
+            <ul>
+               <li>
+                  <p>Sign users up for the website</p>
+               </li>
+               <li>
+                  <p>Log existing users into the website</p>
+               </li>
+               <li>
+                  <p>Send a confirmation email to a newly created account's email.</p>
+               </li>
+               <li>
+                  <p>Prevent duplicate accounts (email is always unique)</p>
+               </li>
+               <li>
+                  <p>Prevent access to administrative web endpoints of other users (CRUD operations for products).</p>
+               </li>
+               <li>
+                  <p>Prevent rendering of administrative web endpoints in the navigation bar given the user is not signed in.</p>
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <p>While the applications produced may not be totally unique in purpose, some of your teammates may choose
+         to go above and beyond. Basically, these are features that were not covered in the preparation material.
+         Such features could include:</p>
+      <ul>
+         <li>
+            <p>Optimizing the CSS for both mobile and desktop browsers.</p>
+         </li>
+         <li>
+            <p>A unique and professional looking CSS layout.</p>
+         </li>
+         <li>
+            <p>Utilizing AJAX requests through JavaScript rather than &ltform&gt actions/methods.</p>
+         </li>
+         <li>
+            <p>Adding extra fields to database items, such as stock quantity, and associated features (orders decrement item stock, users cannot purchase more than the available stock).</p>
+         </li>
+         <li>
+            <p>User has the ability to decrement the quantity of a certain item in a cart.</p>
+         </li>
+         <li>
+            <p>User has the ability to decrement the quantity of a certain item in a cart.</p>
+         </li>
+      </ul>
+      <p>Make sure to list feedback in a comprehensive and constructive manner.</p>
+      <ol>
+         <li>
+            <p>Positive features (if any) with reasonable explanations as to why they are good should be listed first.</p>
+         </li>
+         <li>
+            <p>Negative features (if any) with reasonable explanations as to why they are bad should be listed second.</p>
+         </li>
+         <li>
+            <p>Finally, each negative feature should contain a recommendation for improvement.</p>
+         </li>
+      </ol>
+      <ol>
+         <!-- <li><p>Display data in a professional manner.</p></li> -->
+         <!-- <li><p id="g_teachTime"></p></li> -->
+      </ol>
+      <!-- <h2 id="g_teachInstructor"></h2>
         <p id="g_teachSolution"></p>
         <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson03/team-solution" target="_blank">Teacher Solution</a> -->
-        <h2>Submission</h2>
-        <p id="g_teachSubmit"></p>
-    </article>
+      <h2>Submission</h2>
+      <p id="g_teachSubmit"></p>
+   </article>
 </body>
+
 </html>

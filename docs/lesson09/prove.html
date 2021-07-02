@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,20 @@
     <script type="text/javascript" src="../site/global.js"></script>
     <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML       = g.n09 + " " + g.ponder;
-                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-                document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-                document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
-                document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
-            }
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n09 + " " + g.ponder;
+            document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+            document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+            document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
+            document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
+        }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -31,14 +33,18 @@
         <h2>Assignment</h2>
         <p>Here are your main tasks:</p>
         <ol>
-           <li>
-               <p>Populate an unordered list of the first 10 Pokémon using the url <strong><a target="_blank" href="https://pokeapi.co/api/v2/pokemon?offset=0&limit=10">https://pokeapi.co/api/v2/pokemon?offset=0&limit=10</a></strong> for your fetch request.</p>
-               <div class="tips">
-                   NOTE: Clicking the above link will lead you to a JSON output of the API.
-               </div>
-           </li>
-           <li><p>Create a button which clears the list and populates it with the next paginated result (this url is identified by the “next” key in the responding JSON object)</p></li>
-           <li><p>Create another button which clears the list and populates it with the previous paginated result. (like next, this url is the value of the “previous key in the responding JSON object)</p></li>
+            <li>
+                <p>Populate an unordered list of the first 10 Pokémon using the url <strong><a target="_blank" href="https://pokeapi.co/api/v2/pokemon?offset=0&limit=10">https://pokeapi.co/api/v2/pokemon?offset=0&limit=10</a></strong> for your fetch request.</p>
+                <div class="tips">
+                    NOTE: Clicking the above link will lead you to a JSON output of the API.
+                </div>
+            </li>
+            <li>
+                <p>Create a button which clears the list and populates it with the next paginated result (this url is identified by the “next” key in the responding JSON object)</p>
+            </li>
+            <li>
+                <p>Create another button which clears the list and populates it with the previous paginated result. (like next, this url is the value of the “previous key in the responding JSON object)</p>
+            </li>
         </ol>
         <h2>Rubric</h2>
         <table class="rubric">
@@ -101,4 +107,5 @@
         <div id="g_ponderSubmit"></div>
     </article>
 </body>
+
 </html>

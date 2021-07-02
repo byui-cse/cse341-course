@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <script type="text/javascript" src="../site/global.js"></script>
     <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML       = g.n07 + " " + g.ponder;
-            }
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n07 + " " + g.ponder;
+        }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -28,4 +30,5 @@
         <p>Submit your document in I-learn.</p>
     </article>
 </body>
+
 </html>

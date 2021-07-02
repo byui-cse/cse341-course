@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,20 @@
     <script type="text/javascript" src="../site/global.js"></script>
     <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML       = g.n12 + " " + g.ponder;
-                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-                document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-                document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
-                document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
-            }
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n12 + " " + g.ponder;
+            document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+            document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+            document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
+            document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
+        }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -34,18 +36,32 @@
         <h2>Assignment</h2>
         <h4>Core Requirements</h4>
         <ol>
-            <li><p>When a user logs in using the ta12-login.ejs, their username is stored as a session variable. There <strong>cannot</strong> be duplicate usernames. If a user enters a duplicate username, they are notified.</p>
-                <img src="images/challenge1.gif"></li>
-            <li><p>When a user logs in, other users logged into the chat are notified via an "admin" user.</p>
-                <img src="images/challenge2.gif"></li>
-            <li><p>When a user sends a message, it is appended to their own chatbox and all other connected users. (basically, the page follows the basic operations of a messaging application) </p></li>
+            <li>
+                <p>When a user logs in using the ta12-login.ejs, their username is stored as a session variable. There <strong>cannot</strong> be duplicate usernames. If a user enters a duplicate username, they are notified.</p>
+                <img src="images/challenge1.gif">
+            </li>
+            <li>
+                <p>When a user logs in, other users logged into the chat are notified via an "admin" user.</p>
+                <img src="images/challenge2.gif">
+            </li>
+            <li>
+                <p>When a user sends a message, it is appended to their own chatbox and all other connected users. (basically, the page follows the basic operations of a messaging application) </p>
+            </li>
         </ol>
         <p>This application has a lot of potential for creativity. For example, you could:</p>
         <ul>
-            <li><p>Include the time a message was sent in the message.</p></li>
-            <li><p>Make the messages persistent using MongoDB.</p></li>
-            <li><p>Notify users when a client disconnects.</p></li>
-            <li><p>Use socket.io rooms (instead of a global chat)</p></li>
+            <li>
+                <p>Include the time a message was sent in the message.</p>
+            </li>
+            <li>
+                <p>Make the messages persistent using MongoDB.</p>
+            </li>
+            <li>
+                <p>Notify users when a client disconnects.</p>
+            </li>
+            <li>
+                <p>Use socket.io rooms (instead of a global chat)</p>
+            </li>
         </ul>
 
         <h2>Rubric</h2>
@@ -128,4 +144,5 @@
         <div id="g_ponderSubmit"></div>
     </article>
 </body>
+
 </html>

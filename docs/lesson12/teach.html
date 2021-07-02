@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   <script type="text/javascript" src="../site/global.js"></script>
-   <script>
-        $(function(){
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-            document.getElementById('g_teach').innerHTML       = g.n12 + " " + g.teach;
+        window.onload = function () { // load global variables
+            document.getElementById('g_teach').innerHTML = g.n12 + " " + g.teach;
             document.getElementById('g_project2req').innerHTML = g.project2req;
             document.getElementById('g_teachSubmit').innerHTML = g.teachSubmit;
         }
-   </script>
+    </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -31,4 +33,5 @@
         <p id="g_teachSubmit"></p>
     </article>
 </body>
+
 </html>

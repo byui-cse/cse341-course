@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,18 @@
     <script type="text/javascript" src="../site/global.js"></script>
     <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML       = g.n06 + " " + g.ponder;
-                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-                document.getElementById('g_project1req').innerHTML  = g.project1req;
-            }
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n06 + " " + g.ponder;
+            document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+            document.getElementById('g_project1req').innerHTML = g.project1req;
+        }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -29,9 +31,15 @@
 
         <h2>Assignment</h2>
         <ol>
-            <li><p>Create form validation with error handling for any forms in your application.</p></li>
-            <li><p>Complete your project</p></li>
-            <li><p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p></li>
+            <li>
+                <p>Create form validation with error handling for any forms in your application.</p>
+            </li>
+            <li>
+                <p>Complete your project</p>
+            </li>
+            <li>
+                <p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p>
+            </li>
         </ol>
         <div class="tips">
             <p>Instructor Tip</p>
@@ -43,4 +51,5 @@
         <div id="g_ponderSubmit"></div>
     </article>
 </body>
+
 </html>
