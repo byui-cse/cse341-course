@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
   // Send a HTML response with some "Page not found text
   if (url === '/create-user') {
     const body = [];
-    req.on('data', chunk => {
+    req.on('data', (chunk) => {
       body.push(chunk);
     });
     req.on('end', () => {

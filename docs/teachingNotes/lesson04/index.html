@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="../../site/style.css" />
     <link rel="stylesheet" type="text/css" href="../teachingStyle.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script> 
+    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script>
     <script>
-        $(function(){
-            $("#includedHeader").load("../../site/header.html"); 
+        $(function () {
+            $("#includedHeader").load("../../site/header.html");
         });
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <div class="teachingContainer">
@@ -23,8 +25,12 @@
             <div class="teachingColumn adminNotes">
                 <h2>Administrative Notes</h2>
                 <ul>
-                    <li><p>Post an announcement for your students this lesson in Teams.</p></li>
-                    <li><p>If your section of CSE341 is planning on doing projects with WDD 330 students, this is the lesson to put them into their groups. You can invite them to your Microsoft Teams space, go to their class space, or create a new space altogether. But these students should be put into groups this lesson and start thinking about what project they are going to work on for the second half of the semester. </p></li>
+                    <li>
+                        <p>Post an announcement for your students this lesson in Teams.</p>
+                    </li>
+                    <li>
+                        <p>If your section of CSE341 is planning on doing projects with WDD 330 students, this is the lesson to put them into their groups. You can invite them to your Microsoft Teams space, go to their class space, or create a new space altogether. But these students should be put into groups this lesson and start thinking about what project they are going to work on for the second half of the semester. </p>
+                    </li>
                 </ul>
             </div>
             <div class="teachingColumn" id="pdfPrint">
@@ -40,9 +46,9 @@
                 <p>The Oracle website goes on to describe the difference between a database and a spreadsheet: </p>
                 <p class="quote">
                     Databases and spreadsheets (such as Microsoft Excel) are both convenient ways to store information. The primary differences between the two are:<br><br>
-                        <span class="quoteBullet">How the data is stored and manipulated</span>
-                        <span class="quoteBullet">Who can access the data</span>
-                        <span class="quoteBullet">How much data can be stored</span><br>
+                    <span class="quoteBullet">How the data is stored and manipulated</span>
+                    <span class="quoteBullet">Who can access the data</span>
+                    <span class="quoteBullet">How much data can be stored</span><br>
                     Spreadsheets were originally designed for one user, and their characteristics reflect that. They’re great for a single user or small number of users who don’t need to do a lot of incredibly complicated data manipulation. Databases, on the other hand, are designed to hold much larger collections of organized information—massive amounts, sometimes. Databases allow multiple users at the same time to quickly and securely access and query the data using highly complex logic and language.
                 </p>
                 <h3>SQL</h3>
@@ -50,18 +56,38 @@
                 <p class="quote">
                     SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft. Although SQL is still widely used today, new programming languages are beginning to appear.
                 </p>
-                <p>There are many different relational databases that use SQL. Here are some of the more widely used ones:</p> 
+                <p>There are many different relational databases that use SQL. Here are some of the more widely used ones:</p>
                 <ul>
-                    <li><p>MySQL</p></li>
-                    <li><p>OracleDB</p></li>
-                    <li><p>SQLite</p></li>
-                    <li><p>PostgreSQL</p></li>
-                    <li><p>AWS RDS</p></li>
-                    <li><p>MS SQL Server</p></li>
-                    <li><p>AWS Aurora</p></li>
-                    <li><p>MariaDB</p></li>
-                    <li><p>Google Cloud SQL</p></li>
-                    <li><p>SAP SQL Anywhere</p></li>
+                    <li>
+                        <p>MySQL</p>
+                    </li>
+                    <li>
+                        <p>OracleDB</p>
+                    </li>
+                    <li>
+                        <p>SQLite</p>
+                    </li>
+                    <li>
+                        <p>PostgreSQL</p>
+                    </li>
+                    <li>
+                        <p>AWS RDS</p>
+                    </li>
+                    <li>
+                        <p>MS SQL Server</p>
+                    </li>
+                    <li>
+                        <p>AWS Aurora</p>
+                    </li>
+                    <li>
+                        <p>MariaDB</p>
+                    </li>
+                    <li>
+                        <p>Google Cloud SQL</p>
+                    </li>
+                    <li>
+                        <p>SAP SQL Anywhere</p>
+                    </li>
                 </ul>
                 <h4>Database Visual Example</h4>
                 <p>The following example may help to visualize how data is stored in a relational database architecture:</p>
@@ -70,10 +96,18 @@
                 <h4>Database Code Example</h4>
                 <p>Now that we've seen a visual example of what the data in a SQL database will look like, let's look at some code in SQL to see how we can interact with this data. Each of the SQL database systems listed above has slightly unique syntax in their implementation of SQL. They are all similar, but have slightly different syntax rules. The following examples are in PostgreSQL.</p>
                 <ul>
-                    <li><p><code>SELECT name FROM Student;</code> - This prints/retrieves the name from the Student table.</p></li>
-                    <li><p><code>SELECT id, name FROM Student;</code> - This prints/retrieves the id and name from the Student table.</p></li>
-                    <li><p><code>SELECT * FROM Student WHERE name = 'Lacy';</code> - This prints/retrieves the every column of data from the Student table where the row name is equal to "Lacy".</p></li>
-                    <li><p><img src="lesson04_02.jpg" alt=""><br> This example does a lot of things. It retrieves data from two tables, and finds where the data is similar by isolating the course_id in each table. This is possible because of the unique values stored as primary key in the course table. Then when the section table references a specific course, it uses a foreign key to access that unique piece of data. This query then prints/selects the name of the course, and the section id. This may be useful for isolating a course in I-learn. This same principle of JOINs can be used to access data across many tables and allow you to retrieve the data that you need for a given task.</p></li>
+                    <li>
+                        <p><code>SELECT name FROM Student;</code> - This prints/retrieves the name from the Student table.</p>
+                    </li>
+                    <li>
+                        <p><code>SELECT id, name FROM Student;</code> - This prints/retrieves the id and name from the Student table.</p>
+                    </li>
+                    <li>
+                        <p><code>SELECT * FROM Student WHERE name = 'Lacy';</code> - This prints/retrieves the every column of data from the Student table where the row name is equal to "Lacy".</p>
+                    </li>
+                    <li>
+                        <p><img src="lesson04_02.jpg" alt=""><br> This example does a lot of things. It retrieves data from two tables, and finds where the data is similar by isolating the course_id in each table. This is possible because of the unique values stored as primary key in the course table. Then when the section table references a specific course, it uses a foreign key to access that unique piece of data. This query then prints/selects the name of the course, and the section id. This may be useful for isolating a course in I-learn. This same principle of JOINs can be used to access data across many tables and allow you to retrieve the data that you need for a given task.</p>
+                    </li>
                 </ul>
                 <h3>NoSQL</h3>
                 <h4>Description</h4>
@@ -84,19 +118,41 @@
                     NoSQL data models allow related data to be nested within a single data structure.<br><br>
                     NoSQL databases emerged in the late 2000s as the cost of storage dramatically decreased. Gone were the days of needing to create a complex, difficult-to-manage data model simply for the purposes of reducing data duplication. Developers (rather than storage) were becoming the primary cost of software development, so NoSQL databases optimized for developer productivity.
                 </p>
-                <p>There are many different NoSQL databases. Here are some of the more widely used ones:</p> 
+                <p>There are many different NoSQL databases. Here are some of the more widely used ones:</p>
                 <ul>
-                    <li><p>MongoDB</p></li>
-                    <li><p>Firebase</p></li>
-                    <li><p>Cassandra</p></li>
-                    <li><p>Elasticsearch</p></li>
-                    <li><p>Couchbase</p></li>
-                    <li><p>Oracle NoSQL</p></li>
-                    <li><p>Neo4j</p></li>
-                    <li><p>HBase</p></li>
-                    <li><p>Memcached</p></li>
-                    <li><p>CouchDB</p></li>
-                    <li><p>Redis</p></li>
+                    <li>
+                        <p>MongoDB</p>
+                    </li>
+                    <li>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <p>Cassandra</p>
+                    </li>
+                    <li>
+                        <p>Elasticsearch</p>
+                    </li>
+                    <li>
+                        <p>Couchbase</p>
+                    </li>
+                    <li>
+                        <p>Oracle NoSQL</p>
+                    </li>
+                    <li>
+                        <p>Neo4j</p>
+                    </li>
+                    <li>
+                        <p>HBase</p>
+                    </li>
+                    <li>
+                        <p>Memcached</p>
+                    </li>
+                    <li>
+                        <p>CouchDB</p>
+                    </li>
+                    <li>
+                        <p>Redis</p>
+                    </li>
                 </ul>
                 <p>As you can imagine, these all have their advantages and disadvantages. They are not listed in any order. As you begin work on any project, you should look into what your database needs will be, and then use that knowledge to decide what database architecture you should implement whether it be SQL or NoSQL.</p>
                 <h4>Database Visual Example</h4>
@@ -111,17 +167,33 @@
                 <h3>Database Architecture Comparison</h3>
                 <h4>When to use SQL</h4>
                 <ul>
-                    <li><p>You’re working with complex queries and reports</p></li>
-                    <li><p>You have a high transaction application</p></li>
-                    <li><p>You must ensure <a href="https://www.faircom.com/insights/database-talk-acid-compliance" target="_blank">ACID</a> compliance</p></li>
-                    <li><p>You don’t anticipate a lot of changes or growth</p></li>
+                    <li>
+                        <p>You’re working with complex queries and reports</p>
+                    </li>
+                    <li>
+                        <p>You have a high transaction application</p>
+                    </li>
+                    <li>
+                        <p>You must ensure <a href="https://www.faircom.com/insights/database-talk-acid-compliance" target="_blank">ACID</a> compliance</p>
+                    </li>
+                    <li>
+                        <p>You don’t anticipate a lot of changes or growth</p>
+                    </li>
                 </ul>
                 <h4>When to use NoSQL</h4>
                 <ul>
-                    <li><p>When you need to store large volumes of data that might have little to no structure.</p></li>
-                    <li><p>When you need to make the most of cloud computing and storage.</p></li>
-                    <li><p>When you need speedy development.</p></li>
-                    <li><p>To boost horizontal scalability (Application Growth).</p></li>
+                    <li>
+                        <p>When you need to store large volumes of data that might have little to no structure.</p>
+                    </li>
+                    <li>
+                        <p>When you need to make the most of cloud computing and storage.</p>
+                    </li>
+                    <li>
+                        <p>When you need speedy development.</p>
+                    </li>
+                    <li>
+                        <p>To boost horizontal scalability (Application Growth).</p>
+                    </li>
                 </ul>
                 <h3>Class Activity</h3>
                 <p>To help students gain experience working in Databases, here is a class activity. This will help them learn how to create a MongoDB cluster and connect it to a Node project.The following zip file can be distributed to your students. It has tasks in it instructing them regarding what they should do. This can be done in a class setting as a group, in teams, or individually. </p>
@@ -137,4 +209,5 @@
         </div>
     </div>
 </body>
+
 </html>

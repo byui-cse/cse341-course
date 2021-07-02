@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-            document.getElementById('g_prepare').innerHTML  = g.n03 + " " + g.prepare;
-            document.getElementById('g_reading').innerHTML  = g.reading;}
+        window.onload = function () { // load global variables
+            document.getElementById('g_prepare').innerHTML = g.n03 + " " + g.prepare;
+            document.getElementById('g_reading').innerHTML = g.reading;
+        }
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -25,12 +28,19 @@
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/Y3N__4aDC-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p id="g_reading"></p>
         <ul>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901890" target="_blank">The Model View Controller (MVC)  </a><span class="time">44min</span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901912" target="_blank">Optional: Enhancing the App      </a><span class="time">36min</span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901936" target="_blank">Dynamic Routes & Advanced Models </a><span class="time">1hr 39min</span></p></li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901890" target="_blank">The Model View Controller (MVC) </a><span class="time">44min</span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901912" target="_blank">Optional: Enhancing the App </a><span class="time">36min</span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901936" target="_blank">Dynamic Routes & Advanced Models </a><span class="time">1hr 39min</span></p>
+            </li>
             <br>
             <li>Total: Roughly 3 hours</li>
         </ul>
     </article>
 </body>
+
 </html>

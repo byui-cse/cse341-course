@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-            document.getElementById('g_prepare').innerHTML  = g.n02 + " " + g.prepare;
-            document.getElementById('g_reading').innerHTML  = g.reading;}
+        window.onload = function () { // load global variables
+            document.getElementById('g_prepare').innerHTML = g.n02 + " " + g.prepare;
+            document.getElementById('g_reading').innerHTML = g.reading;
+        }
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -25,8 +28,12 @@
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/L8TzyG4-mYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p id="g_reading"></p>
         <ul>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901717" target="_blank">Working with Express.js                                  </a><span class="time">1hr 34min</span></p></li>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13901874" target="_blank">Working with Dynamic Content & Adding Templating Engines </a><span class="time">2hr 3min </span></p></li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901717" target="_blank">Working with Express.js </a><span class="time">1hr 34min</span></p>
+            </li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13901874" target="_blank">Working with Dynamic Content & Adding Templating Engines </a><span class="time">2hr 3min </span></p>
+            </li>
             <br>
             <li>Total: Roughly 3.5 hours</li>
         </ul>
@@ -38,4 +45,5 @@
         </div>
     </article>
 </body>
+
 </html>

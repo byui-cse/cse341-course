@@ -1,77 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
    <script type="text/javascript" src="../site/global.js"></script>
    <script>
-        $(function(){
-            $("#includedHeader").load("../site/header.html");
-        });
-        window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n05 + " " + g.teach;
-               document.getElementById('g_teachTime').innerHTML       = g.teachTime;
-               document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-               document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
-               document.getElementById('g_teachSubmit').innerHTML     = g.teachSubmit;}
+      $(function () {
+         $("#includedHeader").load("../site/header.html");
+      });
+      window.onload = function () { // load global variables
+         document.getElementById('g_teach').innerHTML = g.n05 + " " + g.teach;
+         document.getElementById('g_teachTime').innerHTML = g.teachTime;
+         document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+         document.getElementById('g_teachSolution').innerHTML = g.teachSolution;
+         document.getElementById('g_teachSubmit').innerHTML = g.teachSubmit;
+      }
    </script>
 </head>
-<body>
-    <div id="includedHeader"></div>
-    <article>
-        <h1><span id="g_teach"></span></h1>
 
-        <h2>Overview</h2>
-        <p>For this lesson's team activity, things will be pretty straight forward.
-           You'll be experimenting with sessions using the MVC architecture we've used
-           so far this semester.</p>
-        <h2>Instructions</h2>
-         <p>Make sure express-session is installed using npm.
-         </p>
-        <ol>
-           <li><p> In the route path "/" for this Team Activities routes, initiliaze two session variables, "style" and
-                  "counter", if they are undefined.
-              </p>
-           </li>
-           <li><p>Create a form that utilizes the route "/change-style" and associated controller that will use the session
-                  variable "style" to change the the primary color/theme of your .ejs page for this team activity.
-               </p>
-            </li>
-           <li><p>Create two forms that will utilize the route "/counter" to increment and decrement the session variable "counter"
-                  by a constant of 1.
-               </p>
-           </li>
-           <li><p>Finally, create a session that utilizes the route "/reset" to destroy the session.
-               </p>
-            </li>
-           <li><p id="g_teachTime"></p></li>
-        </ol>
-        <div class="tips">
+<body>
+   <div id="includedHeader"></div>
+   <article>
+      <h1><span id="g_teach"></span></h1>
+
+      <h2>Overview</h2>
+      <p>For this lesson's team activity, things will be pretty straight forward.
+         You'll be experimenting with sessions using the MVC architecture we've used
+         so far this semester.</p>
+      <h2>Instructions</h2>
+      <p>Make sure express-session is installed using npm.
+      </p>
+      <ol>
+         <li>
+            <p> In the route path "/" for this Team Activities routes, initiliaze two session variables, "style" and
+               "counter", if they are undefined.
+            </p>
+         </li>
+         <li>
+            <p>Create a form that utilizes the route "/change-style" and associated controller that will use the session
+               variable "style" to change the the primary color/theme of your .ejs page for this team activity.
+            </p>
+         </li>
+         <li>
+            <p>Create two forms that will utilize the route "/counter" to increment and decrement the session variable "counter"
+               by a constant of 1.
+            </p>
+         </li>
+         <li>
+            <p>Finally, create a session that utilizes the route "/reset" to destroy the session.
+            </p>
+         </li>
+         <li>
+            <p id="g_teachTime"></p>
+         </li>
+      </ol>
+      <div class="tips">
          <h4>Tips</h4>
-           <ul>
-             <li><p>Remember to redirect to the Team Activity 05's root "/" any time a session variable is modified
-                in order to see the changes.
-             </p></li>
-             <li><p>The ability to specify a desired CSS layout (AKA, a theme) using sessions may be useful for a guest user.
-                For example, many websites like YouTube and StackOverflow utilize a "dark mode" that can be used regardless if
-                the user is signed in on their YouTube or StackOverflow account.
-             </p></li>
-             <li><p>If a variable used on an EJS page is not specified in the render method, an error message will be displayed.</p></li>
-           </ul>
-           <p>Lastly, the following video explains cookies and sessions very well. This may be helpful if you are still struggling to understand or implement these concepts.</p>
-           <iframe src="https://www.youtube.com/embed/J1qXK66k1y4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </div>
-        <h2 id="g_teachInstructor"></h2>
-        <p id="g_teachSolution"></p>
-        <p class="text-center">
-            <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson05/team-solution" target="_blank">Teacher Solution</a>
-            (<a href="team-solution.zip" target="_blank">Download .zip</a>)
-        </p>
-        <h2>Submission</h2>
-        <p id="g_teachSubmit"></p>
-    </article>
+         <ul>
+            <li>
+               <p>Remember to redirect to the Team Activity 05's root "/" any time a session variable is modified
+                  in order to see the changes.
+               </p>
+            </li>
+            <li>
+               <p>The ability to specify a desired CSS layout (AKA, a theme) using sessions may be useful for a guest user.
+                  For example, many websites like YouTube and StackOverflow utilize a "dark mode" that can be used regardless if
+                  the user is signed in on their YouTube or StackOverflow account.
+               </p>
+            </li>
+            <li>
+               <p>If a variable used on an EJS page is not specified in the render method, an error message will be displayed.</p>
+            </li>
+         </ul>
+         <p>Lastly, the following video explains cookies and sessions very well. This may be helpful if you are still struggling to understand or implement these concepts.</p>
+         <iframe src="https://www.youtube.com/embed/J1qXK66k1y4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h2 id="g_teachInstructor"></h2>
+      <p id="g_teachSolution"></p>
+      <p class="text-center">
+         <a href="https://github.com/byui-cse/cse341-course/tree/master/docs//lesson05/team-solution" target="_blank">Teacher Solution</a>
+         (<a href="team-solution.zip" target="_blank">Download .zip</a>)
+      </p>
+      <h2>Submission</h2>
+      <p id="g_teachSubmit"></p>
+   </article>
 </body>
+
 </html>

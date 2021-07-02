@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-   <script type="text/javascript" src="../site/global.js"></script>
-   <script>
-        $(function(){
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script>
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-               document.getElementById('g_teach').innerHTML           = g.n04 + " " + g.teach;}
-   </script>
+        window.onload = function () { // load global variables
+            document.getElementById('g_teach').innerHTML = g.n04 + " " + g.teach;
+        }
+    </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -22,29 +25,42 @@
 
         <h2>Overview</h2>
         <p>Your team activity this lesson is extremely simple. <strong>Once you all have completed the reading</strong>, assist one another in making some modifications to your apps for MongoDB compatability with Heroku. Please read the instructions below:</p>
-         <h3>Using MongoDB on Heroku</h3>
+        <h3>Using MongoDB on Heroku</h3>
         <p>
-          In order to manage the use of external services and ports, Heroku's architecture requires the use of
-          <a href="https://devcenter.heroku.com/articles/config-vars" target="_blank">config vars</a>.</br>
-          For example, for your app to run on both Heroku and localhost, Express calls .listen(PORT), which makes use of
-          of the Heroku config var, .</br>
-          PORT is initialized with:
+            In order to manage the use of external services and ports, Heroku's architecture requires the use of
+            <a href="https://devcenter.heroku.com/articles/config-vars" target="_blank">config vars</a>.</br>
+            For example, for your app to run on both Heroku and localhost, Express calls .listen(PORT), which makes use of
+            of the Heroku config var, .</br>
+            PORT is initialized with:
             <code class="bash hljs">const PORT = process.env.PORT || 5000</code>
-          Using the ||, PORT's value is initialized to the first defined variable.</p>
-          <p>So, when the application is run on Heroku, <code>process.env.PORT</code>
-          is defined and passed to .listen(). Running locally, the config var is undefined, so the localhost port 5000 is passed to .listen() instead.</br>
-          A similar process must be used for the MongoDB implementation you created using the online video course.
+            Using the ||, PORT's value is initialized to the first defined variable.
+        </p>
+        <p>So, when the application is run on Heroku, <code>process.env.PORT</code>
+            is defined and passed to .listen(). Running locally, the config var is undefined, so the localhost port 5000 is passed to .listen() instead.</br>
+            A similar process must be used for the MongoDB implementation you created using the online video course.
         </p>
         <h2>Instructions</h2>
         <h3>Create MongoDB Account and Cluster</h3>
         <ol>
-            <li><p>Navigate to the <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> Site</p></li>
-            <li><p>Click: Start Free</p></li>
-            <li><p>Fill out your email, name and password to create an account.</p></li>
-            <li><p>Choose the free option and click: Create a Cluster</p></li>
-            <li><p>Ensure that the configurations for the new cluster look similar to the following image and have the free options selected.</p></li>
+            <li>
+                <p>Navigate to the <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> Site</p>
+            </li>
+            <li>
+                <p>Click: Start Free</p>
+            </li>
+            <li>
+                <p>Fill out your email, name and password to create an account.</p>
+            </li>
+            <li>
+                <p>Choose the free option and click: Create a Cluster</p>
+            </li>
+            <li>
+                <p>Ensure that the configurations for the new cluster look similar to the following image and have the free options selected.</p>
+            </li>
             <img src="./images/atlas_settings.jpg" class="img_tutorial" alt="" style="border: 1px solid black;">
-            <li><p>Your account is now ready to be configured with your project.</p></li>
+            <li>
+                <p>Your account is now ready to be configured with your project.</p>
+            </li>
         </ol>
         <h3>Connect to Application</h3>
         <ol>
@@ -62,7 +78,9 @@
                 <p>You are welcome to select the "Add Current IP Address" option, or look up the IP of your computer and add that. If you see the following error (after running npm start), it is because of the IP address not matching the one in use. This will be fixed by using 0.0.0.0/0</p>
                 <img src="images/mongo_error.jpg" class="img-tutorial">
             </li>
-            <li><p>Click: Security > Database Access, and create a new user with read/write access in any database.</p></li>
+            <li>
+                <p>Click: Security > Database Access, and create a new user with read/write access in any database.</p>
+            </li>
             <li>
                 <p>Within your <a href="https://cloud.mongodb.com/" target="_blank">MongoDB Atlas dashboard</a>, click on the clusters tab below "Data Storage"</p>
                 <p>Click on "connect" within the cluster you created for your shop</p>
@@ -83,7 +101,7 @@
             <li>
                 <p>Finally, within your app.js or index.js file (or wherever else you decided to place your Mongoose setup), add the
                     following lines of code:</p>
-                    <pre>
+                <pre>
                         <code class="hljs">
 const cors = <span class="hljs-function">require</span>(<span class="hljs-string">'cors'</span>) <span class="hljs-comment">// Place this with other requires (like 'path' and 'express')</span>
 ...
@@ -122,10 +140,13 @@ mongoose
                     </code>
                 </pre>
             </li>
-            <li><p>Finally, push your application to Heroku master and check if your app works on Heroku.</p></li>
+            <li>
+                <p>Finally, push your application to Heroku master and check if your app works on Heroku.</p>
+            </li>
         </ol>
-    <h2>Conclusion</h2>
-    <p>If you ever have any questions or issues, make sure to look at your Heroku logs with <code>heroku logs --tail</code> and search online for solutions before seeking help in the class. If you find helpful resources or tutorials as you configure your project this lesson, please post them in the help channel to help your peers.</p>
+        <h2>Conclusion</h2>
+        <p>If you ever have any questions or issues, make sure to look at your Heroku logs with <code>heroku logs --tail</code> and search online for solutions before seeking help in the class. If you find helpful resources or tutorials as you configure your project this lesson, please post them in the help channel to help your peers.</p>
     </article>
 </body>
+
 </html>

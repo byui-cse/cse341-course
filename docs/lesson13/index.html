@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,51 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-            document.title                                         = g.courseMaterials;
+        window.onload = function () { // load global variables
+            document.title = g.courseMaterials;
             document.getElementById('g_otherUnofficial').innerHTML = g.otherUnofficial;
-            document.getElementById('g_teach').innerHTML           = g.n13 + " " + g.teach;
-            document.getElementById('g_u13').innerHTML             = g.u13;
-            document.getElementById('g_prepare').innerHTML         = g.prepare;
+            document.getElementById('g_teach').innerHTML = g.n13 + " " + g.teach;
+            document.getElementById('g_u13').innerHTML = g.u13;
+            document.getElementById('g_prepare').innerHTML = g.prepare;
         };
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
-        <h1 id="g_u13">                         </h1>
-        <h2>Summary                             </h2>
+        <h1 id="g_u13"> </h1>
+        <h2>Summary </h2>
         <p>Welcome to Lesson Thirteen of CSE 341! </p>
         <p>This lesson, you will submit your projects!</p>
-        <p>Our goals this lesson are to:           
-      </p>
+        <p>Our goals this lesson are to:
+        </p>
         <ul>
-        <li><p>Complete our personal projects</p></li>
-        <li><p>Learn how to prepare for your career by working on the personal skills involved in getting a job.</p></li>
+            <li>
+                <p>Complete our personal projects</p>
+            </li>
+            <li>
+                <p>Learn how to prepare for your career by working on the personal skills involved in getting a job.</p>
+            </li>
         </ul>
         <h2>Assignments</h2>
         <ul>
-            <li><p><a href="prepare.html" id="g_prepare"></a></p></li>
-            <li><p><a href="teach.html" id="g_teach"></a></p></li>
-            <li><p><a href="prove.html">Ponder: Reflection</a></p></li>
+            <li>
+                <p><a href="prepare.html" id="g_prepare"></a></p>
+            </li>
+            <li>
+                <p><a href="teach.html" id="g_teach"></a></p>
+            </li>
+            <li>
+                <p><a href="prove.html">Ponder: Reflection</a></p>
+            </li>
         </ul>
 
         <h6 id="g_otherUnofficial"></h6>
     </article>
 </body>
+
 </html>

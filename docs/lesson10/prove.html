@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,20 @@
     <script type="text/javascript" src="../site/global.js"></script>
     <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML       = g.n10 + " " + g.ponder;
-                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-                document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-                document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
-                document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
-            }
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n10 + " " + g.ponder;
+            document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+            document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+            document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
+            document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
+        }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -30,8 +32,8 @@
         <span id="g_secondProjectMessage"></span>
         <ul>
             <li>
-            <p>Dummy data:</p>
-            <pre><code class="hljs">{
+                <p>Dummy data:</p>
+                <pre><code class="hljs">{
         "avengers": [
             {
                 "name": "Tony Stark"
@@ -57,7 +59,7 @@
             </li>
             <li>
                 <p>Starter code for your routehandler</p>
-<pre><code class="hljs">
+                <pre><code class="hljs">
     const express = <span class="hljs-function">require</span>(<span class="hljs-string">'express'</span>);
     const router = express.<span class="hljs-function">Router</span>();
 
@@ -85,9 +87,15 @@
         </ul>
         <h2>Assignment</h2>
         <ol>
-            <li><p>Loop through and display all the dummy data to the prove activity page.</p></li>
-            <li><p>Create a web endpoint that adds to the dummy data, preventing duplicates.</p></li>
-            <li><p>Utilize that web endpoint with a text input and client-side JavaScript. </p></li>
+            <li>
+                <p>Loop through and display all the dummy data to the prove activity page.</p>
+            </li>
+            <li>
+                <p>Create a web endpoint that adds to the dummy data, preventing duplicates.</p>
+            </li>
+            <li>
+                <p>Utilize that web endpoint with a text input and client-side JavaScript. </p>
+            </li>
         </ol>
         <div class="tips">
             <p>NOTE: The route to fetch all data has been completed for you, and for simplicity you will not create a controller. Remember that you will need to use async requests instead of HTML forms!</p>
@@ -148,4 +156,5 @@
         <div id="g_ponderSubmit"></div>
     </article>
 </body>
+
 </html>

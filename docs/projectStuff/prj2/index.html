@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="../../site/style.css"
-        />
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script
-            type="text/javascript"
-            src="../../site/global.js"
-        ></script>
-        <script>
-            $(function () {
-                $('#includedHeader').load('../../site/header.html');
-            });
-        </script>
-    </head>
-    <body>
-        <div id="includedHeader"></div>
-        <article>
-            <h1>Project 2</h1>
-            <h2>Summary</h2>
-            <p>
-                After having created your first project, you are ready to branch out and apply all that you have learned up to this point. For the remainder of the course, you will work on another project that will account for the majority of your grade in this course. There are two possibilities for your second project. Your instructor will choose which of these projects students will do. Details are listed below.
-            </p>
-            <p>All students regardless of which project they participate in will be in a team in this class and they will be individually responsible for their grade. Information about teams, how individuals in teams will receive grades based on participation, and team roles can be found here:</p>
-            <ul>
-                <li>
-                    <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/prj2-teams.html">Team Requirements</a></p>
-                </li>
-                <li>
-                    <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/prj2-roles.html">Team Roles</a></p>
-                </li>
-            </ul>
-            <h4>Using Git</h4>
-            <p>
-                While working on your first project, you used git to track changes and push your code to Heroku. Now that you're working with a team, you'll have to do a little more than just add, commit, and push. You'll likely want to work on different features on their own branches, and merge finished features into your main branch. Because you're working on a team, you'll also have to deal with merge conflicts, and need to know how to resolve them.
-            </p>
-            <p>
-                Git is a valuable skill that will be useful to you in other classes, as well as in internships and jobs in the future. To help you gain a better understanding of how git works and how to use it, here are some resources about using git and GitHub:
-            </p>
-            <ul>
-                <li><p><a href="https://learngitbranching.js.org/" target="_blank">Learn Git Branching</a> - An interactive tutorial for using git on the command line</p></li>
-                <li><p><a href="https://youtu.be/HkdAHXoRtos" target="_blank">How to use Git and Github</a> (12:18) - Intro to git/GitHub by Fireship on YouTube</p></li>
-                <li><p><a href="https://youtu.be/SWYqp7iY_Tc" target="_blank">Git & GitHub Crash Course For Beginners</a> (32:14) - Crash course by Traversy Media on YouTube</p></li>
-                <li><p><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">GitLens</a> - VSCode extension that adds more git integration</p></li>
-            </ul>
-            <h3>Project Option 1: Full Stack Application</h3>
-            <p>
-                This project will be similar in architecture to the first project you completed this semester. It will be a full stack application and your team in CSE 341 will be responsible for the database, the backend, and the frontend. Requirements for this project along with all other pertinent information can be found here:
-            </p>
-            <ul>
-                <li><p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/prj2-breakdown.html">Fullstack Project 2 Breakdown</a></p></li>
-                <li><p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/prj2-requirements.html">Fullstack Project 2 Requirements</a></p></li>
-            </ul>
-            <h3>
-                Project Option 2: Backend project - teams from two classes
-            </h3>
-            <p>
-                Teams participating in this project will also have a team from Frontend Web Development II - WDD 330. In this project, teams in both courses will have to communicate with each other to achieve a common goal. Students in CSE 341 will be responsible for the backend, and students in WDD 330 will be responsible for the frontend. Project architecture will vary from what was learned in the first part of the semester in some ways. For example, students will deploy a server-side application that will allow another project to retrieve data. It is very common in industry to see teams of frontend developers and teams of backend developers writing code in two different repositories, but that pertain to the same web application as a whole. Overall, it will be a full stack application. However, the frontend of the application will be built by WDD330 students and the backend will be built by CSE 341 students. Requirements for this project along with all other pertinent information can be found here:
-            </p>
-            <ul>
-                <li><p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/wdd330_cse341/prj2-breakdown.html">WDD330/CSE341 Project 2 Breakdown</a></p></li>
-                <li><p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/wdd330_cse341/prj2-requirements.html">WDD330/CSE341 Project 2 Requirements</a></p></li>
-                <li><p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/wdd330_cse341/prj2-resources.html">WDD330/CSE341 Project 2 Resources</a></p></li>
-            </ul>
 
-            <h6 id="g_otherUnofficial"></h6>
-        </article>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../../site/global.js"></script>
+    <script>
+        $(function () {
+            $('#includedHeader').load('../../site/header.html');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1>Project 2</h1>
+        <h2>Summary</h2>
+        <p>
+            After having created your first project, you are ready to branch out and apply all that you have learned up to this point. For the remainder of the course, you will work on another project that will account for the majority of your grade in this course. There are two possibilities for your second project. Your instructor will choose which of these projects students will do. Details are listed below.
+        </p>
+        <p>All students regardless of which project they participate in will be in a team in this class and they will be individually responsible for their grade. Information about teams, how individuals in teams will receive grades based on participation, and team roles can be found here:</p>
+        <ul>
+            <li>
+                <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/prj2-teams.html">Team Requirements</a></p>
+            </li>
+            <li>
+                <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/prj2-roles.html">Team Roles</a></p>
+            </li>
+        </ul>
+        <h4>Using Git</h4>
+        <p>
+            While working on your first project, you used git to track changes and push your code to Heroku. Now that you're working with a team, you'll have to do a little more than just add, commit, and push. You'll likely want to work on different features on their own branches, and merge finished features into your main branch. Because you're working on a team, you'll also have to deal with merge conflicts, and need to know how to resolve them.
+        </p>
+        <p>
+            Git is a valuable skill that will be useful to you in other classes, as well as in internships and jobs in the future. To help you gain a better understanding of how git works and how to use it, here are some resources about using git and GitHub:
+        </p>
+        <ul>
+            <li>
+                <p><a href="https://learngitbranching.js.org/" target="_blank">Learn Git Branching</a> - An interactive tutorial for using git on the command line</p>
+            </li>
+            <li>
+                <p><a href="https://youtu.be/HkdAHXoRtos" target="_blank">How to use Git and Github</a> (12:18) - Intro to git/GitHub by Fireship on YouTube</p>
+            </li>
+            <li>
+                <p><a href="https://youtu.be/SWYqp7iY_Tc" target="_blank">Git & GitHub Crash Course For Beginners</a> (32:14) - Crash course by Traversy Media on YouTube</p>
+            </li>
+            <li>
+                <p><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">GitLens</a> - VSCode extension that adds more git integration</p>
+            </li>
+        </ul>
+        <h3>Project Option 1: Full Stack Application</h3>
+        <p>
+            This project will be similar in architecture to the first project you completed this semester. It will be a full stack application and your team in CSE 341 will be responsible for the database, the backend, and the frontend. Requirements for this project along with all other pertinent information can be found here:
+        </p>
+        <ul>
+            <li>
+                <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/prj2-breakdown.html">Fullstack Project 2 Breakdown</a></p>
+            </li>
+            <li>
+                <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/prj2-requirements.html">Fullstack Project 2 Requirements</a></p>
+            </li>
+        </ul>
+        <h3>
+            Project Option 2: Backend project - teams from two classes
+        </h3>
+        <p>
+            Teams participating in this project will also have a team from Frontend Web Development II - WDD 330. In this project, teams in both courses will have to communicate with each other to achieve a common goal. Students in CSE 341 will be responsible for the backend, and students in WDD 330 will be responsible for the frontend. Project architecture will vary from what was learned in the first part of the semester in some ways. For example, students will deploy a server-side application that will allow another project to retrieve data. It is very common in industry to see teams of frontend developers and teams of backend developers writing code in two different repositories, but that pertain to the same web application as a whole. Overall, it will be a full stack application. However, the frontend of the application will be built by WDD330 students and the backend will be built by CSE 341 students. Requirements for this project along with all other pertinent information can be found here:
+        </p>
+        <ul>
+            <li>
+                <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/wdd330_cse341/prj2-breakdown.html">WDD330/CSE341 Project 2 Breakdown</a></p>
+            </li>
+            <li>
+                <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/wdd330_cse341/prj2-requirements.html">WDD330/CSE341 Project 2 Requirements</a></p>
+            </li>
+            <li>
+                <p><a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/wdd330_cse341/prj2-resources.html">WDD330/CSE341 Project 2 Resources</a></p>
+            </li>
+        </ul>
+
+        <h6 id="g_otherUnofficial"></h6>
+    </article>
+</body>
+
 </html>

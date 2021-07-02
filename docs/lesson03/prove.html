@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,18 @@
     <script type="text/javascript" src="../site/global.js"></script>
     <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                    document.getElementById('g_ponder').innerHTML       = g.n03 + " " + g.ponder;
-                    document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-                    document.getElementById('g_project1req').innerHTML  = g.project1req;
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n03 + " " + g.ponder;
+            document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+            document.getElementById('g_project1req').innerHTML = g.project1req;
         }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -28,11 +30,21 @@
         <h2>Assignment</h2>
         <p></p>
         <ol>
-            <li><p>Organize your personal project in such a way that it follows the MVC pattern.</p></li>
-            <li><p>Create JSON file that has the data you need for your app (for example, all of the products you are going to be selling).</p></li>
-            <li><p>Create a webpage to get information from the json.</p></li>
-            <li><p>Make sure your app has dynamic routes and paths that make sense for your app. One example is adding the specific ID of your product to your url path.</p></li>
-            <li><p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p></li>
+            <li>
+                <p>Organize your personal project in such a way that it follows the MVC pattern.</p>
+            </li>
+            <li>
+                <p>Create JSON file that has the data you need for your app (for example, all of the products you are going to be selling).</p>
+            </li>
+            <li>
+                <p>Create a webpage to get information from the json.</p>
+            </li>
+            <li>
+                <p>Make sure your app has dynamic routes and paths that make sense for your app. One example is adding the specific ID of your product to your url path.</p>
+            </li>
+            <li>
+                <p>Please review rubric below to see how you'll be graded and to ensure you've completed each aspect of this assignment.</p>
+            </li>
         </ol>
         <div class="tips">
             <p>Instructor Tip</p>
@@ -112,4 +124,5 @@
         <div id="g_ponderSubmit"></div>
     </article>
 </body>
+
 </html>

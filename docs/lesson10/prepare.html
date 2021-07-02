@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-        document.getElementById('g_prepare').innerHTML  = g.n10 + " " + g.prepare;
-        document.getElementById('g_reading2').innerHTML  = g.reading2;}
+        window.onload = function () { // load global variables
+            document.getElementById('g_prepare').innerHTML = g.n10 + " " + g.prepare;
+            document.getElementById('g_reading2').innerHTML = g.reading2;
+        }
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -25,8 +28,11 @@
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/ZZTw5s8euQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p id="g_reading2"></p>
         <ul>
-            <li><p><a href="https://pro.academind.com/courses/767386/lectures/13902444" target="_blank">Working with REST APIs - The Practical Application </a><span class="time"><i>2hr 30min</i></span></p></li>
+            <li>
+                <p><a href="https://pro.academind.com/courses/767386/lectures/13902444" target="_blank">Working with REST APIs - The Practical Application </a><span class="time"><i>2hr 30min</i></span></p>
+            </li>
         </ul>
     </article>
 </body>
+
 </html>

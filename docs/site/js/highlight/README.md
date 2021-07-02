@@ -14,9 +14,11 @@ library along with one of the styles and calling
 [`initHighlightingOnLoad`][1]:
 
 ```html
-<link rel="stylesheet" href="/path/to/styles/default.css">
+<link rel="stylesheet" href="/path/to/styles/default.css" />
 <script src="/path/to/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
 ```
 
 This will find and highlight code inside of `<pre><code>` tags; it tries
@@ -28,7 +30,7 @@ work for you, you can specify the language in the `class` attribute:
 ```
 
 The list of supported language classes is available in the [class
-reference][2].  Classes can also be prefixed with either `language-` or
+reference][2]. Classes can also be prefixed with either `language-` or
 `lang-`.
 
 To disable highlighting altogether use the `nohighlight` class:
@@ -41,14 +43,14 @@ To disable highlighting altogether use the `nohighlight` class:
 
 When you need a bit more control over the initialization of
 highlight.js, you can use the [`highlightBlock`][3] and [`configure`][4]
-functions. This allows you to control *what* to highlight and *when*.
+functions. This allows you to control _what_ to highlight and _when_.
 
 Here’s an equivalent way to calling [`initHighlightingOnLoad`][1] using
 jQuery:
 
 ```javascript
-$(document).ready(function() {
-  $('pre code').each(function(i, block) {
+$(document).ready(function () {
+  $('pre code').each(function (i, block) {
     hljs.highlightBlock(block);
   });
 });
@@ -59,9 +61,9 @@ you don't use a container that preserve line breaks you will need to
 configure highlight.js to use the `<br>` tag:
 
 ```javascript
-hljs.configure({useBR: true});
+hljs.configure({ useBR: true });
 
-$('div.code').each(function(i, block) {
+$('div.code').each(function (i, block) {
   hljs.highlightBlock(block);
 });
 ```

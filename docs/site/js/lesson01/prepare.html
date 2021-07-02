@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script> 
+    <script type="text/javascript" src="../site/global.js"></script>
     <script>
-        $(function(){
-            $("#includedHeader").load("../site/header.html"); 
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){document.getElementById('g_prepare').innerHTML  = g.n01 + " " + g.prepare;}</script> 
+        window.onload = function () { document.getElementById('g_prepare').innerHTML = g.n01 + " " + g.prepare; }</script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <article>
@@ -21,11 +23,31 @@
         <h2>Overview</h2>
         <p>This lesson you will get set up with the applications and accounts you will use this semester. You will need:</p>
         <ul>
-            <li><p><heading><a href="#vsCode">Visual Studio Code</a></heading> - Or another editor of your choice</p></li>
-            <li><p><heading><a href="#slack">Slack              </a></heading> - For all course communication and collaboration</p></li>
-            <li><p><heading><a href="#github">Github            </a></heading> - To store your code</p></li>
-            <li><p><heading><a href="#node">Node.js             </a></heading> - The primary programming language for this course</p></li>
-            <li><p><heading><a href="#azure">Azure              </a></heading> - The cloud computing service that will host our applications</p></li>
+            <li>
+                <p>
+                    <heading><a href="#vsCode">Visual Studio Code</a></heading> - Or another editor of your choice
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#slack">Slack </a></heading> - For all course communication and collaboration
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#github">Github </a></heading> - To store your code
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#node">Node.js </a></heading> - The primary programming language for this course
+                </p>
+            </li>
+            <li>
+                <p>
+                    <heading><a href="#azure">Azure </a></heading> - The cloud computing service that will host our applications
+                </p>
+            </li>
         </ul>
 
         <h2>Getting all setup</h2>
@@ -40,32 +62,56 @@
         <p>GitHub is essentially a big database of source code for people all around the world. You can make your source code public or private and configure many different permissions and settings. Each project has its own repository, or "repo". This repository will be a clone of the one on your local computer. Thus, you will have three copies of your code, 1) on your local computer, 2) at Heroku, and 3) at GitHub.</p>
         <h4>Create a new repository</h4>
         <ol>
-            <li><p>Go to <a href="http://github.com" target="_blank">GitHub.com</a> and sign up for a new account if you haven't already. If you already have an account, that is perfect, you can use it here.</p></li>
-            <li><p>After creating an account, return to GitHub.com and sign in. In the upper right corner of the screen you should see a "+" icon. Click this and select "New Repository".</p></li>
-            <li><p>Choose a name for your repository (likely cs313-php or something similar).</p></li>
-            <li><p>Leave the repo public and do not check the box for a readme. Leave .gitignore and license as "none".</p>
-                    <div class="tips">
+            <li>
+                <p>Go to <a href="http://github.com" target="_blank">GitHub.com</a> and sign up for a new account if you haven't already. If you already have an account, that is perfect, you can use it here.</p>
+            </li>
+            <li>
+                <p>After creating an account, return to GitHub.com and sign in. In the upper right corner of the screen you should see a "+" icon. Click this and select "New Repository".</p>
+            </li>
+            <li>
+                <p>Choose a name for your repository (likely cs313-php or something similar).</p>
+            </li>
+            <li>
+                <p>Leave the repo public and do not check the box for a readme. Leave .gitignore and license as "none".</p>
+                <div class="tips">
                     <p>Instructor Tip:</p>
                     <p>It's not technically a problem if you add these other files now, but it makes it a little more difficult when you go to push to GitHub for the first time, because you'll have conflicts that you'll have to resolve. So at this point, it's easiest to leave everything blank.</p>
                 </div>
             </li>
-            <li><p>Click the button to create the repository.</p></li>
-            <li><p>On the page that follows, you should see a URL for your new repository (e.g., "https://github.com/username/repositoryname.git"). Copy this URL for use later on.</p></li>
+            <li>
+                <p>Click the button to create the repository.</p>
+            </li>
+            <li>
+                <p>On the page that follows, you should see a URL for your new repository (e.g., "https://github.com/username/repositoryname.git"). Copy this URL for use later on.</p>
+            </li>
         </ol>
 
         <h3 id="node">Node.js</h3>
         <ol>
-            <li><p>Open the official page for <a href="https://nodejs.org/en/download/" target="_blank">Node.js downloads</a> and download Node.js for your operating system.</p></li>
-            <li><p>Run the downloaded Node.js Installer - including accepting the license, selecting the destination, and authenticating for the install. <i>This requires Administrator privileges, and you may need to authenticate.</i></p></li>
-            <li><p>To ensure Node.js has been installed, run node -v in your terminal - you should get something like v6.9.5</p></li>
-            <li><p>Update your version of npm with npm install npm --global. <i>This requires Administrator privileges, and you may need to authenticate</i></p></li>
-            <li><p>Congratulations - you've now got Node.js installed, and are ready to start building!</p></li>
+            <li>
+                <p>Open the official page for <a href="https://nodejs.org/en/download/" target="_blank">Node.js downloads</a> and download Node.js for your operating system.</p>
+            </li>
+            <li>
+                <p>Run the downloaded Node.js Installer - including accepting the license, selecting the destination, and authenticating for the install. <i>This requires Administrator privileges, and you may need to authenticate.</i></p>
+            </li>
+            <li>
+                <p>To ensure Node.js has been installed, run node -v in your terminal - you should get something like v6.9.5</p>
+            </li>
+            <li>
+                <p>Update your version of npm with npm install npm --global. <i>This requires Administrator privileges, and you may need to authenticate</i></p>
+            </li>
+            <li>
+                <p>Congratulations - you've now got Node.js installed, and are ready to start building!</p>
+            </li>
         </ol>
 
         <h3 id="azure">Azure</h3>
         <ol>
-            <li><p>Follow <a href="https://webmailbyui-my.sharepoint.com/:w:/g/personal/birch25_byui_edu/EVZuOm1tf9VLipgGEoRjJ9ABCWVgAFFx9O1hkKQHVc-_VA?e=pGSMDH" target="_blank">these instructions</a> to create a new project using Microsoft Azure.</p></li>
+            <li>
+                <p>Follow <a href="https://webmailbyui-my.sharepoint.com/:w:/g/personal/birch25_byui_edu/EVZuOm1tf9VLipgGEoRjJ9ABCWVgAFFx9O1hkKQHVc-_VA?e=pGSMDH" target="_blank">these instructions</a> to create a new project using Microsoft Azure.</p>
+            </li>
         </ol>
     </article>
 </body>
+
 </html>

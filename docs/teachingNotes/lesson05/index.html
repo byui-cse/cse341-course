@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="../../site/style.css" />
     <link rel="stylesheet" type="text/css" href="../teachingStyle.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script> 
+    <script type="text/javascript" src="https://byui-cse.github.io/cse341-course/site/global.js"></script>
     <script>
-        $(function(){
-            $("#includedHeader").load("../../site/header.html"); 
+        $(function () {
+            $("#includedHeader").load("../../site/header.html");
         });
     </script>
 </head>
+
 <body>
     <div id="includedHeader"></div>
     <div class="teachingContainer">
@@ -23,8 +25,12 @@
             <div class="teachingColumn adminNotes">
                 <h2>Administrative Notes</h2>
                 <ul>
-                    <li><p>Post an announcement for your students this lesson in Teams.</p></li>
-                    <li><p>For on-campus sections working with WDD 330 students, our CSE341 students should be in contact with them and deciding on what they're going to do for a project.</p></li>
+                    <li>
+                        <p>Post an announcement for your students this lesson in Teams.</p>
+                    </li>
+                    <li>
+                        <p>For on-campus sections working with WDD 330 students, our CSE341 students should be in contact with them and deciding on what they're going to do for a project.</p>
+                    </li>
                 </ul>
             </div>
             <div class="teachingColumn">
@@ -34,8 +40,12 @@
                 <h4>What are they?</h4>
                 <p>Files that contain small pieces of data that are exchanged between a user's computer and a web server to identify specific users and improve their browsing experience.</p>
                 <ul>
-                    <li><p>are stored on the client</p></li>
-                    <li><p>use key/value pairs to store information</p></li>
+                    <li>
+                        <p>are stored on the client</p>
+                    </li>
+                    <li>
+                        <p>use key/value pairs to store information</p>
+                    </li>
                 </ul>
                 <h4><a href="https://www.adpushup.com/blog/types-of-cookies/" target="_blank">Different Types</a>:</h4>
                 <h5>First-party Cookies</h5>
@@ -47,21 +57,33 @@
                 <h5>Session Cookies</h5>
                 <p>Session cookies either expire immediately or within a few seconds of the user leaving the web browser. Among other uses, these cookies are used by e-commerce websites to remember the product placed in cart by the user, to keep users logged in, and to calculate each user session for analytical purposes.</p>
                 <p>For example, if an e-commerce website does not use session cookies, then the items added in cart will be removed by the time the user reaches the checkout page. And the server will forget the user and treat him/her like a completely new visitor. </p>
-                <h5>Persistent Cookies  </h5>
+                <h5>Persistent Cookies </h5>
                 <p>As the name suggests, persistent cookies stay on the user’s browser for a very long time. Generally, persistent cookies are required to have an expiration date which could be anything between a second to 10 years. The above shared screenshot is an example of persistent cookies with expiration date.</p>
                 <p>Persistent cookies are used by publishers to track a single user and his/her interaction with their website. To check whether your browser has persistent cookies, try this. If you are logged in to Gmail on the browser, then close the tab(s) and restart your device. When your device turns back on, open the same browser and visit the same service or account (Gmail), if you are still logged in, then you have persistent cookies saved on the browser, dropped by Google mail service.</p>
                 <p>Browsers are making it harder to use cookies. Web browsers like Firefox and Safari are updating their products to kill these cookies as soon as users are done with the websites. And Chrome is soon to join this bandwagon and will start blocking third-party cookies by 2022.</p>
-                <h5>Secure Cookies   </h5>
+                <h5>Secure Cookies </h5>
                 <p>Only HTTPS websites can set secure cookies, i.e., cookies with encrypted data. Mostly, the checkout or payment pages of e-commerce websites have secure cookies to facilitate safer transactions. Similarly, online banking websites are required to use secure cookies for security reasons.</p>
                 <h4>What data can cookies hold?</h4>
                 <p>Strings, functioning as key value pairs frequently hold: </p>
                 <ul>
-                    <li><p>your movements within the site</p></li>
-                    <li><p>help you resume where you left off</p></li>
-                    <li><p>remember your registered login</p></li>
-                    <li><p>theme selection</p></li>
-                    <li><p>Preferences</p></li>
-                    <li><p>and other customization functions.</p></li>
+                    <li>
+                        <p>your movements within the site</p>
+                    </li>
+                    <li>
+                        <p>help you resume where you left off</p>
+                    </li>
+                    <li>
+                        <p>remember your registered login</p>
+                    </li>
+                    <li>
+                        <p>theme selection</p>
+                    </li>
+                    <li>
+                        <p>Preferences</p>
+                    </li>
+                    <li>
+                        <p>and other customization functions.</p>
+                    </li>
                 </ul>
                 <h4>Code example</h4>
                 <img src="lesson05_01.jpg" alt="" class="img-tutorial">
@@ -71,11 +93,17 @@
 
                 <h3>Sessions</h3>
                 <h4><a href="https://www.sohamkamani.com/blog/2017/01/08/web-security-session-cookies/#:~:text=A%20%E2%80%9Csession%E2%80%9D%20is%20a%20single,person%20who%20is%20logged%20in." target="_blank">What are they?</a></h4>
-                <p>A “session” is a single interval of time in which the user is authenticated.  What makes this secure is that each session comes with a different session token, and the session token by itself gives no indication about the person who is logged in.</p>
+                <p>A “session” is a single interval of time in which the user is authenticated. What makes this secure is that each session comes with a different session token, and the session token by itself gives no indication about the person who is logged in.</p>
                 <ul>
-                    <li><p>Data stored on the server to uniquely identify users</p></li>
-                    <li><p>Track any user that uses the site</p></li>
-                    <li><p>Allow users to stay logged in</p></li>
+                    <li>
+                        <p>Data stored on the server to uniquely identify users</p>
+                    </li>
+                    <li>
+                        <p>Track any user that uses the site</p>
+                    </li>
+                    <li>
+                        <p>Allow users to stay logged in</p>
+                    </li>
                 </ul>
                 <h4><a href="https://redislabs.com/blog/cache-vs-session-store/#:~:text=Session%20data%20may%20include%20user,targeted%20promotions%20and%20discounts%2C%20etc.&text=The%20following%20points%20contrast%20session,the%20sessions%20of%20different%20users." target="_blank">What data can they store</a>?</h4>
                 <p>Session data may include user profile information, messages, personalized data and themes, recommendations, targeted promotions and discounts, etc. The following points contrast session store from a cache: In a session store, the data is not shared between the sessions of different users.</p>
@@ -84,12 +112,24 @@
                 <h3>Cookies and Sessions</h3>
                 <p>More often than not, cookies and sessions are used together. </p>
                 <ul>
-                    <li><p>Cookie to identify user on the client</p></li>
-                    <li><p>Sensitive data on the server</p></li>
-                    <li><p>Session cookie (will expire when browser closes) with hashed information from server to be saved on client</p></li>
-                    <li><p>Keep sensitive data away from the client</p></li>
-                    <li><p>Sessions can store user data, shopping cart info, anything while cookies are limited to strings.</p></li>
-                    <li><p>Cookie used to identify session</p></li>
+                    <li>
+                        <p>Cookie to identify user on the client</p>
+                    </li>
+                    <li>
+                        <p>Sensitive data on the server</p>
+                    </li>
+                    <li>
+                        <p>Session cookie (will expire when browser closes) with hashed information from server to be saved on client</p>
+                    </li>
+                    <li>
+                        <p>Keep sensitive data away from the client</p>
+                    </li>
+                    <li>
+                        <p>Sessions can store user data, shopping cart info, anything while cookies are limited to strings.</p>
+                    </li>
+                    <li>
+                        <p>Cookie used to identify session</p>
+                    </li>
                 </ul>
                 <h4>Cookies vs Sessions</h4>
                 <table class="table-small">
@@ -130,4 +170,5 @@
         </div>
     </div>
 </body>
+
 </html>

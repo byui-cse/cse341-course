@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,20 @@
     <script type="text/javascript" src="../site/global.js"></script>
     <script type="text/javascript" src="../site/rubric.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $("#includedHeader").load("../site/header.html");
         });
-        window.onload = function(){ // load global variables
-                document.getElementById('g_ponder').innerHTML       = g.n11 + " " + g.ponder;
-                document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-                document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-                document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
-                document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
-            }
+        window.onload = function () { // load global variables
+            document.getElementById('g_ponder').innerHTML = g.n11 + " " + g.ponder;
+            document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
+            document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+            document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
+            document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
+        }
     </script>
- </head>
- <body>
+</head>
+
+<body>
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_ponder"></span></h1>
@@ -30,16 +32,28 @@
         <span id="g_secondProjectMessage"></span>
         <h2>Assignment</h2>
         <ol>
-           <li><p>Using your code from the W10 activity, implement socket.io on both the client JS and server to emit an update to the list from one client to all other clients. This means that if a the client on one browser adds a new name, all other cleints should update the list with that new name as well.</p></li>
+            <li>
+                <p>Using your code from the W10 activity, implement socket.io on both the client JS and server to emit an update to the list from one client to all other clients. This means that if a the client on one browser adds a new name, all other cleints should update the list with that new name as well.</p>
+            </li>
         </ol>
         <div class="tips">
             <p>Hints:</p>
             <ul>
-                <li><p>You should not have to add many lines of code to implement socket.io</p></li>
-                <li><p>Make sure socket.io and socket.io-client are installed on your application</p></li>
-                <li><p>On your EJS page, consider including a script tag with src "/socket.io/socket.io.js" above your client-side script tag</p></li>
-                <li><p>A cheatsheet for emit methods can be found here: <a target="_blank" href="https://socket.io/docs/emit-cheatsheet/">Emit Cheatsheet (socket.io)</a> </p></li>
-                <li><p>It's a good idea to read documentation or guides for any web/software technology you may be unfamiliar with. This is a good starting point: <a target="_blank" href="https://socket.io/get-started/chat/">Get Started (socket.io)</a></p></li>
+                <li>
+                    <p>You should not have to add many lines of code to implement socket.io</p>
+                </li>
+                <li>
+                    <p>Make sure socket.io and socket.io-client are installed on your application</p>
+                </li>
+                <li>
+                    <p>On your EJS page, consider including a script tag with src "/socket.io/socket.io.js" above your client-side script tag</p>
+                </li>
+                <li>
+                    <p>A cheatsheet for emit methods can be found here: <a target="_blank" href="https://socket.io/docs/emit-cheatsheet/">Emit Cheatsheet (socket.io)</a> </p>
+                </li>
+                <li>
+                    <p>It's a good idea to read documentation or guides for any web/software technology you may be unfamiliar with. This is a good starting point: <a target="_blank" href="https://socket.io/get-started/chat/">Get Started (socket.io)</a></p>
+                </li>
             </ul>
         </div>
 
@@ -109,4 +123,5 @@
         <div id="g_ponderSubmit"></div>
     </article>
 </body>
+
 </html>

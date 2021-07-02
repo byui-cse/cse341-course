@@ -69,7 +69,7 @@ vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
 .hljs-hexcolor,
 .hljs-input .hljs-prompt,
 .hljs-char {
- color: #cc6666
+  color: #cc6666;
 }
 
 /*color: fg_green*/
@@ -97,7 +97,7 @@ vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
 .hljs-variable .hljs-filter .hljs-keyword,
 .hljs-template_tag .hljs-filter .hljs-keyword,
 .hljs-name {
- color: #b294bb;
+  color: #b294bb;
 }
 
 /*color: fg_blue*/
@@ -115,7 +115,7 @@ vim-hybrid theme by w0ng (https://github.com/w0ng/vim-hybrid)
 .hljs-method,
 .hljs-list .hljs-title,
 .hljs-tag {
- color: #81a2be;
+  color: #81a2be;
 }
 
 /*color: fg_aqua*/
