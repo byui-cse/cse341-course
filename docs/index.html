@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./site/style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="site/global.js"></script>
     <script type="text/javascript" src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./site/style.css" />
+    <style>
+        h2 {
+            border-bottom: 0px;
+        }
+    </style>
     <script>
         $(function () {
             $("#includedHeader").load("site/header.html");
@@ -21,73 +28,272 @@
     <article>
         <h1 id="g_courseMaterials"></h1>
         <p id="g_otherUnofficial"></p>
-        <table class="evenlySpaced">
-            <tr>
-                <td>
-                    <!-- <h1>Online Videos Course</h1> -->
-                    <ul>
-                        <li>
-                            <p><a href="lesson01/index.html" id="g_u01"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson02/index.html" id="g_u02"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson03/index.html" id="g_u03"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson04/index.html" id="g_u04"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson05/index.html" id="g_u05"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson06/index.html" id="g_u06"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson07/index.html" id="g_u07"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson08/index.html" id="g_u08"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson09/index.html" id="g_u09"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson10/index.html" id="g_u10"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson11/index.html" id="g_u11"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson12/index.html" id="g_u12"></a></p>
-                        </li>
-                        <li>
-                            <p><a href="lesson13/index.html" id="g_u13"></a></p>
-                        </li>
-                    </ul>
-                </td>
-                <!-- <td>
-                    <h1>Traditional Course</h1>
-                    <ul>
-                        <li><p><a href="./lesson01/index.html" id="g_w01"></a></p></li> -->
-                <!-- <li><p><a href="./lesson02/index.html" id="g_w02"></a></p></li>
-                        <li><p><a href="./lesson03/index.html" id="g_w03"></a></p></li>
-                        <li><p><a href="./lesson04/index.html" id="g_w04"></a></p></li>
-                        <li><p><a href="./lesson05/index.html" id="g_w05"></a></p></li>
-                        <li><p><a href="./lesson06/index.html" id="g_w06"></a></p></li>
-                        <li><p><a href="./lesson07/index.html" id="g_w07"></a></p></li>
-                        <li><p><a href="./lesson08/index.html" id="g_w08"></a></p></li>
-                        <li><p><a href="./lesson09/index.html" id="g_w09"></a></p></li>
-                        <li><p><a href="./lesson10/index.html" id="g_w10"></a></p></li>
-                        <li><p><a href="./lesson11/index.html" id="g_w11"></a></p></li>
-                        <li><p><a href="./lesson12/index.html" id="g_w12"></a></p></li>
-                        <li><p><a href="./lesson13/index.html" id="g_w13"></a></p></li> -->
-                <!-- </ul>
-                </td> -->
-            </tr>
-        </table>
         <iframe width="560" height="315" class="img-tutorial" src="https://www.youtube.com/embed/oHzZPTTrKxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span id="g_u01"></span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson01/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Course Introduction</p>
+                            </li>
+                            <li>
+                                <p>Setup Computer and Accounts</p>
+                            </li>
+                            <li>
+                                <p>Academind Course Starts</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span id="g_u02"></span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson02/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Learn about Express, Routers, and Template Engines</p>
+                            </li>
+                            <li>
+                                <p>Start 1st Project: E-commerce Project with Academind Videos</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span id="g_u03"></span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson03/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Learn about MVC and CRUD</p>
+                            </li>
+                            <li>
+                                <p>Continue work on E-Commerce Project</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span id="g_u04"></span>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson04/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Learn about MongoDB and CRUD</p>
+                            </li>
+                            <li>
+                                <p>Continue work on E-Commerce Project</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <span id="g_u05"></span>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson05/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Learn about Sessions, Cookies and Authentication</p>
+                            </li>
+                            <li>
+                                <p>Continue work on E-Commerce Project</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <span id="g_u06"></span>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson06/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Learn more about Authentication</p>
+                            </li>
+                            <li>
+                                <p>Finish and Submit E-Commerce Project</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <span id="g_u07"></span>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson07/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Learn about Project Planning and Risk Assessment</p>
+                            </li>
+                            <li>
+                                <p>Start Final Project with your team - an app of your choosing</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <span id="g_u08"></span>
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson08/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Continue work on Final Project</p>
+                            </li>
+                            <li>
+                                <p>Learn about Pagination, Payments and Files</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        <span id="g_u09"></span>
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson09/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Continue work on Final Project</p>
+                            </li>
+                            <li>
+                                <p>Learn about REST APIs</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        <span id="g_u10"></span>
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson10/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Continue work on Final Project</p>
+                            </li>
+                            <li>
+                                <p>Learn about Async Requests and more about REST APIs</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        <span id="g_u11"></span>
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson11/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Continue work on Final Project</p>
+                            </li>
+                            <li>
+                                <p>Learn about Sockets, Async/Await and GraphQL</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        <span id="g_u12"></span>
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson12/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Continue work on Final Project</p>
+                            </li>
+                            <li>
+                                <p>Learn about Project Hosting and Testing</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                        <span id="g_u13"></span>
+                    </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><a href="lesson13/index.html">Open Lesson Page</a></p>
+                        <ul>
+                            <li>
+                                <p>Complete and Submit Final Project</p>
+                            </li>
+                            <li>
+                                <p>Learn about Career Readiness</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </article>
 </body>
 

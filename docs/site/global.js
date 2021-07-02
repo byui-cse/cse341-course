@@ -25,10 +25,10 @@ g.prepare = 'Prepare: Reading Material';
 g.teach = 'Teach: Team Activity';
 g.ponder = 'Prove: Assignment';
 g.reading =
-  'For your technical reading this lesson, you will complete the following sections of the course: ';
+  'For your technical reading this lesson, you will complete the following sections of the course. Remember, you can always accelerate or decelerate the speed of the videos with a Chrome extension like <a href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en" target="_blank">this</a>. Academind also has frequent zip files with code that you can download that may be helpful.  The videos will go through your entire prove assignment for the week, so don\'t worry if they take you a while. Once you finish them, you will also be done with your assignment (see description in this week\'s prove assignment).';
 g.reading2 =
-  g.reading.slice(0, -2) +
-  '. Now that you are working on your team project for the remainder of the semester, you will notice that not all of the readings will apply to your team project. However, to continue your professional development and to be prepared for your prove assignments, you should be familiar with these concepts.';
+  g.reading.split('. Academind also')[0] +
+  '.  Now that you are working on your team project for the remainder of the semester, you will notice that not all of the readings will apply to your team project, however, these concepts will help with your professional development.';
 g.teachTime =
   'Please spend at least 1 hour on this assignment before reviewing the solution.';
 g.teachInstructor = "Instructor's Solution";
@@ -101,3 +101,5 @@ g.secondHalfProveMessage =
   '<div class="tips">Special note:<p> While this prove assignment contains very valuable information, the concepts found in this prove are not required to be implemented into ' +
   'the second project. These concepts are great stretch goals that can be added to the project and can help to reach 100%. This prove assignment can ' +
   "be done in your groups or done individually. <b>Don't spend over an hour working on this on your own. Please use the teacher solution after an hour to finish the assignment.</b></p></div>";
+g.optionalReading =
+  '<h4>These videos are optional</h4><p>The prepare quiz in I-learn will have questions from this reading. You may use the quiz to direct your study to help you find specific answers. You can find these answers in these videos, or by searching the web on your own. This quiz can be taken as many times as wish.</p>';
