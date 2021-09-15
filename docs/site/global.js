@@ -47,7 +47,7 @@ g.ponderSubmit =
 g.project1req =
   "Your assignment for this lesson will be 100% dedicated to your personal E-commerce project for this portion of the semester. The E-Commerce project spans lessons 2-6. Similar to last lesson, your assignment for this lesson will follow the Academind videos very closely. By simply completing the code demonstrated in the videos and pushing to Heroku, you'll be eligible for 93% on this assignment. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>.";
 g.project2req =
-  "Your assignment for this lesson will be 100% dedicated to your team project for this portion of the semester. To review project requirements please read here: <a href='../projectStuff/prj2/prj2-requirements.html'>full-stack</a>.";
+  'Your assignment for this lesson will be 100% dedicated to your team project for this portion of the semester. To review project requirements please select Project > Project 2 from the navbar, then select your project (ONLINE or CAMPUS). There will be a link for the requirements there. <br><img src="../projectStuff/projectRequirements.png" class="img-tutorial>';
 
 // module numbers
 g.n01 = '01';
