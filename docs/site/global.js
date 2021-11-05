@@ -21,11 +21,12 @@ g.courseCodeName = g.courseCode + ' | ' + g.courseName;
 g.courseMaterials = g.courseCode + ' - Course Materials';
 
 // frequently used phrases
+g.prepare1 = 'Prepare: Reading Material and Assignment';
 g.prepare = 'Prepare: Reading Material';
 g.teach = 'Teach: Team Activity';
 g.ponder = 'Prove: Assignment';
 g.reading =
-  'For your technical reading this lesson, you will complete the following sections of the course. Remember, you can always accelerate or decelerate the speed of the videos with a Chrome extension like <a href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en" target="_blank">this</a>. Academind also has frequent zip files with code that you can download that may be helpful.  The videos will go through your entire prove assignment for the week, so don\'t worry if they take you a while. Once you finish them, you will also be done with your assignment (see description in this week\'s prove assignment).';
+  'For your technical reading and assignment this lesson, you will complete the following sections of the course. Remember, you can always accelerate or decelerate the speed of the videos with a Chrome extension like <a href="https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en" target="_blank">this</a>. Academind also has frequent zip files with code that you can download that may be helpful.  The videos will go through your entire prove assignment for the week, so don\'t worry if they take you a while. Once you finish them, you will also be done with your assignment, just push to GitHub.';
 g.reading2 =
   g.reading.split('. Academind also')[0] +
   '.  Now that you are working on your team project for the remainder of the semester, you will notice that not all of the readings will apply to your team project, however, these concepts will help with your professional development.';
@@ -45,7 +46,7 @@ g.ponderSubmit =
   '<li><p>Download this assignment\'s <a href="prove.txt" target="_blank">submission form</a>, fill it out, and submit it to I-Learn.</p></li>' +
   '</ol>';
 g.project1req =
-  "Your assignment for this lesson will be 100% dedicated to your personal E-commerce project for this portion of the semester. The E-Commerce project spans lessons 2-6. Similar to last lesson, your assignment for this lesson will follow the Academind videos very closely. By simply completing the code demonstrated in the videos and pushing to Heroku, you'll be eligible for 93% on this assignment. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>.";
+  "Your assignment for this lesson will be 100% dedicated to your personal E-commerce project for this portion of the semester. The E-Commerce project spans the first 7 weeks of the course. Similar to last lesson, your assignment for this lesson will follow the Academind videos very closely. By simply completing the code demonstrated in the videos and pushing to Heroku, you'll be eligible for 93% on this assignment. To review project requirements please <a href='../projectStuff/prj1-requirements.html'>read here</a>.";
 g.project2req =
   'Your assignment for this lesson will be 100% dedicated to your team project for this portion of the semester. To review project requirements please select Project > Project 2 from the navbar, then select your project (ONLINE or CAMPUS). There will be a link for the requirements there. <br><img src="../projectStuff/projectRequirements.png" class="img-tutorial>';
 
