@@ -88,9 +88,9 @@ g.u04 = 'Lesson ' + g.n04 + ' - Databases and NoSQL';
 g.u05 = 'Lesson ' + g.n05 + ' - Sessions and Authentication';
 g.u06 = 'Lesson ' + g.n06 + ' - Advanced Authentication';
 g.u07 = 'Lesson ' + g.n07 + ' - Project Risk and Planning';
-g.u08 = 'Lesson ' + g.n08 + ' - Advanced Topics';
-g.u09 = 'Lesson ' + g.n09 + ' - Async Requests, REST APIs';
-g.u10 = 'Lesson ' + g.n10 + ' - Working with REST';
+g.u08 = 'Lesson ' + g.n08 + ' - Async Requests, REST APIs';
+g.u09 = 'Lesson ' + g.n09 + ' - Working with REST';
+g.u10 = 'Lesson ' + g.n10 + ' - Advanced Topics';
 g.u11 = 'Lesson ' + g.n11 + ' - Async Await, Websockets, GraphQL';
 g.u12 = 'Lesson ' + g.n12 + ' - Deployment and Testing';
 g.u13 = 'Lesson ' + g.n13 + ' - Wrap Up';
@@ -104,3 +104,95 @@ g.secondHalfProveMessage =
   "be done in your groups or done individually. <b>Don't spend over an hour working on this on your own. Please use the teacher solution after an hour to finish the assignment.</b></p></div>";
 g.optionalReading =
   '<h4>These videos are optional</h4><p>The prepare quiz in I-learn will have questions from this reading. You may use the quiz to direct your study to help you find specific answers. You can find these answers in these videos, or by searching the web on your own. This quiz can be taken as many times as wish.</p>';
+
+// youtube videos for weeks 8 and 9
+
+let videos = [
+  {
+    order: 1,
+    title: 'What is a RESTful API? | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=0oXYLzuucwE&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q&index=1',
+    duration: '15',
+  },
+  {
+    order: 2,
+    title: 'Planning & First Steps | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=blQ60skPzl0&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q&index=2',
+    duration: '15',
+  },
+  {
+    order: 3,
+    title: 'Adding More Routes to the API | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=blQ60skPzl0&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q&index=3',
+    duration: '17',
+  },
+  {
+    order: 4,
+    title:
+      'Handling Errors & Improving the Project Setup | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q&index=4',
+    duration: '10',
+  },
+  {
+    order: 5,
+    title:
+      'Parsing the Body & Handling CORS | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q&index=5',
+    duration: '16',
+  },
+  {
+    order: 6,
+    title: 'MongoDB and Mongoose | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=6',
+    duration: '36',
+  },
+  {
+    order: 7,
+    title: 'Mongoose Validation | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=7',
+    duration: '19',
+  },
+  {
+    order: 8,
+    title: 'Managing Orders with Mongoose | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=8',
+    duration: '22',
+  },
+  {
+    order: 9,
+    title:
+      'Populating Queries with Mongoose | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=9',
+    duration: '3',
+  },
+  {
+    order: 10,
+    title: 'Uploading an Image | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=10',
+    duration: '22',
+  },
+  {
+    order: 11,
+    title: 'Adding User Signup | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=11',
+    duration: '29',
+  },
+  {
+    order: 12,
+    title: 'Adding User Login & JWT Signing | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=12',
+    duration: '15',
+  },
+  {
+    order: 13,
+    title: 'JWT Route Protection | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=13',
+    duration: '16',
+  },
+  {
+    order: 14,
+    title: 'Adding Controllers | Creating a REST API with Node.js',
+    url: 'https://www.youtube.com/watch?v=UVAMha41dwo&list=PL65RiY5tL51q4D-B63KBnygU6opNPFk_q&index=14',
+    duration: '20',
+  },
+];

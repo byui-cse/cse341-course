@@ -13,8 +13,8 @@
             $("#includedHeader").load("../site/header.html");
         });
         window.onload = function () { // load global variables
-            document.getElementById('g_teach').innerHTML = g.n10 + " " + g.teach;
             document.getElementById('g_project2req').innerHTML = g.project2req;
+            document.getElementById('g_teach').innerHTML = g.n10 + " " + g.teach;
             document.getElementById('g_teachSubmit').innerHTML = g.teachSubmit;
         }
     </script>
@@ -24,10 +24,15 @@
     <div id="includedHeader"></div>
     <article>
         <h1><span id="g_teach"></span></h1>
+
         <h2>Overview</h2>
         <p id="g_project2req"></p>
         <h2>Assignment</h2>
         <p>Your assignment for this lesson should roughly follow one of the tasks listed in the <a href="../projectStuff/prj2/prj2-breakdown.html">project 2 breakdown</a>.</p>
+        <div class="alert alert-danger" role="alert">
+            <h4>On Campus Students</h4>
+            <p>For this assignment you will create your Swagger API documentation that will be used by your backend team and the WDD330 frontend team. <a href="https://byui-cse.github.io/cse341-course/projectStuff/prj2/wdd330_cse341/prj2-resources.html" target="_blank">These</a> resources may be helpful.</p>
+        </div>
         <h2>Submission</h2>
         <p id="g_teachSubmit"></p>
     </article>
