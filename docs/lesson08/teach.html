@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../site/style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../site/global.js"></script>
+    <script src="../site/rubric.js"></script>
+    <script>
+        $(function () {
+            $("#includedHeader").load("../site/header.html");
+        });
+        window.onload = function () { // load global variables
+            document.getElementById('g_teach').innerHTML = g.n08 + " " + g.teach;
+            //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
+            //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+            //    document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
+            document.getElementById('g_project2req').innerHTML = g.project2req;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="includedHeader"></div>
+    <article>
+        <h1><span id="g_teach"></span></h1>
+
+        <h2>Overview</h2>
+        <p>
+            Today's team activity will give you a chance to practice your REST API Skills.
+        </p>
+        <h2>Assignment</h2>
+        <ol>
+            <li>
+                <p>Download <a href="./02-sending-post-requests.zip">this</a> zip file that came from the Academind course.</p>
+            </li>
+            <li>
+                <p>Examine the code, and discuss together what the code is doing. How many routes are there? What will the routes look like when called by a frontend? What is the application actually doing?</p>
+            </li>
+            <li>
+                <p>Run npm install and npm start</p>
+            </li>
+            <li>
+                <p>Now that your server is running, let's test these REST API endpoints using a REST client. There are many good options out there. The Academind course uses <a href="https://www.postman.com/downloads/" target="_blank">Postman</a>. Another amazing alternative is a VS Code extension that allows you to test RESTful API endpoints in VS code. This extension is called <strong>REST Client</strong>. Search for it in the extensions:</p>
+                <img src="./r-client.png" class="img-tutorial" alt="">
+            </li>
+            <li>
+                <p>With this extension installed, create a file with the following extension: <strong>.rest</strong>. Place this file somewhere in your project. In it, you can specify any api endpoint/route to test. We currently have this node application running locally on port 8080, so we can test it by adding that route to our <strong>rest</strong> file, and clicking the Send Request button as shown in the following image: </p>
+                <img src="./restClient.png" class="img-tutorial" alt="">
+                <p>One really nice thing about using the REST Client extension, is that as you test your endpoints, this <strong>rest</strong> file will grow, essentially becoming the documentation needed for the frontend developers to build their end when the time comes.</p>
+            </li>
+            <li>
+                <p>Next, create another route in your <strong>rest</strong> file to test a POST request. You will likely need to look at the REST Client extension documentation or use google to figure out how to make additional requests available in this file, and how to do POSTs. Once it's working, you should see something like this:</p>
+                <img src="./post.png" alt="" class="img-tutorial">
+                <p>If you try sending the GET request after this, you'll notice that it doesn't show the updated data that you sent with your previous POST request. This is because our simple application has no database and no way to save data. But modifying this is something you've done on many occasions using MongoDB, and that aspect will be exactly the same. </p>
+            </li>
+            <li>
+                <p>Your final task for this project will is extremely important. Anytime a backend team works with a frontend team, there needs to be documentation in place to define where the two ends of the project will meet. This documentation is frequently referred to as an API Contract. An API Contract will provide the frontend team with every route and piece of data necessary for retrieving data from the API, and it also provides the backend team with a clearly defined set of deliverables so they know what to deliver and how. There are several common ways of creating these contracts used in industry today:</p>
+                <ul>
+                    <li>
+                        <p>Postman has a way of <a href="https://apitransform.com/how-to-export-postman-collection/" target="_blank">exporting requests</a> that can then be shared with others. </p>
+                    </li>
+                    <li>
+                        <p>There are tools like <a href="https://medium.com/commencis/contract-first-api-development-with-openapi-generator-and-connexion-b21bbf2f9244" target="_blank">Swagger.io</a> that create a really nice, testable user interface that can be used by both the frontend and the backend teams to test endpoints.</p>
+                    </li>
+                    <li>
+                        <p>We can also use the <strong>rest</strong> file that we created earlier. When you have a larger project, your rest file(s) may be much larger, but their function is similar to the other two tools mentioned. Additionally, the frontend team can download the REST Client extension as well and have a really easy way to test these endpoints.</p>
+                    </li>
+                </ul>
+                <p>For your task, pick one of these to use to provide API documentation (or an API contract) to a pretend frontend team. This should have everything they will need to build the application (endpoints, data, types of responses, parameters, authentication if present, etc.). While this application is simple, your documentation should be clear and professional.</p>
+            </li>
+        </ol>
+        <h2>Submission</h2>
+        <p>
+            Submit the API Contract in I-learn.
+        </p>
+    </article>
+</body>
+
+</html>
