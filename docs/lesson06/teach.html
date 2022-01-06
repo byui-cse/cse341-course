@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="../site/style.css" />
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="../site/global.js"></script>
+   <script>
+      $(function () {
+         $("#includedHeader").load("../site/header.html");
+      });
+      window.onload = function () { // load global variables
+         document.getElementById('g_teach').innerHTML = g.n06 + " " + g.teach;
+         //    document.getElementById('g_teachTime').innerHTML       = g.teachTime;
+         //    document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
+         //    document.getElementById('g_teachSolution').innerHTML   = g.teachSolution;
+         document.getElementById('g_teachSubmit').innerHTML = g.teachSubmit;
+      }
+   </script>
+</head>
+
+<body>
+   <div id="includedHeader"></div>
+   <article>
+      <h1><span id="g_teach"></span></h1>
+
+      <h2>Overview</h2>
+      <p>Your team activity this week will be very flexible. Your goal, is to create a simple application to get practice working with authentication. You may choose anything that does this as long as it is not the exact same code from your reading. You can and should use the videos and code that you wrote from the reading to help you during this assignment. </p>
+      <h2>Instructions</h2>
+      <p>Create an application (or webpage)</p>
+      <ol>
+         <li>
+            <p> Incorporate Authentication
+            </p>
+         </li>
+         <li>
+            <p>Incorporate Validation
+            </p>
+         </li>
+         <li>
+            <p>Incorporate Error Handling
+            </p>
+         </li>
+      </ol>
+      <p>This assignment is intended to be open-ended. Working through a task like this helps to build certain skills that other, more rigid assignments cannot build. Your ability to take vague requirements and build something useful is an extremely valuable skill.</p>
+      <h2>Submission</h2>
+      <p id="g_teachSubmit"></p>
+   </article>
+</body>
+
+</html>
