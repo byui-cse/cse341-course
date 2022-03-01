@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="../site/style.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="../site/global.js"></script>
+		<script type="text/javascript" src="../site/rubric.js"></script>
+		<script>
+			$(function () {
+				$("#includedHeader").load("../site/header.html");
+			});
+			window.onload = function () {
+				// load global variables
+				document.getElementById("g_ponder").innerHTML =
+					g.n09 + " " + g.ponder;
+				document.getElementById("g_ponderSubmit").innerHTML =
+					g.ponderSubmit;
+				document.getElementById("g_teachInstructor").innerHTML =
+					g.teachInstructor;
+				document.getElementById("g_proveSolution").innerHTML =
+					g.proveSolution;
+				document.getElementById("g_secondProjectMessage").innerHTML =
+					g.secondHalfProveMessage;
+			};
+		</script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../site/style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="../site/global.js"></script>
-    <script type="text/javascript" src="../site/rubric.js"></script>
-    <script>
-        $(function () {
-            $("#includedHeader").load("../site/header.html");
-        });
-        window.onload = function () { // load global variables
-            document.getElementById('g_ponder').innerHTML = g.n09 + " " + g.ponder;
-            document.getElementById('g_ponderSubmit').innerHTML = g.ponderSubmit;
-            document.getElementById('g_teachInstructor').innerHTML = g.teachInstructor;
-            document.getElementById('g_proveSolution').innerHTML = g.proveSolution;
-            document.getElementById('g_secondProjectMessage').innerHTML = g.secondHalfProveMessage;
-        }
-    </script>
-</head>
-
-<body>
-    <div id="includedHeader"></div>
-    <article>
-        <h1><span id="g_ponder"></span></h1>
-        <h2>Overview</h2>
-        <p>No Assignment this week outside of your reading and team project.</p>
-        <!-- <p>For this lesson's activity, you’ll work on pulling from a 3rd party API using async requests. The API you will be using is <a target="_blank" href="https://pokeapi.co/">pokeapi.co</a>, a popular RESTful API for Pokemon information. JavaScript’s “fetch” method will be used to make the async requests. For now, you’ll only be using GET for the request method.</p>
+	<body>
+		<div id="includedHeader"></div>
+		<article>
+			<h1><span id="g_ponder"></span></h1>
+			<h2>Overview</h2>
+			<p>
+				You will build the backend to an application that already has an
+				existing frontend using JWT for authentication.
+			</p>
+			<h2>Assignment</h2>
+			<ol>
+				<li>
+					<p>
+						The frontend for this project is complete. Please download the
+						<a href="./frontend.zip">frontend project zip file</a>. You
+						will not change any code in it, you will just open the html
+						file in the browser to test that your backend is functional.
+						You'll see a series of ids in the html and the JavaScript.
+						Look at the data that the JavaScript file uses to populate the
+						html, this includes text and an image path.
+					</p>
+				</li>
+				<li>
+					<p>
+						The backend for this project has a starting template. Please
+						download the
+						<a href="./backend-start.zip">backend project zip file</a>.Use
+						this template to make a new node project with REST endpoints.
+						You will use POST to send user login data and GET to grab all
+						the data for the specific user.
+					</p>
+				</li>
+				<li>
+					<p>
+						While you're writing your code, test it with REST Client in VS
+						Code to ensure it is working correctly.
+					</p>
+				</li>
+				<li>
+					<p>
+						Once everything looks good with the REST Client, open the
+						frontend webpage in the browser and check to see if it is
+						working (ensure that your backend server is still running on
+						port 8080).
+					</p>
+				</li>
+				<li>
+					<p>
+						Clean up your REST Client .rest file and add comments for
+						documentation for your backend.
+					</p>
+				</li>
+				<li>
+					<p>
+						Upload your node project along with the
+						<strong>rest</strong> file to a new GitHub repository and
+						submit the GitHub link in I-learn.
+					</p>
+				</li>
+			</ol>
+			<iframe
+				width="560"
+				height="315"
+				class="img-tutorial"
+				src=""
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+			<!-- <p>For this lesson's activity, you’ll work on pulling from a 3rd party API using async requests. The API you will be using is <a target="_blank" href="https://pokeapi.co/">pokeapi.co</a>, a popular RESTful API for Pokemon information. JavaScript’s “fetch” method will be used to make the async requests. For now, you’ll only be using GET for the request method.</p>
         <span id="g_secondProjectMessage"></span>
         <h2>Assignment</h2>
         <p>Here are your main tasks:</p>
@@ -106,7 +175,6 @@
             (<a href="prove-backend-solution.zip" target="_blank">Download .zip</a>)
         </p>
         <div id="g_ponderSubmit"></div> -->
-    </article>
-</body>
-
+		</article>
+	</body>
 </html>
